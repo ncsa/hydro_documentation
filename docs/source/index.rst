@@ -1,4 +1,4 @@
-**Using Hydro for Research**
+**NCSA Hydro User Documentation**
 ============================
 
 --------------
