@@ -2,9 +2,9 @@
 
 # -- Project information
 
-project = 'Lumache'
-copyright = '2021, Graziella'
-author = 'Graziella'
+project = 'NCSA Hydro User Documentation'
+copyright = '2022, University of Illinois'
+author = 'University of Illinois'
 
 release = '0.1'
 version = '0.1.0'
