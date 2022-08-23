@@ -467,67 +467,45 @@ Useful Batch Job Environment Variables
 
 Here is a sample Batch script:
 
-+-----------------------------------------------------------------------+
-| ``#!/bin/bash``                                                       |
-|                                                                       |
-| ``### set the wallclock time``                                        |
-|                                                                       |
-| ``#SBATCH --time=00:30:00``                                           |
-|                                                                       |
-| ``### set                                                             |
-|  the number of nodes, tasks per node, and cpus per task for the job`` |
-|                                                                       |
-| ``#SBATCH --nodes=3``                                                 |
-|                                                                       |
-| ``#SBATCH --ntasks-per-node=1``                                       |
-|                                                                       |
-| ``#SBATCH --cpus-per-task=16``                                        |
-|                                                                       |
-| ``### set the job name``                                              |
-|                                                                       |
-| ``#SBATCH --job-name="hello"``                                        |
-|                                                                       |
-| ``### set a file name for the stdout and stderr from the job``        |
-|                                                                       |
-| ``### the %j parameter will be replaced with the job ID.``            |
-|                                                                       |
-| ``### By default, stderr and stdout both go to the --output``         |
-|                                                                       |
-| ``### file, but you can optionally specify a --error file to``        |
-|                                                                       |
-| ``### keep them separate``                                            |
-|                                                                       |
-| ``#SBATCH --output=hello.o%j``                                        |
-|                                                                       |
-| ``##SBATCH --error=hello.e%j``                                        |
-|                                                                       |
-| ``### set email notification``                                        |
-|                                                                       |
-| ``##SBATCH --mail-type=BEGIN,END,FAIL``                               |
-|                                                                       |
-| ``##SBATCH --mail-user=username@host``                                |
-|                                                                       |
-| ``### In case of multiple allocations, select which one to charge``   |
-|                                                                       |
-| ``##SBATCH --account=xyz``                                            |
-|                                                                       |
-| ``### For OpenMP jobs, set OMP_NUM_THREADS to the number of``         |
-|                                                                       |
-| ``### cpus per task for the job step``                                |
-|                                                                       |
-| ``export`` ``OMP_NUM_THREADS=4``                                      |
-|                                                                       |
-| ``## Use srun to run the j                                            |
-| ob on the requested resources. You can change --ntasks-per-node and`` |
-|                                                                       |
-| ``## --cpus-per-task, as                                              |
-| long as --cpus-per-task does not exceed the number requested in the`` |
-|                                                                       |
-| ``## sbatch parameters``                                              |
-|                                                                       |
-| ``sru                                                                 |
-| n --ntasks=12 --ntasks-per-node=4 --cpus-per-task=4 .``\ ``/hellope`` |
-+-----------------------------------------------------------------------+
+:: 
+   
+   #!/bin/bash
+   ### set the wallclock time
+   #SBATCH --time=00:30:00
+
+   ### set the number of nodes, tasks per node, and cpus per task for the job
+   #SBATCH --nodes=3
+   #SBATCH --ntasks-per-node=1
+   #SBATCH --cpus-per-task=16
+
+   ### set the job name
+   #SBATCH --job-name="hello"
+
+   ### set a file name for the stdout and stderr from the job
+   ### the %j parameter will be replaced with the job ID.
+   ### By default, stderr and stdout both go to the --output
+   ### file, but you can optionally specify a --error file to
+   ### keep them separate
+   #SBATCH --output=hello.o%j
+   ##SBATCH --error=hello.e%j
+
+   ### set email notification
+   ##SBATCH --mail-type=BEGIN,END,FAIL
+   ##SBATCH --mail-user=username@host
+
+   ### In case of multiple allocations, select which one to charge
+   ##SBATCH --account=xyz
+
+   ### For OpenMP jobs, set OMP_NUM_THREADS to the number of
+   ### cpus per task for the job step
+   export OMP_NUM_THREADS=4
+
+   ## Use srun to run the job on the requested resources. You can change --ntasks-per-node and
+   ## --cpus-per-task, as long as --cpus-per-task does not exceed the number requested in the
+   ## sbatch parameters
+   srun --ntasks=12 --ntasks-per-node=4 --cpus-per-task=4 ./hellope
+
+
 
 See the sbatch man page for additional environment variables available.
 
