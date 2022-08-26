@@ -67,21 +67,8 @@ access to Hydro
 
 **4.** `Run Code <#Run%20Code>`__ - example: *srun -n 1 ./foo.exe*
 
-**3. How Hydro is different from BW**
--------------------------------------
 
--  Hydro does not use the Blue Waters Cray interconnect
--  Hydro is a standard Linux cluster that uses commodity hardware and
-   Infiniband
--  Hydro runs a separate and different scheduler (Slurm) than Blue
-   Waters
--  Software Environment Modules are not consistent between Hydro and
-   Blue Waters
--  Hydro does not use Blue Waters allocation system and use is not
-   charged
--  There are no GPUs on Hydro
-
-**4. System Description**
+**3. System Description**
 -------------------------
 
 **Hardware**
@@ -185,8 +172,8 @@ page <https://bluewaters.ncsa.illinois.edu/aboutallocations>`__.
 **Logging In**
 --------------
 
-Connect to Blue Waters via the external login hosts at
-`bw.ncsa.illinois.edu <http://bw.ncsa.illinois.edu/>`__ using ssh with
+Connect to Hydro via the login hosts at
+`hydro.ncsa.illinois.edu <http://bw.ncsa.illinois.edu/>`__ using ssh with
 your NCSA DUO passcode or push response from your smartphone (see
 instructions below)
 
