@@ -158,16 +158,14 @@ command line tools and working on a high-performance computing system:
 **Access and Policy**
 =====================
 
-Access to the Hydro cluster is limited to users of allocated Blue Waters
-projects and is not a separately allocated resource.
+Access to the Hydro cluster is limited to users of allocated NFI
+projects and is not a generally allocated resource.
 
-If you are part of an allocated project on Blue Waters and would like
+If you are part of an allocated NFI project and would like
 access to the Hydro cluster please send email to
-`help+bw@ncsa.illinois.edu <mailto:help+bw@ncsa.illinois.edu?subject=access%20to%20Blue%20Waters%20Hydro%20cluster>`__
+`help+hydro@ncsa.illinois.edu <mailto:help+delta@ncsa.illinois.edu?subject=access%20to%20Blue%20Waters%20Hydro%20cluster>`__
 with a justification for your need to use the cluster.
 
-For allocations on Blue Waters please see the `Allocations
-page <https://bluewaters.ncsa.illinois.edu/aboutallocations>`__.
 
 **Logging In**
 --------------
