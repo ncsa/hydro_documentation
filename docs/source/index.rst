@@ -163,7 +163,7 @@ projects and is not a generally allocated resource.
 
 If you are part of an allocated NFI project and would like
 access to the Hydro cluster please send email to
-`help+hydro@ncsa.illinois.edu <mailto:help+delta@ncsa.illinois.edu?subject=access%20to%20Blue%20Waters%20Hydro%20cluster>`__
+`help+hydro@ncsa.illinois.edu <mailto:help+delta@ncsa.illinois.edu?subject=access%20to%20Hydro%20cluster>`__
 with a justification for your need to use the cluster.
 
 
