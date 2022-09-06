@@ -41,18 +41,6 @@ access to Hydro
 **4.** `Run Code <#Run%20Code>`__ - example: *srun -n 1 ./foo.exe*
 
 
-.. toctree::
-   :maxdepth: 2
-   quick_start_guide
-   system_description
-   accessing_transferring_files
-   programming_environments
-   partitions_and_job_policies
-   running
-   support_and_services
-   tools_and_utilities
-
-
 **5. Level of Expertise Expected for Blue Waters Hydro Users**
 --------------------------------------------------------------
 
@@ -129,4 +117,17 @@ instructions below)
 
 -  If I have an issue, who do I contact?
 
-   -  help+bw@ncsa.illinois.edu
+   -  help@ncsa.illinois.edu
+   -  Mention "Hydro" in the subject line
+   
+.. toctree::
+   :maxdepth: 2
+   quick_start_guide
+   system_description
+   accessing_transferring_files
+   programming_environments
+   partitions_and_job_policies
+   running
+   support_and_services
+   tools_and_utilities
+
