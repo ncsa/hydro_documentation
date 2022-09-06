@@ -27,7 +27,7 @@ Programming Environments
 -------------------------
 
 The default shell is /bin/bash. You can change it by sending a request
-via email to help+bw@ncsa.illinois.edu. (can they not do this through bw
+via email to help+hydro@ncsa.illinois.edu. (can they not do this through bw
 portal as bw LDAP is shared between the two systems?)
 
 The user environment is controlled using the modules environment
@@ -112,7 +112,7 @@ Useful User Defined Module Collections:
 **2. Home Directory Permissions**
 ---------------------------------
 
-By default, user home directories and /scratch directories are closed
+By default, user home directories and /project directories are closed
 (permissions 700) with a parent directory setting that prevents users
 from opening up the permissions. See the File and Directory Access
 Control List page (https://bluewaters.ncsa.illinois.edu/facl) for Blue
