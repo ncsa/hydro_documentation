@@ -5,7 +5,7 @@
 **Introduction**
 ======================
 
-The Hydro cluster combines a current OS and software stack, 384 GB of
+The Hydro cluster combines a current OS and software stack, up to 384 GB of
 memory per node, 40 Gb/s WAN bandwidth, and direct access to two Lustre-based parallel filesystems (/home and /projects):
 
 

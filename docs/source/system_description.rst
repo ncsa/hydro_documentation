@@ -19,7 +19,7 @@ Hardware
    -  Dell PowerEdge R7525
    -  Dual Socket (2) AMD EPYC CPU 7452 (32 core) @ 2.35GHz 128MB Cache
       (64 cores per node) (SMT disabled)
-   -  256 GB of memory
+   -  256 GB of RAM
    -  100 Gb/s Ethernet
    -  FDR 56Gb/s InfiniBand
    -  2 NVIDIA A100 80GB PCIe GPUs
