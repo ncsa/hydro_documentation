@@ -13,6 +13,7 @@ Hardware
    -  384 GB of memory
    -  40 Gb/s Ethernet
    -  FDR 56Gb/s InfiniBand
+   - foo
 
 -  Compute node B (7 ct):
 
