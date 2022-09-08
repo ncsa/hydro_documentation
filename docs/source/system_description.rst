@@ -28,7 +28,7 @@
 
    -  Dell PowerEdge R7525
    -  Dual Socket (2) AMD EPYC CPU 7453 (28 core) @ 2.75GHz 64MB Cache
-      (64 cores per node) (SMT disabled)
+      (56 cores per node) (SMT disabled)
    -  256 GB of memory
    -  100 Gb/s Ethernet
    -  FDR 56Gb/s InfiniBand
