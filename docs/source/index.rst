@@ -81,7 +81,7 @@ instructions below)
    
    
 Hydro Documentation Table of Contents
-------------------------------
+-------------------------------------
    
 .. toctree::
    :maxdepth: 2
