@@ -1,7 +1,7 @@
-**Job Submission**
+Job Submission
 ==================
 
-**1. Running Batch Jobs**
+Running Batch Jobs
 -------------------------
 
 User access to the compute nodes for running jobs is available via a
@@ -180,6 +180,7 @@ Here is a sample Batch script:
 See the sbatch man page for additional environment variables available.
 
 srun
+~~~~~~
 
 The srun command initiates an interactive job on the compute nodes.
 
@@ -212,12 +213,13 @@ When you are done with your runs, you can use the exit command to end
 the job.
 
 scancel/qdel
+~~~~~~~~~~~~~~~~~
 
 The scancel command deletes a queued job or kills a running job.
 
 -  scancel JobID deletes/kills a job.
 
-**2. Job Dependencies**
+Job Dependencies
 -----------------------
 
 Job dependencies allow users to set execution order in which their
@@ -263,7 +265,7 @@ behave as expected because of the difference between a batch job error
 and application errors. See the dependency section of the sbatch manual
 page for additional information (man sbatch).
 
-**3. Job Arrays**
+Job Arrays
 -----------------
 
 If a need arises to submit the same job to the batch system multiple
@@ -304,7 +306,7 @@ A sample batch script that makes use of job arrays is available in
    `qdel <https://campuscluster.illinois.edu/resources/docs/user-guide/#qdel>`__
    command section.
 
-**4. Translating PBS Scripts to Slurm Scripts**
+Translating PBS Scripts to Slurm Scripts
 -----------------------------------------------
 
 The following table contains a list of common commands and terms used
