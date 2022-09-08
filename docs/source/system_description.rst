@@ -33,6 +33,7 @@ Hardware
    -  100 Gb/s Ethernet
    -  FDR 56Gb/s InfiniBand
    -  2 NVIDIA A100 80GB PCIe GPUs
+   -  pci bus
 
 Storage and File Systems
 -------------------------
