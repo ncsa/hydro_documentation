@@ -1,8 +1,8 @@
 **3. System Description**
--------------------------
+==========================
 
 **Hardware**
-~~~~~~~~~~~~
+-------------
 
 -  2 Login and 42 Compute nodes
 -  Compute node A (33 ct):
