@@ -1,7 +1,7 @@
 **System Description**
 ==========================
 
-**Hardware**
+Hardware
 -------------
 
 -  2 Login and 42 Compute nodes
@@ -33,3 +33,12 @@
    -  100 Gb/s Ethernet
    -  FDR 56Gb/s InfiniBand
    -  2 NVIDIA A100 80GB PCIe GPUs
+
+Storage and File Systems
+-------------------------
+
+============  =======  =========  =============
+file system   path     OSTs       default quota
+============  =======  =========  =============
+home          /home    8          25 GB
+============  =======  =========  =============
