@@ -13,10 +13,6 @@ Please be aware that the interactive nodes are a shared resource for all
 users of the system and their use should be limited to editing,
 compiling and building your programs, and for short non-intensive runs.
 
-**Note:** User processes running on the interactive nodes are killed
-automatically if they accrue more than 30 minutes of CPU time or if more
-than 4 identical processes owned by the same user are running
-concurrently.
 
 An interactive batch job provides a way to get interactive access to a
 compute node via a batch job. See the srun or salloc section for
