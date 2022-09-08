@@ -37,9 +37,9 @@ Hardware
 Storage and File Systems
 -------------------------
 
-============  =========  =========  =============
-file system   path       OSTs       default quota
-============  =========  =========  =============
-home          /home      8          25 GB
-projects      /projects  8          25 PB
-============  =========  =========  =============
+============  ====================  =========  ============= =========
+File System   Path                  OSTs       Default Quota Description
+============  ====================  =========  ============= =========
+home          /u/<USER>             36          1 TB         Home directory, compiling, source, etc
+projects      /projects/<PROJECT>   36          50 TB        Shared project location, datasets, job I/O, etc.
+============  ====================  =========  ============= =========
