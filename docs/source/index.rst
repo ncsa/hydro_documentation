@@ -25,7 +25,7 @@ access to Hydro
 **4.** `Run Code <#Run%20Code>`__ - example: *srun -n 1 ./foo.exe*
 
 
-**5. Level of Expertise Expected for Blue Waters Hydro Users**
+Level of Expertise Expected for Blue Waters Hydro Users
 --------------------------------------------------------------
 
 The instructions on this portal
@@ -44,7 +44,7 @@ command line tools and working on a high-performance computing system:
 -  http://websistent.com/linux-acl-tutorial/ # explains linux Access
    Control Lists (ACL) compared with chmod
 
-**Access and Policy**
+Access and Policy
 ----------------------
 
 Access to the Hydro cluster is limited to users of allocated NFI
