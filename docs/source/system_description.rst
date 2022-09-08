@@ -1,4 +1,4 @@
-**3. System Description**
+**System Description**
 ==========================
 
 **Hardware**
