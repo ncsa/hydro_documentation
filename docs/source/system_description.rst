@@ -14,7 +14,7 @@ Hardware
    -  40 Gb/s Ethernet
    -  FDR 56Gb/s InfiniBand
 
--  Compute node B (7 ct):
+-  Compute node B (7 countt):
 
    -  Dell PowerEdge R7525
    -  Dual Socket (2) AMD EPYC CPU 7452 (32 core) @ 2.35GHz 128MB Cache
@@ -24,7 +24,7 @@ Hardware
    -  FDR 56Gb/s InfiniBand
    -  2 NVIDIA A100 80GB PCIe GPUs
 
--  Compute node C (2 ct):
+-  Compute node C (2 countt):
 
    -  Dell PowerEdge R7525
    -  Dual Socket (2) AMD EPYC CPU 7453 (28 core) @ 2.75GHz 64MB Cache
@@ -33,7 +33,6 @@ Hardware
    -  100 Gb/s Ethernet
    -  FDR 56Gb/s InfiniBand
    -  2 NVIDIA A100 80GB PCIe GPUs
-   -  pci bus
 
 Storage and File Systems
 -------------------------
