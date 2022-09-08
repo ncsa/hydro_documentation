@@ -1,9 +1,9 @@
 Programming Environments
--------------------------
+=========================
 
 
-**Software**
-~~~~~~~~~~~~
+Software
+-------------
 
 -  RHEL 8.4
 -  Kernel 4.18.0
@@ -23,8 +23,9 @@ Programming Environments
       -  GCC 10.2
       -  R
       -  GDAL
-**1. Shells and Modules**
--------------------------
+
+Shells and Modules
+---------------------------
 
 The default shell is /bin/bash. You can change it by sending a request
 via email to help+hydro@ncsa.illinois.edu. (can they not do this through bw
@@ -109,7 +110,7 @@ Useful User Defined Module Collections:
 | module describe collection_name  | List collection_name modulefiles |
 +----------------------------------+----------------------------------+
 
-**2. Home Directory Permissions**
+Home Directory Permissions
 ---------------------------------
 
 By default, user home directories and /project directories are closed
@@ -121,7 +122,7 @@ common space for your group; if you want a space that all your group
 members can access, that's a good place for it. As always, your space on
 the /scratch file system is the best place for job inputs and outputs.
 
-**3. Programming Environment**
+Programming Environment
 ------------------------------
 
 The GNU compilers (GCC) version 10.2.0 are in the default user
@@ -132,8 +133,8 @@ the command:
 | ``module load GCC/``\ ``9.3``\ ``.``\ ``0`` |
 +---------------------------------------------+
 
-**Compiling**
-=============
+Compiling
+------------
 
 | To compile MPI code, use the *mpicc, mpiCC, or mpif90* compiler
   wrappers to automatically include the OpenMPI libraries.
