@@ -5,17 +5,17 @@
 **Introduction**
 ======================
 
-The Hydro cluster combines a current OS and software stack, 384 GB of
+The Hydro cluster combines a current OS and software stack, up to 384 GB of
 memory per node, 40 Gb/s WAN bandwidth, and direct access to two Lustre-based parallel filesystems (/home and /projects):
 
 
 **Quick Start Guide to Hydro**
 -------------------------------
 
-This information is for users who are adept at using BW and are only
-interested in the basic workflow.
+This information is for users who are adept at using an HPC system and are only
+interested in the basic hydro workflow.
 
-**1.** `Getting Access <#Access>`__ - Limited to BW Users who need
+**1.** `Getting Access <#Access>`__ - Limited to NFI projects who need
 access to Hydro
 
 **2.** `Log in to Hydro <#Logging%20in>`__ - example: *ssh hydro*
@@ -25,7 +25,7 @@ access to Hydro
 **4.** `Run Code <#Run%20Code>`__ - example: *srun -n 1 ./foo.exe*
 
 
-Level of Expertise Expected for Blue Waters Hydro Users
+Level of Expertise Expected for Hydro Users
 --------------------------------------------------------------
 
 The instructions on this portal
@@ -81,7 +81,7 @@ instructions below)
    
    
 Hydro Documentation Table of Contents
-------------------------------
+-------------------------------------
    
 .. toctree::
    :maxdepth: 2

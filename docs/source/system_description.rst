@@ -1,7 +1,7 @@
 **System Description**
 ==========================
 
-**Hardware**
+Hardware
 -------------
 
 -  2 Login and 42 Compute nodes
@@ -19,7 +19,7 @@
    -  Dell PowerEdge R7525
    -  Dual Socket (2) AMD EPYC CPU 7452 (32 core) @ 2.35GHz 128MB Cache
       (64 cores per node) (SMT disabled)
-   -  256 GB of memory
+   -  256 GB of RAM
    -  100 Gb/s Ethernet
    -  FDR 56Gb/s InfiniBand
    -  2 NVIDIA A100 80GB PCIe GPUs
@@ -33,3 +33,13 @@
    -  100 Gb/s Ethernet
    -  FDR 56Gb/s InfiniBand
    -  2 NVIDIA A100 80GB PCIe GPUs
+
+Storage and File Systems
+-------------------------
+
+============  =========  =========  =============
+file system   path       OSTs       default quota
+============  =========  =========  =============
+home          /home      8          25 GB
+projects      /projects  8          25 PB
+============  =========  =========  =============
