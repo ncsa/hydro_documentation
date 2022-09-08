@@ -1,15 +1,16 @@
+**********************************
 **NCSA Hydro User Documentation**
-============================
+**********************************
 
-**1. Introduction**
---------------
+**Introduction**
+======================
 
 The Hydro cluster combines a current OS and software stack, 384 GB of
 memory per node, 40 Gb/s WAN bandwidth, and direct access to two Lustre-based parallel filesystems (/home and /project):
 
 
-**2. Quick Start Guide to Hydro**
----------------------------------
+**Quick Start Guide to Hydro**
+-------------------------------
 
 This information is for users who are adept at using BW and are only
 interested in the basic workflow.
@@ -44,7 +45,7 @@ command line tools and working on a high-performance computing system:
    Control Lists (ACL) compared with chmod
 
 **Access and Policy**
-=====================
+----------------------
 
 Access to the Hydro cluster is limited to users of allocated NFI
 projects.
