@@ -1,4 +1,4 @@
-Job Submission
+Running 
 ==================
 
 Running Batch Jobs
@@ -216,7 +216,7 @@ The scancel command deletes a queued job or kills a running job.
 -  scancel JobID deletes/kills a job.
 
 Job Dependencies
------------------------
+~~~~~~~~~~~~~~~~~~~
 
 Job dependencies allow users to set execution order in which their
 queued jobs run. Job dependencies are set by using the ??dependency
@@ -262,7 +262,7 @@ and application errors. See the dependency section of the sbatch manual
 page for additional information (man sbatch).
 
 Job Arrays
------------------
+~~~~~~~~~~~~
 
 If a need arises to submit the same job to the batch system multiple
 times, instead of issuing one sbatch command for each individual job,
@@ -303,7 +303,7 @@ A sample batch script that makes use of job arrays is available in
    command section.
 
 Translating PBS Scripts to Slurm Scripts
------------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The following table contains a list of common commands and terms used
 with the TORQUE/PBS scheduler, and the corresponding commands and terms
@@ -313,7 +313,7 @@ into Slurm scripts to be read by the new scheduler, or as a reference
 when creating new Slurm job scripts.
 
 User Commands
-~~~~~~~~~~~~~
+$$$$$$$$$$$$$$$
 
 +----------------------+----------------------+---------------------------------+
 | **User Commands**    | **PBS/Torque**       | **Slurm**                       |
@@ -338,7 +338,7 @@ User Commands
 +----------------------+----------------------+---------------------------------+
 
 Environment
-~~~~~~~~~~~
+$$$$$$$$$$$$
 
 ================ ============== ====================
 **Environment**  **PBS/Torque** **Slurm**
@@ -351,7 +351,7 @@ Q                $PBS_ARRAYID   $SLURM_ARRAY_TASK_ID
 ================ ============== ====================
 
 Job Specifications
-~~~~~~~~~~~~~~~~~~
+$$$$$$$$$$$$$$$$$$$$$$
 
 +----------------------+----------------------+----------------------+
 | **Job                | **PBS/Torque**       | **Slurm**            |
