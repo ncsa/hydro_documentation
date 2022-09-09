@@ -13,7 +13,7 @@ memory per node, 40 Gb/s WAN bandwidth, and direct access to two Lustre-based pa
 -------------------------------
 
 This information is for users who are adept at using an HPC system and are only
-interested in the basic hydro workflow.
+interested in the basic Hydro workflow.
 
 **1.** `Getting Access <#Access>`__ - Limited to NFI projects who need
 access to Hydro
@@ -35,9 +35,9 @@ scripts, and submit jobs to a batch queue system.
 
 If you're not at that level yet (if you're unfamiliar with things like
 ssh, emacs, vi, jpico, srun, make, top) then you'll need to gain some
-knowledge before you can use Blue Waters effectively. Here are a few
+knowledge before you can use Hydro effectively. Here are a few
 links to resources that will teach you some of the basics about Unix
-command line tools and working on a high-performance computing system:
+command-line tools and working on a high-performance computing system:
 
 -  https://www.xsede.org/web/xup/online-training
 -  https://newton.utk.edu/bin/view/Main/LinuxCommandLineBasics
