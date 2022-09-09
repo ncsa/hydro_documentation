@@ -34,6 +34,9 @@ Hardware
    -  FDR 56Gb/s InfiniBand
    -  2 NVIDIA A100 80GB PCIe GPUs
 
+Network
+----------
+
 Storage and File Systems
 -------------------------
 
