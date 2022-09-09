@@ -18,7 +18,7 @@ interested in the basic Hydro workflow.
 **1.** `Getting Access <#Access>`__ - Limited to NFI projects who need
 access to Hydro
 
-**2.** `Log in to Hydro <#Logging%20in>`__ - example: *ssh hydro*
+**2.** `Log in to Hydro <#Logging%20in>`__ - example: *ssh hydro.ncsa.illinois.edu*
 
 **3.** `Compile Code <#Compiling>`__ - example: *mpicc -o foo.exe foo.c*
 
