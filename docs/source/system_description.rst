@@ -7,7 +7,7 @@ Hardware
 -  2 Login and 42 Compute nodes
 -  Login node (2 ct):
 
-   -  Dell PowerEdge ???
+   -  Dell PowerEdge R720
    -  Dual Socket (2) Intel Xeon CPU E5-2690 (8 core, SandyBridge) @ 2.90GHz 20MB
       Cache (16 cores per node) (HT disabled)
    -  384 GB of memory
