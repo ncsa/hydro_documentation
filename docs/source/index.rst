@@ -1,5 +1,5 @@
 **********************************
-**NCSA Hydro User Documentation**
+**Hydro User Documentation**
 **********************************
 
 **Introduction**
