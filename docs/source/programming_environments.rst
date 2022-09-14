@@ -36,7 +36,7 @@ management system. Modules may be loaded, unloaded, or swapped either on
 a command line or in your $HOME/.bashrc (.cshrc for csh ) shell startup
 file.
 
-The command "*module avail \| more"* will display the avail modules on
+The command "*module avail \| more"* will display the available modules on
 the system one page at a time.
 
 The module command is a user interface to the Lmod package. The Lmod
