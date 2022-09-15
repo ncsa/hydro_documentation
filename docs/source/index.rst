@@ -72,12 +72,17 @@ instructions below)
    push from Duo.
 
 
-**Frequently Asked Questions**
+
+Frequently Asked Questions
 ------------------------------
 
--  If I have an issue, who do I contact?
 
-   -  help+hydro@ncsa.illinois.edu
+
+..  _help:
+
+If I have an issue, who do I contact?
+--------------------------------------
+To open a help ticket, send an email to: help+hydro@ncsa.illinois.edu.
    
    
 Hydro Documentation Table of Contents
