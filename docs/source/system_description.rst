@@ -18,15 +18,23 @@ Hardware
    -  Dual Socket (2) Intel Xeon CPU E5-2690 (8 core, SandyBridge) @ 2.90GHz 20MB
       Cache (16 cores per node) (HT disabled)
    -  384 GB of memory
+   -  Cache (KB) L1/L2/L3: 32/256/20480
+   -  NUMA domains per socket: 1
+   -  NUMA domains per node: 2
+   -  CPUs per NUMA: domain0={0,2,4,6,8,10,12,14}, domain1={1,3,5,7,9,11,13,15}
    -  40 Gb/s Ethernet
    -  FDR 56Gb/s InfiniBand
 
 -  Compute node B (7 ct):
 
    -  Dell PowerEdge R7525
-   -  Dual Socket (2) AMD EPYC CPU 7452 (32 core, Rome) @ 2.35GHz 128MB Cache
+   -  Dual Socket (2) AMD EPYC CPU 7452 (32 core, Rome) @ 2.35GHz 
       (64 cores per node) (SMT disabled)
-   -  256 GB of RAM
+   -  256 GB of memory
+   -  Cache (KB) L1/L2/L3: 32/512/16384; L3 Total: 128 MB
+   -  NUMA domains per socket: 1
+   -  NUMA domains per node: 2
+   -  CPUs per NUMA: domain0={0-31}, domain1={32-63}
    -  100 Gb/s Ethernet
    -  FDR 56Gb/s InfiniBand
    -  2 NVIDIA A100 80GB PCIe GPUs
@@ -34,9 +42,13 @@ Hardware
 -  Compute node C (2 ct):
 
    -  Dell PowerEdge R7525
-   -  Dual Socket (2) AMD EPYC CPU 7453 (28 core, Milan) @ 2.75GHz 64MB Cache
+   -  Dual Socket (2) AMD EPYC CPU 7453 (28 core, Milan) @ 2.75GHz
       (56 cores per node) (SMT disabled)
    -  256 GB of memory
+   -  Cache (KB) L1/L2/L3: 32/512/16384; L3 Total: 64 MB
+   -  NUMA domains per socket: 1
+   -  NUMA domains per node: 2
+   -  CPUs per NUMA: domain0={0-27, domain1={28-55}}
    -  100 Gb/s Ethernet
    -  FDR 56Gb/s InfiniBand
    -  2 NVIDIA A100 80GB PCIe GPUs
