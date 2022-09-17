@@ -15,10 +15,9 @@ Hardware
 -  Compute node A (33 ct):
 
    -  Dell PowerEdge R720
-   -  Dual Socket (2) Intel Xeon CPU E5-2690 (8 core, SandyBridge) @ 2.90GHz 20MB
-      Cache (16 cores per node) (HT disabled)
+   -  Dual Socket (2) Intel Xeon CPU E5-2690 (8 core, SandyBridge) @ 2.90GHz (16 cores per node) (HT disabled)
    -  384 GB of memory
-   -  Cache (KB) L1/L2/L3: 32/256/20480
+   -  Cache (KB) L1/L2/L3: 32/256/20480; L3 Total: 20 MB
    -  NUMA domains per socket: 1
    -  NUMA domains per node: 2
    -  CPUs per NUMA: domain0={0,2,4,6,8,10,12,14}, domain1={1,3,5,7,9,11,13,15}
