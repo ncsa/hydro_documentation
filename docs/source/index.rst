@@ -2,7 +2,7 @@
 **Hydro User Documentation**
 **********************************
 
-.. warning ::
+.. warning::
 
    This documentation is currently (fall 2022) being ported to readthedocs.com.  Information here is believe to be valid, but might be slightly       incomplete as we fill in the rest of the pages.  
 
