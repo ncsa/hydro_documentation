@@ -84,7 +84,7 @@ Frequently Asked Questions
 
 ..  _help:
 
-If I have an issue, who do I contact?
+How do I submit a ticket about Hydro?
 --------------------------------------
 To open a help ticket, send an email to: help+hydro@ncsa.illinois.edu.  Be sure "HYDRO" is in the subject line and put as much information and background about your problem or question in the body of the message.  You should receive a return email with a reference to the ticket within one business day.  
    
