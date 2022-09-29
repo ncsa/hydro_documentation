@@ -110,17 +110,6 @@ Useful User Defined Module Collections:
 | module describe collection_name  | List collection_name modulefiles |
 +----------------------------------+----------------------------------+
 
-Home Directory Permissions
----------------------------------
-
-By default, user home directories and /project directories are closed
-(permissions 700) with a parent directory setting that prevents users
-from opening up the permissions. See the File and Directory Access
-Control List page (https://bluewaters.ncsa.illinois.edu/facl) for Blue
-Waters file system policies. The /projects file system is designed as
-common space for your group; if you want a space that all your group
-members can access, that's a good place for it. As always, your space on
-the /scratch file system is the best place for job inputs and outputs.
 
 Programming Environment
 ------------------------------
