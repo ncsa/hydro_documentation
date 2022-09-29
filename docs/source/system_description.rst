@@ -64,3 +64,16 @@ File System   Path                  OSTs       Default Quota Description
 home          /u/<USER>             36          1 TB         Home directory, compiling, source, etc
 projects      /projects/<PROJECT>   36          50 TB        Shared project location, datasets, job I/O, etc.
 ============  ====================  =========  ============= =========
+
+Home Directory Permissions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+By default, user home directories and /project directories are closed
+(permissions 700) with a parent directory setting that prevents users
+from opening up the permissions. See the File and Directory Access
+Control List page (https://bluewaters.ncsa.illinois.edu/facl) for Blue
+Waters file system policies. The /projects file system is designed as
+common space for your group; if you want a space that all your group
+members can access, that's a good place for it. As always, your space on
+the /scratch file system is the best place for job inputs and outputs.
+
