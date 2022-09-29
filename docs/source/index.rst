@@ -80,17 +80,19 @@ instructions below)
 Frequently Asked Questions
 ------------------------------
 
-
+How do I get help if I can't find the answer in the documentation?  
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+If you can't find the answer in the documentation (or via the search bar in the upper left corner) please submit a ticket (next topic).  The ticket becomes a discussion of your problem and the path to a solution.  
 
 ..  _help:
 
 How do I submit a ticket about Hydro?
---------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 To open a help ticket, send an email to: help+hydro@ncsa.illinois.edu.  Be sure "HYDRO" is in the subject line and put as much information and background about your problem or question in the body of the message.  You should receive a return email with a reference to the ticket within one business day.  
    
    
 Hydro Documentation Table of Contents
--------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    
 .. toctree::
    :maxdepth: 2
