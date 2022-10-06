@@ -97,6 +97,7 @@ Hydro Documentation Table of Contents
 .. toctree::
    :maxdepth: 2
    
+   index
    quick_start_guide
    system_description
    accessing_transferring_files
