@@ -102,6 +102,7 @@ Hydro Documentation Table of Contents
    system_description
    accessing_transferring_files
    programming_environments
+   containers
    partitions_and_job_policies
    running
    support_and_services
