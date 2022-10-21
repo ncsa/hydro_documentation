@@ -10,7 +10,7 @@ https://arxiv.org/ftp/arxiv/papers/2208/2208.12106.pdf).
 
 Apptainer 1.1 is installed on all Hydro login and compute nodes
 at /usr/bin/apptainer and is fully documented at https://apptainer.org/docs/user/1.1/
-so the following is limited to detains and advice specific to Hydro.
+so the following is limited to details and advice specific to Hydro.
 
 
 Using Docker Images with Apptainer
