@@ -81,11 +81,11 @@ Interacting with Host Filesystems
 --------------------------------------
 
 Apptainer will bind-mount $HOME, $PWD, and /tmp into the container by default.
-Additional directories may be mounted with --bind src[:dest[:ro]]
-and default mounts suppressed with --no-home or --contain.
+Additional directories may be mounted with ``--bind src[:dest[:ro]]``
+and default mounts suppressed with ``--no-home`` or ``--contain``.
 The caller's current user and group will appear unchanged,
 but all other users and groups will appear as nobody.
-(With the --fakeroot option $HOME will be mounted as /root
+(With the ``--fakeroot`` option $HOME will be mounted as /root
 and the caller's user and group will be mapped to root.)
 Regardless of apparent user and group, **processes inside a
 container have the caller's full read and write capabilities
@@ -116,10 +116,10 @@ Running with GPU Acceleration
 
 Apptainer GPU support is described in detail at
 https://apptainer.org/docs/user/1.1/gpu.html,
-but adding --nv should just work, assuming that
+but adding ``--nv`` should just work, assuming that
 GPUs were correctly requested in the Slurm submission options.
 Devices visible with nvidia-smi outside a container
-should be visible inside a container launched with --nv.
+should be visible inside a container launched with ``--nv``.
 
 
 Running on Multiple Nodes with MPI
@@ -141,7 +141,7 @@ HPL image can be launched within a Slurm job by:
 
 The job script sets all the node counts, task counts etc.
 but the hpl.sh script uses numactl so both cpu and gpu binding must be disabled.
-The --mpi=pmi2 option overrides Hydro's default pmix, but if there is a failure
+The ``--mpi=pmi2`` option overrides Hydro's default pmix, but if there is a failure
 the pmi signal handling doesn’t work and the run hangs rather than exits.
 
 The `Extreme-scale Scientific Software Stack (E4S) <https://e4s-project.github.io/>`_
@@ -154,7 +154,7 @@ MPI applications can be launched inside the container by:
 
   mpiexec ... apptainer exec e4s-cuda-x86_64-22.08.sif myprog ...
 
-While the --cleanenv option can prevent interaction with the Hydro module system
+While the ``--cleanenv`` option can prevent interaction with the Hydro module system
 when building software, in a parallel job it blocks environment variables needed by MPI,
 resulting in many independent processes rather than a single unified MPI launch.
 
@@ -163,8 +163,8 @@ Accessing Hydro Modules in a Container
 
 The following Apptainer definition file will build an image
 that is compatible with the Hydro base OS and modules,
-including the MPI library, if launched with the --bind and
---env options shown in the %help section.
+including the MPI library, if launched with the ``--bind`` and
+``--env`` options shown in the %help section.
 The definition file can be extended to yum install additional
 packages to augment the Hydro software stack
 when building and running software in a container.
