@@ -1,6 +1,13 @@
 Containers
 ==============
 
+Containerization is a modern software packaging and execution technology that
+allows scripts and executables to be distributed with not only libraries and
+other dependencies, but a complete Linux operating system environment.
+Unlike virtual machines, which run a separate kernel on virtual processors,
+containerized applications share the same kernel as the host
+and therefore suffer practically no overhead.
+
 The Hydro cluster supports containers via `Apptainer <https://apptainer.org/>`_
 (formerly Singularity),
 which is similar to Docker but specialized for traditional HPC environments.
