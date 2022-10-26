@@ -87,7 +87,7 @@ particularly when files are copied using relative paths.
 Interacting with Host Filesystems
 --------------------------------------
 
-Apptainer will bind-mount $HOME, $PWD, and /tmp into the container by default.
+Apptainer will bind-mount $HOME and /tmp into the container by default.
 Additional directories may be mounted with ``--bind src[:dest[:ro]]``
 and default mounts suppressed with ``--no-home`` or ``--contain``.
 The caller's current user and group will appear unchanged,
