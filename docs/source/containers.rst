@@ -128,6 +128,17 @@ GPUs were correctly requested in the Slurm submission options.
 Devices visible with nvidia-smi outside a container
 should be visible inside a container launched with ``--nv``.
 
+The NVIDIA HPC SDK container distribution includes
+`directions for running with Singularity
+<https://catalog.ngc.nvidia.com/orgs/nvidia/containers/nvhpc#running-with-singularity>`_
+that can be used as-is with Apptainer (/usr/bin/singularity is a symbolic link to apptainer).
+Note that by default Apptainer passes through most environment variables,
+including CC, CXX, FC, and F77 from the gcc module
+and MPICC, MPICXX, MPIF77, and MPIF90 from the openmpi module,
+which will mislead cmake and configure scripts into attempting
+to use compilers in /sw/spack/... that are not available in the container.
+This can be prevented by either running ``module unload gcc openmpi``
+or running Apptainer with the ``--cleanenv`` option.
 
 Running on Multiple Nodes with MPI
 -----------------------------------
