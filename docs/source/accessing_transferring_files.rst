@@ -37,7 +37,7 @@ Choose “National Center for Supercomputing Applications” as your Identity Pr
 
 If prompted click “Allow” when asked to authorized the Globus Web App
 
-.. image:: Screen-Shot-2021-01-19-at-9.22.30-PM-768x506.png
+.. image:: globus/Screen-Shot-2021-01-19-at-9.22.30-PM-768x506.png
 
 Login in via the Illinois Shibboleth service, this will be a Duo 2FA prompt
 
@@ -49,17 +49,17 @@ Once logged in you should be taken to the File Manager section, on one side sear
 
 The system will prompt you to Authenticate to the endpoint, click continue; Globus may prompt you to link your netid@illinois.edu identity, go ahead and do so
 
-.. image:: Screen-Shot-2021-01-19-at-9.23.26-PM-768x299.png
+.. image:: globus/Screen-Shot-2021-01-19-at-9.23.26-PM-768x299.png
 
-.. image:: Screen-Shot-2021-01-19-at-9.51.47-PM-768x280.png
+.. image:: globus/Screen-Shot-2021-01-19-at-9.51.47-PM-768x280.png
 
-.. image:: Screen-Shot-2021-01-19-at-9.52.00-PM-768x657.png
+.. image:: globus/Screen-Shot-2021-01-19-at-9.52.00-PM-768x657.png
 
 You should then get dropped back into the “File Manger” view and be able to see your home directory in the explorer window
 
-.. image:: Screen-Shot-2021-01-19-at-9.24.28-PM-768x381.png
+.. image:: globus/Screen-Shot-2021-01-19-at-9.24.28-PM-768x381.png
 
 Then in a similar manner (in the right half of the “File Manger” view) search for and authenticate to the collection you are planning to transfer data to/from, then use the GUI to transfer the data; you can choose transfer settings. Also on the left is a button to view your current transfer activity
 
-.. image:: Screen-Shot-2021-01-19-at-9.39.22-PM-1024x141.png
+.. image:: globus/Screen-Shot-2021-01-19-at-9.39.22-PM-1024x141.png
 
