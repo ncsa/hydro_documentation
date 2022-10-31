@@ -13,6 +13,8 @@ The Hydro cluster combines a current OS and software stack, up to 384 GB of
 memory per node, 40 Gb/s WAN bandwidth, and direct access to two Lustre-based parallel filesystems (/home and /projects):
 
 
+.. _quick-start:
+
 **Quick Start Guide to Hydro**
 -------------------------------
 
@@ -75,7 +77,7 @@ instructions below)
    on the choice you make there, you should receive a pass code or a
    push from Duo.
 
-
+.. _faq:
 
 Frequently Asked Questions
 ------------------------------
