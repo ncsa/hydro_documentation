@@ -109,4 +109,4 @@ Hydro Documentation Table of Contents
    running
    support_and_services
    tools_and_utilities
-
+   appendices/index
