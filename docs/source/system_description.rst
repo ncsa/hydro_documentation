@@ -30,7 +30,7 @@ Hardware
       (64 cores per node) (SMT disabled)
    -  256 GB of memory
    -  Cache L1/L2/L3: 32/512/16384 KB; L3 Total: 128 MB
-   -  NUMA domains 1 per socket, 2 per node
+   -  NUMA domains: 1 per socket, 2 per node
    -  CPUs per NUMA: domain0={0-31}, domain1={32-63}
    -  100 Gb/s Ethernet
    -  FDR 56Gb/s InfiniBand
@@ -43,7 +43,7 @@ Hardware
       (56 cores per node) (SMT disabled)
    -  256 GB of memory
    -  Cache L1/L2/L3: 32/512/16384 KB; L3 Total: 64 MB
-   -  NUMA domains 1 per socket, 2 per node
+   -  NUMA domains: 1 per socket, 2 per node
    -  CPUs per NUMA: domain0={0-27}, domain1={28-55}
    -  100 Gb/s Ethernet
    -  FDR 56Gb/s InfiniBand
