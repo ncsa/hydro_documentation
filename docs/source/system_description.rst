@@ -17,7 +17,7 @@ Hardware
    -  Dell PowerEdge R720
    -  Dual Socket (2) Intel Xeon CPU E5-2690 (8 core, SandyBridge) @ 2.90GHz (16 cores per node) (HT disabled)
    -  384 GB of memory
-   -  Cache (KB) L1/L2/L3: 32/256/20480 KB; L3 Total: 20 MB
+   -  Cache L1/L2/L3: 32/256/20480 KB; L3 Total: 20 MB
    -  NUMA domains: 1 per socket, 2 per node
    -  CPUs per NUMA: domain0={0,2,4,6,8,10,12,14}, domain1={1,3,5,7,9,11,13,15}
    -  40 Gb/s Ethernet
@@ -29,7 +29,7 @@ Hardware
    -  Dual Socket (2) AMD EPYC CPU 7452 (32 core, Rome) @ 2.35GHz 
       (64 cores per node) (SMT disabled)
    -  256 GB of memory
-   -  Cache (KB) L1/L2/L3: 32/512/16384 KB; L3 Total: 128 MB
+   -  Cache L1/L2/L3: 32/512/16384 KB; L3 Total: 128 MB
    -  NUMA domains 1 per socket, 2 per node
    -  CPUs per NUMA: domain0={0-31}, domain1={32-63}
    -  100 Gb/s Ethernet
@@ -42,7 +42,7 @@ Hardware
    -  Dual Socket (2) AMD EPYC CPU 7453 (28 core, Milan) @ 2.75GHz
       (56 cores per node) (SMT disabled)
    -  256 GB of memory
-   -  Cache (KB) L1/L2/L3: 32/512/16384 KB; L3 Total: 64 MB
+   -  Cache L1/L2/L3: 32/512/16384 KB; L3 Total: 64 MB
    -  NUMA domains 1 per socket, 2 per node
    -  CPUs per NUMA: domain0={0-27}, domain1={28-55}
    -  100 Gb/s Ethernet
