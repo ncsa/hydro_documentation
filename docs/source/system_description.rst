@@ -1,7 +1,7 @@
 **System Description**
 ==========================
 
-Hardware
+Hardware Description
 -------------
 
 -  2 Login and 42 Compute nodes
