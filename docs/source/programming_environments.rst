@@ -131,3 +131,7 @@ Compiling
 | *mpicc -o mpi_hello mpi_hello.c*
 | If the code also uses OpenMP, include the -fopenmp flag:
 | *mpicc -o omp_mpi_hello omp_mpi_hello.c -fopenmp*
+
+.. toctree::
+   
+   programming_environments/python
