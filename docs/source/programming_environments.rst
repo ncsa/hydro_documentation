@@ -132,6 +132,9 @@ Compiling
 | If the code also uses OpenMP, include the -fopenmp flag:
 | *mpicc -o omp_mpi_hello omp_mpi_hello.c -fopenmp*
 
+
+Other Programming Environments
+--------------------------------
 .. toctree::
    
    programming_environments/python
