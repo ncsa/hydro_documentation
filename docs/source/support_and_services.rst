@@ -13,5 +13,10 @@ Requests requiring deeper engagement will need additional review and potentially
 Machine Learning
 --------------------
 
+Additional support is available for Hydro stakeholders on the topics of Machine Learning and Deep Learning. The Hydro programming environment provides access to common ML/DL frameworks by way of vendor provided containers from NVIDIA NGC or AMD Infinity Hub, from Anaconda Python, or from generic Python installations. 
+
+Similar to General Support, requests requiring deeper engagement will need additional review and potentially funded work. Examples of such requests would be development or implementation of new models and methodologies, development of large training datasets, etc. Please open a ticket to initiate a conversation. 
+
 Geospatial
 ------------
+
