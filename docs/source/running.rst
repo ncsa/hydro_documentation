@@ -135,7 +135,7 @@ Useful Batch Job Environment Variables
 |                 |                 | section)        |                 |
 +-----------------+-----------------+-----------------+-----------------+
 
-.. _sample_batch_script:
+.. _sample-batch-script:
 
 Here is a sample Batch script:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
