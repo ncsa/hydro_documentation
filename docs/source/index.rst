@@ -32,6 +32,10 @@ access to Hydro
 
 **5.** :ref:`partitions-job-policies` - Batch System documentation
 
+**6.** :ref:`slurm` - Slurm job control software
+
+**7.** :ref:`sample-batch-script` - Sample batch script
+
 .. _expected-experience:
 
 Level of Expertise Expected for Hydro Users
