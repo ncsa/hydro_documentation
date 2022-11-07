@@ -21,7 +21,7 @@ memory per node, 40 Gb/s WAN bandwidth, and direct access to two Lustre-based pa
 This information is for users who are adept at using an HPC system and are only
 interested in the basic Hydro workflow.
 
-**1.** `Getting Access <#Access>`__ - Limited to NFI projects who need
+**1.** Getting Access (:ref:`getting-access`) - Limited to NFI projects who need
 access to Hydro
 
 **2.** `Log in to Hydro <#Logging%20in>`__ - example: *ssh hydro.ncsa.illinois.edu*
@@ -29,6 +29,8 @@ access to Hydro
 **3.** `Compile Code <#Compiling>`__ - example: *mpicc -o foo.exe foo.c*
 
 **4.** `Run Code <#Run%20Code>`__ - example: *srun -n 1 ./foo.exe*
+
+**5.** :ref:`Partitions and Job Policies` - Batch System documentation
 
 .. _expected-experience:
 
