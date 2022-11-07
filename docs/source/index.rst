@@ -30,7 +30,7 @@ access to Hydro
 
 **4.** `Run Code <#Run%20Code>`__ - example: *srun -n 1 ./foo.exe*
 
-**5.** :ref:`Partitions and Job Policies` - Batch System documentation
+**5.** :ref:`partitions-job-policies` - Batch System documentation
 
 .. _expected-experience:
 
