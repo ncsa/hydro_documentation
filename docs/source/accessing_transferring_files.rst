@@ -1,5 +1,9 @@
+.. _transferring-files:
+
 Accessing and Transferring Files to and from Hydro
 ====================================================
+
+.. _small-transfer-tools:
 
 Transferring a Few Small Files With Text Tools
 -------------------------------------------------
@@ -10,12 +14,10 @@ If you use a Windows machine, you can transfer files back and forth between your
 
 The program Secure CoPy (SCP) can be used to securely transfer files between Delta and other systems.  SCP is built into all Mac and most Windows computers.  
 
+.. _globus:
 
 Transferring Many or Large Files With Globus
 ---------------------------------------------
-
-File Transfers with Globus
------------------------------
 
 Globus is a web-based file transfer system that works in the background to move files between systems with "Globus Endpoints".  Delta's Globus endpoint is called "NCSA Delta".  To transfer files to and from your directories using Globus, you will have to authenticate that endpoint, using your  NCSA username, password, and NCSA account on Duo. 
 
