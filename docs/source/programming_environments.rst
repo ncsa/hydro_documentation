@@ -1,6 +1,9 @@
+.. _programming_environments:
+
 Programming Environments
 =========================
 
+.. _software:
 
 Software
 -------------
@@ -23,6 +26,8 @@ Software
       -  GCC 11.2
       -  R
       -  GDAL
+
+.. _shells-and-modules:
 
 Shells and Modules
 ---------------------------
@@ -121,6 +126,8 @@ the command:
 +---------------------------------------------+
 | ``module load GCC/``\ ``9.3``\ ``.``\ ``0`` |
 +---------------------------------------------+
+
+.. _compiling:
 
 Compiling
 ------------
