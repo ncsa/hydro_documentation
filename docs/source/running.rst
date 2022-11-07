@@ -215,7 +215,7 @@ program.
 When you are done with your runs, you can use the exit command to end
 the job.
 
-scancel/qdel
+scancel
 ~~~~~~~~~~~~~~~~~
 
 The scancel command deletes a queued job or kills a running job.
