@@ -30,6 +30,7 @@ access to Hydro
 
 **4.** `Run Code <#Run%20Code>`__ - example: *srun -n 1 ./foo.exe*
 
+.. _expected-experience:
 
 Level of Expertise Expected for Hydro Users
 --------------------------------------------------------------
@@ -50,6 +51,8 @@ command-line tools and working on a high-performance computing system:
 -  http://websistent.com/linux-acl-tutorial/ # explains linux Access
    Control Lists (ACL) compared with chmod
 
+.. _access-and-policy:
+
 Access and Policy
 ----------------------
 
@@ -61,6 +64,7 @@ access to the Hydro cluster please send email to
 `help+hydro@ncsa.illinois.edu <mailto:help+delta@ncsa.illinois.edu?subject=access%20to%20Hydro%20cluster>`__
 with a justification for your need to use the cluster.
 
+.. _logging-in:
 
 **Logging In**
 --------------
@@ -86,7 +90,7 @@ How do I get help if I can't find the answer in the documentation?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 If you can't find the answer in the documentation (or via the search bar in the upper left corner) please submit a ticket (next topic).  The ticket becomes a discussion of your problem and the path to a solution.  
 
-..  _help:
+..  _submit-ticket:
 
 How do I submit a ticket about Hydro?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
