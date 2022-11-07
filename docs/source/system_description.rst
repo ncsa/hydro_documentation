@@ -1,5 +1,9 @@
+.. _system-overview:
+
 **System Overview**
 ==========================
+
+.. _hardware:
 
 Hardware Description
 -------------
@@ -49,8 +53,12 @@ Hardware Description
    -  FDR 56Gb/s InfiniBand
    -  2 NVIDIA A100 80GB PCIe GPUs
 
+.. _network:
+
 Network
 ----------
+
+.. _storage:
 
 Storage and File Systems
 -------------------------
