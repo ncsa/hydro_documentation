@@ -1,8 +1,12 @@
+.. _running:
+
 Running 
 ==================
 
-Running Batch Jobs
--------------------------
+.. _slurm:
+
+Running Batch Jobs (Slurm)
+----------------------------
 
 User access to the compute nodes for running jobs is available via a
 batch job. Hydro uses the `Slurm Workload
@@ -131,7 +135,10 @@ Useful Batch Job Environment Variables
 |                 |                 | section)        |                 |
 +-----------------+-----------------+-----------------+-----------------+
 
+.. _sample_batch_script:
+
 Here is a sample Batch script:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 :: 
    
