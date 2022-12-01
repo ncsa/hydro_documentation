@@ -131,6 +131,11 @@ GPUs were correctly requested in the Slurm submission options.
 Devices visible with nvidia-smi outside a container
 should be visible inside a container launched with ``--nv``.
 
+Images based on Alpine Linux may not work correctly with ``--nv``,
+e.g., reporting ``nvidia-smi: not found``.
+If this happens, try an image based on another Linux distribution
+such as Ubuntu.
+
 The NVIDIA HPC SDK container distribution includes
 `directions for running with Singularity
 <https://catalog.ngc.nvidia.com/orgs/nvidia/containers/nvhpc#running-with-singularity>`_
