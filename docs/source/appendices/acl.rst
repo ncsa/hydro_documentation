@@ -127,26 +127,26 @@ for user2 using setfacl and then checking the permissions using getfacl.
 Note that the permissions for the parent directory need to allow for
 "o+x" as mentioned above.
 
-+-----------------------------------------------------------------------+
-| user1@hydrol1:~> mkdir abc                                            |
-| user1@hydrol1:~> getfacl abc                                          |
-| # file: abc                                                           |
-| # owner: user1                                                        |
-| # group: hydro_bbmb                                                   |
-| user::rwx group::--- other::---                                       |
-| user1@hydrol1:~> setfacl -m "u:user2:rx" abc                          |
-| user1@hydrol1:~> getfacl abc                                          |
-| # file: abc                                                           |
-| # owner: user1                                                        |
-| # group: hydro_bbmb                                                   |
-| user::rwx                                                             |
-| user:user2:r-x                                                        |
-| group::---                                                            |
-| mask::r-x                                                             |
-| other::---                                                            |
-| user1@hydrol1:~>ls -ld abc                                            |
-| drwxr-x---+ 2 gbauer hydro_bbmb 4096 Dec 19 09:13 abc                 |
-+-----------------------------------------------------------------------+
++-------------------------------------------------------------------------+
+| | user1@hydrol1:~> mkdir abc                                            |
+| | user1@hydrol1:~> getfacl abc                                          |
+| | # file: abc                                                           |
+| | # owner: user1                                                        |
+| | # group: hydro_bbmb                                                   |
+| | user::rwx group::--- other::---                                       |
+| | user1@hydrol1:~> setfacl -m "u:user2:rx" abc                          |
+| | user1@hydrol1:~> getfacl abc                                          |
+| | # file: abc                                                           |
+| | # owner: user1                                                        |
+| | # group: hydro_bbmb                                                   |
+| | user::rwx                                                             |
+| | user:user2:r-x                                                        |
+| | group::---                                                            |
+| | mask::r-x                                                             |
+| | other::---                                                            |
+| | user1@hydrol1:~>ls -ld abc                                            |
+| | drwxr-x---+ 2 gbauer hydro_bbmb 4096 Dec 19 09:13 abc                 |
++-------------------------------------------------------------------------+
 
 See Also
 --------
