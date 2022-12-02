@@ -33,8 +33,7 @@ Shells and Modules
 ---------------------------
 
 The default shell is /bin/bash. You can change it by sending a request
-via email to help+hydro@ncsa.illinois.edu. (can they not do this through bw
-portal as bw LDAP is shared between the two systems? I would not count on that working.)
+via email to help+hydro@ncsa.illinois.edu. 
 
 The user environment is controlled using the modules environment
 management system. Modules may be loaded, unloaded, or swapped either on
