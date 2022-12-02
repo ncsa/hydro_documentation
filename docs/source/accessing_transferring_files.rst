@@ -12,7 +12,24 @@ These tools are suitable for a few (typically less than 1000) files and in total
 
 If you use a Windows machine, you can transfer files back and forth between your machine and Hydro using an application called "WinSCP".  You'll have to download it and install it.  When open WinSCP, you'll need to log into the Hydro login node as your "remote" node, using your username, password, and 2FA as usual.  Once you've logged in, SCP will work like a drag and drop interface for moving files.  
 
-The program Secure CoPy (SCP) can be used to securely transfer files between Hydro and other systems.  SCP is built into all Mac and most Windows computers.  
+The program Secure CoPy (SCP) can be used to securely transfer files between Hydro and other systems.  SCP is built into all Mac and most Windows computers.  You can find tutorials online for using scp.  The important thing you need to know is the full pathname of the file(s) that you're wanting to move on the machine where they're coming from, *and* the full pathname of where you want the files to go.
+
+As an example, you want to move a a file called "my_input_file.dat" from your local computer to Hydro.  You want to put it in a directory on Hydro which is "/u/hirop/input_files".  First, open a terminal or command prompt.  Change directories to where the file is, so that if you run the "ls" command, the file you want to transfer is listed.  
+
+:: 
+
+   $ cd outgoing_data
+   $ ls
+   my_input_file.dat
+   
+Now securely copy the file to Hydro using the following command: 
+
+:: 
+
+   scp ./my_input_file.dat hirop@hydro.ncsa.illinois.edu:/u/hirop/input_files/
+
+The output will prompt you for your kerberos password, ask you to initiate a 2FA confirmation (or else ask for a passcode).  If you authentication is successful, it will transfer the file, printing out progress as it does so.
+
 
 .. _globus:
 
