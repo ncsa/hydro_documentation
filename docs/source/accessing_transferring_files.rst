@@ -10,21 +10,21 @@ Transferring a Few Small Files With Text Tools
 
 These tools are suitable for a few (typically less than 1000) files and in total less than 100 GB.  If your transfers using these tools take more than 15 minutes, please consider using Globus instead.  
 
-If you use a Windows machine, you can transfer files back and forth between your machine and Delta using an application called "WinSCP".  You'll have to download it and install it.  When open WinSCP, you'll need to log into the Delta login node as your "remote" node, using your username, password, and 2FA as usual.  Once you've logged in, SCP will work like a drag and drop interface for moving files.  
+If you use a Windows machine, you can transfer files back and forth between your machine and Hydro using an application called "WinSCP".  You'll have to download it and install it.  When open WinSCP, you'll need to log into the Hydro login node as your "remote" node, using your username, password, and 2FA as usual.  Once you've logged in, SCP will work like a drag and drop interface for moving files.  
 
-The program Secure CoPy (SCP) can be used to securely transfer files between Delta and other systems.  SCP is built into all Mac and most Windows computers.  
+The program Secure CoPy (SCP) can be used to securely transfer files between Hydro and other systems.  SCP is built into all Mac and most Windows computers.  
 
 .. _globus:
 
 Transferring Many or Large Files With Globus
 ---------------------------------------------
 
-Globus is a web-based file transfer system that works in the background to move files between systems with "Globus Endpoints".  Delta's Globus endpoint is called "NCSA Delta".  To transfer files to and from your directories using Globus, you will have to authenticate that endpoint, using your  NCSA username, password, and NCSA account on Duo. 
+Globus is a web-based file transfer system that works in the background to move files between systems with "Globus Endpoints".  Hydro's Globus endpoint is called "ncsa#BlueWaters".  To transfer files to and from your directories using Globus, you will have to authenticate that endpoint, using your  NCSA username, password, and NCSA account on Duo. 
 
 One-time Setup
 ~~~~~~~~~~~~~~~~
 
-You will need to set up a separate account on globus.org, that will have a username and a separate password.  To use Globus to transfer files to and from Delta, if you haven't already, you will need to "link" your new Globus account with your NCSA identity.  Log into globus.org, click on "Account" in the left sidebar, then click on the "Identities" tab.  If your NCSA username and email address is not in that list, then click "Link Another Identity" in the upper right to link it.
+You will need to set up a separate account on globus.org, that will have a username and a separate password.  To use Globus to transfer files to and from Hydro, if you haven't already, you will need to "link" your new Globus account with your NCSA identity.  Log into globus.org, click on "Account" in the left sidebar, then click on the "Identities" tab.  If your NCSA username and email address is not in that list, then click "Link Another Identity" in the upper right to link it.
 
 Using Globus to Transfer Files
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -43,7 +43,10 @@ If prompted click “Allow” when asked to authorized the Globus Web App
 
 Login in via the Illinois Shibboleth service, this will be a Duo 2FA prompt
 
-Once logged in you should be taken to the File Manager section, on one side search for "Delta" collection and you should see a list of endpoints, click on the “NCSA Delta” endpoint
+..
+   Once logged in you should be taken to the File Manager section, on one side search for "BlueWaters" collection and you should see a list of endpoints, click on the “ncsa#BlueWaters” endpoint
+
+For the moment, continue using the legacy endpoint "ncsa#BlueWaters" to get to Hydro in Globus.  When a named end point is set up, it will be documented here.  
 
 .. 
    this will be a link to the endpoint, which we don't know the name of yet.
