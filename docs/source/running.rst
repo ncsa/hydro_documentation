@@ -91,49 +91,50 @@ for options.
 
 Useful Batch Job Environment Variables
 
-+-----------------+---------------------+-----------------+-----------------+
-| Description     | SLURM               | Detail          | | PBS           |
-|                 | Environment         | Description     |   Environment   |
-|                 | Variable            |                 |   Variable      |
-|                 |                     |                 | | *(no longer   |
-|                 |                     |                 |   valid)*       |
-+=================+=====================+=================+=================+
-| JobID           | $SLURM_JOB_ID       | Job identifier  | $PBS_JOBID      |
-|                 |                     | assigned to the |                 |
-|                 |                     | job             |                 |
-+-----------------+---------------------+-----------------+-----------------+
-| Job Submission  | $S                  | By default,     | $PBS_O_WORKDIR  |
-| Directory       | LURM_SUBMIT_DIR.    | jobs start in   |                 |
-|                 |                     | the directory   |                 |
-|                 |                     | the job was     |                 |
-|                 |                     | submitted from. |                 |
-|                 |                     | So the cd       |                 |
-|                 |                     | $S              |                 |
-|                 |                     | LURM_SUBMIT_DIR |                 |
-|                 |                     | command is not  |                 |
-|                 |                     | needed.         |                 |
-+-----------------+---------------------+-----------------+-----------------+
-| Machine(node)   | $SLURM_NODELIST     | variable name   | $PBS_NODEFILE   |
-| list            |                     | that containins |                 |
-|                 |                     | the list of     |                 |
-|                 |                     | nodes assigned  |                 |
-|                 |                     | to the batch    |                 |
-|                 |                     | job             |                 |
-+-----------------+---------------------+-----------------+-----------------+
-| Array JobID     | $SLU                | each member of  | $PBS_ARRAYID    |
-|                 | RM_ARRAY_JOB_ID.    | a job array is  |                 |
-|                 | $SLUR               | assigned a      |                 |
-|                 | M_ARRAY_TASK_ID.    | unique          |                 |
-|                 |                     | identifier (see |                 |
-|                 |                     | the `Job        |                 |
-|                 |                     | Arrays <        |                 |
-|                 |                     | https://campusc |                 |
-|                 |                     | luster.illinois |                 |
-|                 |                     | .edu/resources/ |                 |
-|                 |                     | docs/user-guide |                 |
-|                 |                     | /#jobarrays>`__ |                 |
-|                 |                     | section)        |                 |
-+-----------------+---------------------+-----------------+-----------------+
++-----------------+---------------------+--------------------+-----------------+
+| Description     | SLURM               | Detail             | | PBS           |
+|                 | Environment         | Description        |   Environment   |
+|                 | Variable            |                    |   Variable      |
+|                 |                     |                    | | *(no longer   |
+|                 |                     |                    |   valid)*       |
++=================+=====================+====================+=================+
+| JobID           | $SLURM_JOB_ID       | Job identifier     | $PBS_JOBID      |
+|                 |                     | assigned to the    |                 |
+|                 |                     | job                |                 |
++-----------------+---------------------+--------------------+-----------------+
+| Job Submission  | $S                  | By default,        | $PBS_O_WORKDIR  |
+| Directory       | LURM_SUBMIT_DIR.    | jobs start in.     |                 |
+|                 |                     | the directory.     |                 |
+|                 |                     |                    |                 |
+|                 |                     | the job was        |                 |
+|                 |                     | submitted from.    |                 |
+|                 |                     | So the cd          |                 |
+|                 |                     | $SLURM_SUBMIT_DIR  |                 |
+|                 |                     |                    |                 |
+|                 |                     | command is not     |                 |
+|                 |                     | needed.            |                 |
++-----------------+---------------------+--------------------+-----------------+
+| Machine(node)   | $SLURM_NODELIST     | variable name      | $PBS_NODEFILE   |
+| list            |                     | that containins.   |                 |
+|                 |                     | the list of        |                 |
+|                 |                     | nodes assigned     |                 |
+|                 |                     | to the batch       |                 |
+|                 |                     | job                |                 |
++-----------------+---------------------+--------------------+-----------------+
+| Array JobID     | $SLU                | each member of     | $PBS_ARRAYID    |
+|                 | RM_ARRAY_JOB_ID.    | a job array is     |                 |
+|                 | $SLUR               | assigned a         |                 |
+|                 | M_ARRAY_TASK_ID.    | unique             |                 |
+|                 |                     | identifier (see    |                 |
+|                 |                     | the `Job           |                 |
+|                 |                     | Arrays <           |                 |
+|                 |                     | https://campusc    |                 |
+|                 |                     | luster.illinois    |                 |
+|                 |                     | .edu/resources/    |                 |
+|                 |                     | docs/user-guide    |                 |
+|                 |                     | /#jobarrays>`__    |                 |
+|                 |                     | section)           |                 |
++-----------------+---------------------+--------------------+-----------------+
 
 .. _sample-batch-script:
 
