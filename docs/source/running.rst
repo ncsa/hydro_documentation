@@ -97,8 +97,8 @@ Useful Batch Job Environment Variables
 |               | Environment         | Description                                                                                    | Environment   |
 |               |                     |                                                                                                | Variable      |
 |               |                     |                                                                                                |               |
-|               |                     |                                                                                                | *no longer*   |
-|               | Variable            |                                                                                                | *valid*       |
+|               |                     |                                                                                                | (*no longer*  |
+|               | Variable            |                                                                                                | *valid*)      |
 +===============+=====================+================================================================================================+===============+
 | JobID         | $SLURM_JOB_ID       | Job identifier                                                                                 | $PBS_JOBID    |
 |               |                     | assigned to the                                                                                |               |
@@ -109,7 +109,7 @@ Useful Batch Job Environment Variables
 |               |                     |                                                                                                |               |
 |               |                     | the job was submitted from.  So the                                                            |               |
 |               |                     |                                                                                                |               |
-|               |                     |"cd $SLURM_SUBMIT_DIR"                                                                          |               |
+|               |                     | "cd $SLURM_SUBMIT_DIR"                                                                         |               |
 |               |                     |                                                                                                |               |
 |               |                     | command is not needed                                                                          |               |
 +---------------+---------------------+------------------------------------------------------------------------------------------------+---------------+
