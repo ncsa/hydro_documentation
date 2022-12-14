@@ -130,7 +130,7 @@ Useful Batch Job Environment Variables
 |                 |                      |                    |                 |
 |                 |                      | unique             |                 |
 |                 |                      | identifier         |                 |
-|                 |                      | (see `Job Arrays <https://campuscluster.illinois.edu/resources/docs/user-guide/#jobarrays>`__) |             |                 |                      |                    |                 |
+|                 |                      | (see `Job Arrays <https://campuscluster.illinois.edu/resources/docs/user-guide/#jobarrays>`__) |            |
 +-----------------+----------------------+--------------------+-----------------+
 
 .. _sample-batch-script:
