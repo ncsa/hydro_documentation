@@ -129,7 +129,7 @@ Useful Batch Job Environment Variables
 |                 | $SLURM_ARRAY_TASK_ID | assigned a         |                 |
 |                 |                      |                    |                 |
 |                 |                      | unique             |                 |
-|                 |                      | identifier 
+|                 |                      | identifier         |                 |
 |                 |                      | (see `Job Arrays <https://campuscluster.illinois.edu/resources/docs/user-guide/#jobarrays>`__) |             |                 |                      |                    |                 |
 +-----------------+----------------------+--------------------+-----------------+
 
