@@ -24,11 +24,11 @@ interested in the basic Hydro workflow.
 **1.** Getting Access (:ref:`getting-access`) - Limited to NFI projects who need
 access to Hydro
 
-**2.** `Log in to Hydro <#Logging%20in>`__ - example: *ssh hydro.ncsa.illinois.edu*
+**2.** :ref:`logging-in` - example: *ssh hydro.ncsa.illinois.edu*
 
-**3.** `Compile Code <#Compiling>`__ - example: *mpicc -o foo.exe foo.c*
+**3.** :ref:`compiling` - example: *mpicc -o foo.exe foo.c*
 
-**4.** `Run Code <#Run%20Code>`__ - example: *srun -n 1 ./foo.exe*
+**4.** :ref:`running` - example: *srun -n 1 ./foo.exe*
 
 **5.** :ref:`partitions-job-policies` - Batch System documentation
 
