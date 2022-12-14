@@ -1,3 +1,5 @@
+.. _acl:
+
 File and Directory Access Control List (ACL)
 ============================================
 
@@ -20,6 +22,8 @@ Filesystem ACL change restriction defaults
       chmod is allowed, but setfacl is preferred.
    -  Periodically review your file and folder permissions (getfacl
       shows all extended attributes)
+
+.. _acl-home-dir:
 
 Home Directories
 ----------------
@@ -50,6 +54,8 @@ like a mask of 700 for user username.*
 | | other::---                                                          |
 +-----------------------------------------------------------------------+
 
+.. _acl_project_dir:
+
 Project Directory
 -----------------
 
@@ -58,6 +64,8 @@ exception that files here will be group accessible (will override
 umask). The respective project group will own files created in the
 project directory by default, overriding the user primary group if it
 differs.
+
+.. _enabling_acl:
 
 Enabling ACL Modification (if needed)
 -------------------------------------
