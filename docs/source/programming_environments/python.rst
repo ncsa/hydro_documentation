@@ -1,5 +1,9 @@
+.. _python:
+
 Python
 =========
+
+.. _anaconda:
 
 Anaconda
 ########
