@@ -306,7 +306,7 @@ A sample batch script that makes use of job arrays is available in
    JobID (e.g., PBS_JOBID) must be enclosed in double quotes.
 
 -  To delete job arrays, see the
-   `qdel <https://campuscluster.illinois.edu/resources/docs/user-guide/#qdel>`__
+   `scancel <https://slurm.schedmd.com/job_array.html#scancel>`__
    command section.
 
 Translating PBS Scripts to Slurm Scripts
