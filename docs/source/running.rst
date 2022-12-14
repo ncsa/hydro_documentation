@@ -91,47 +91,47 @@ for options.
 
 Useful Batch Job Environment Variables
 
-+-----------------+----------------------+--------------------+-----------------+
-| Description     | SLURM                | Detail             | PBS             |
-|                 |                      |                    |                 |
-|                 | Environment          | Description        | Environment     |
-|                 |                      |                    |   Variable      |
-|                 |                      |                    |                 |
-|                 |                      |                    | *(no longer     |
-|                 | Variable             |                    |   valid)*       |
-+=================+======================+====================+=================+
-| JobID           | $SLURM_JOB_ID        | Job identifier     | $PBS_JOBID      |
-|                 |                      | assigned to the    |                 |
-|                 |                      | job                |                 |
-+-----------------+----------------------+--------------------+-----------------+
-| Job Submission  | $SLURM_SUBMIT_DIR    | By default,        | $PBS_O_WORKDIR  |
-| Directory       |                      | jobs start in      |                 |
-|                 |                      | the directory      |                 |
-|                 |                      |                    |                 |
-|                 |                      | the job was        |                 |
-|                 |                      | submitted from.    |                 |
-|                 |                      | So the cd          |                 |
-|                 |                      | $SLURM_SUBMIT_DIR  |                 |
-|                 |                      |                    |                 |
-|                 |                      | command is not     |                 |
-|                 |                      | needed             |                 |
-+-----------------+----------------------+--------------------+-----------------+
-| Machine(node)   | $SLURM_NODELIST      | variable name      | $PBS_NODEFILE   |
-| list            |                      | that containins    |                 |
-|                 |                      | the list of        |                 |
-|                 |                      |                    |                 |
-|                 |                      | nodes assigned     |                 |
-|                 |                      | to the batch       |                 |
-|                 |                      | job                |                 |
-+-----------------+----------------------+--------------------+-----------------+
-| Array JobID     | $SLURM_ARRAY_JOB_ID  | each member of     | $PBS_ARRAYID    |
-|                 |                      | a job array is     |                 |
-|                 | $SLURM_ARRAY_TASK_ID | assigned a         |                 |
-|                 |                      |                    |                 |
-|                 |                      | unique             |                 |
-|                 |                      | identifier         |                 |
-|                 |                      | (see `Job Arrays <https://campuscluster.illinois.edu/resources/docs/user-guide/#jobarrays>`__) |            |
-+-----------------+----------------------+--------------------+-----------------+
++---------------+---------------------+------------------------------------------------------------------------------------------------+---------------+
+| Description   | SLURM               | Detail                                                                                         | PBS           |
+|               |                     |                                                                                                |               |
+|               | Environment         | Description                                                                                    | Environment   |
+|               |                     |                                                                                                |   Variable    |
+|               |                     |                                                                                                |               |
+|               |                     |                                                                                                | *(no longer   |
+|               | Variable            |                                                                                                |   valid)*     |
++===============+=====================+================================================================================================+===============+
+| JobID         | $SLURM_JOB_ID       | Job identifier                                                                                 | $PBS_JOBID    |
+|               |                     | assigned to the                                                                                |               |
+|               |                     | job                                                                                            |               |
++---------------+---------------------+------------------------------------------------------------------------------------------------+---------------+
+| Job Submission| $SLURM_SUBMIT_DIR   | By default,                                                                                    | $PBS_O_WORKDIR|
+| Directory     |                     | jobs start in                                                                                  |               |
+|               |                     | the directory                                                                                  |               |
+|               |                     |                                                                                                |               |
+|               |                     | the job was                                                                                    |               |
+|               |                     | submitted from.                                                                                |               |
+|               |                     | So the cd                                                                                      |               |
+|               |                     | $SLURM_SUBMIT_DIR                                                                              |               |
+|               |                     |                                                                                                |               |
+|               |                     | command is not                                                                                 |               |
+|               |                     | needed                                                                                         |               |
++---------------+---------------------+------------------------------------------------------------------------------------------------+---------------+
+| Machine(node) | $SLURM_NODELIST     | variable name                                                                                  | $PBS_NODEFILE |
+| list          |                     | that containins                                                                                |               |
+|               |                     | the list of                                                                                    |               |
+|               |                     |                                                                                                |               |
+|               |                     | nodes assigned                                                                                 |               |
+|               |                     | to the batch                                                                                   |               |
+|               |                     | job                                                                                            |               |
++---------------+---------------------+------------------------------------------------------------------------------------------------+---------------+
+| Array JobID   | $SLURM_ARRAY_JOB_ID | each member of                                                                                 | $PBS_ARRAYID  |
+|               |                     | a job array is                                                                                 |               |
+|               | $SLURM_ARRAY_TASK_ID| assigned a                                                                                     |               |
+|               |                     |                                                                                                |               |
+|               |                     | unique                                                                                         |               |
+|               |                     | identifier                                                                                     |               |
+|               |                     | (see `Job Arrays <https://campuscluster.illinois.edu/resources/docs/user-guide/#jobarrays>`__) |               |
++---------------+---------------------+------------------------------------------------------------------------------------------------+---------------+
 
 .. _sample-batch-script:
 
