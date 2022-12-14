@@ -92,20 +92,21 @@ for options.
 Useful Batch Job Environment Variables
 
 +-----------------+----------------------+--------------------+-----------------+
-| Description     | SLURM                | Detail             | | PBS           |
+| Description     | SLURM                | Detail             | PBS             |
 |                 |                      |                    |                 |
-|                 | Environment          | Description        |   Environment   |
+|                 | Environment          | Description        | Environment     |
 |                 |                      |                    |   Variable      |
-|                 |                      |                    | | *(no longer   |
-|                 |  Variable            |                    |   valid)*       |
+|                 |                      |                    |                 |
+|                 |                      |                    | *(no longer     |
+|                 | Variable             |                    |   valid)*       |
 +=================+======================+====================+=================+
 | JobID           | $SLURM_JOB_ID        | Job identifier     | $PBS_JOBID      |
 |                 |                      | assigned to the    |                 |
 |                 |                      | job                |                 |
 +-----------------+----------------------+--------------------+-----------------+
 | Job Submission  | $SLURM_SUBMIT_DIR    | By default,        | $PBS_O_WORKDIR  |
-| Directory       |                      | jobs start in.     |                 |
-|                 |                      | the directory.     |                 |
+| Directory       |                      | jobs start in      |                 |
+|                 |                      | the directory      |                 |
 |                 |                      |                    |                 |
 |                 |                      | the job was        |                 |
 |                 |                      | submitted from.    |                 |
@@ -113,10 +114,10 @@ Useful Batch Job Environment Variables
 |                 |                      | $SLURM_SUBMIT_DIR  |                 |
 |                 |                      |                    |                 |
 |                 |                      | command is not     |                 |
-|                 |                      | needed.            |                 |
+|                 |                      | needed             |                 |
 +-----------------+----------------------+--------------------+-----------------+
 | Machine(node)   | $SLURM_NODELIST      | variable name      | $PBS_NODEFILE   |
-| list            |                      | that containins.   |                 |
+| list            |                      | that containins    |                 |
 |                 |                      | the list of        |                 |
 |                 |                      |                    |                 |
 |                 |                      | nodes assigned     |                 |
@@ -128,15 +129,8 @@ Useful Batch Job Environment Variables
 |                 | $SLURM_ARRAY_TASK_ID | assigned a         |                 |
 |                 |                      |                    |                 |
 |                 |                      | unique             |                 |
-|                 |                      | identifier (see    |                 |
-|                 |                      | the `Job           |                 |
-|                 |                      | Arrays <           |                 |
-|                 |                      | https://campusc    |                 |
-|                 |                      | luster.illinois    |                 |
-|                 |                      | .edu/resources/    |                 |
-|                 |                      | docs/user-guide    |                 |
-|                 |                      | /#jobarrays>`__    |                 |
-|                 |                      | section)           |                 |
+|                 |                      | identifier 
+|                 |                      | (see `Job Arrays <https://campuscluster.illinois.edu/resources/docs/user-guide/#jobarrays>`__) |             |                 |                      |                    |                 |
 +-----------------+----------------------+--------------------+-----------------+
 
 .. _sample-batch-script:
