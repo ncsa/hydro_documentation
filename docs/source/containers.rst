@@ -1,3 +1,5 @@
+.. _containers:
+
 Containers
 ==============
 
@@ -22,6 +24,8 @@ In interpreting the Apptainer documentation it is occasionally helpful
 to know that Apptainer on Hydro runs in `non-suid mode
 <https://apptainer.org/docs/user/1.1/security.html#setuid-user-namespaces>`_.
 
+
+.. _docker-aptainer:
 
 Using Docker Images with Apptainer
 ---------------------------------------
@@ -86,6 +90,7 @@ particularly when files are copied using relative paths.
 
    apptainer build image.sif image.def
 
+.. _docker_host_fs:
 
 Interacting with Host Filesystems
 --------------------------------------
@@ -103,6 +108,7 @@ on mounted host filesystems.**
 
 See https://apptainer.org/docs/user/1.1/bind_paths_and_mounts.html for details.
 
+.. _container-mounting-images:
 
 Mounting Images of Many-File Datasets
 ----------------------------------------
@@ -120,6 +126,7 @@ providing the simplicity and performance of a single large file.
 Each image file can safely be mounted either read-write by a single container
 or read-only by many containers (but not both at the same time).
 
+.. _container-gpu:
 
 Running with GPU Acceleration
 -------------------------------
@@ -147,6 +154,8 @@ which will mislead cmake and configure scripts into attempting
 to use compilers in /sw/spack/... that are not available in the container.
 This can be prevented by either running ``module unload gcc openmpi``
 or running Apptainer with the ``--cleanenv`` option.
+
+.. _container-mpi:
 
 Running on Multiple Nodes with MPI
 -----------------------------------
@@ -183,6 +192,8 @@ MPI applications can be launched inside the container by:
 While the ``--cleanenv`` option can prevent interaction with the Hydro module system
 when building software, in a parallel job it blocks environment variables needed by MPI,
 resulting in many independent processes rather than a single unified MPI launch.
+
+.. _modules-in-container:
 
 Accessing Hydro Modules in a Container
 ----------------------------------------
