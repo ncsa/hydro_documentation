@@ -52,8 +52,7 @@ knowledge before you can use Hydro effectively. Here are a few
 links to resources that will teach you some of the basics about Unix
 command-line tools and working on a high-performance computing system:
 
--  https://www.xsede.org/web/xup/online-training
--  https://newton.utk.edu/bin/view/Main/LinuxCommandLineBasics
+-  https://portal.tacc.utexas.edu/-/linux-unix-basics-for-hpc
 -  http://websistent.com/linux-acl-tutorial/ # explains linux Access
    Control Lists (ACL) compared with chmod
 
