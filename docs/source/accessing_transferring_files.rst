@@ -14,7 +14,7 @@ If you use a Windows machine, you can transfer files back and forth between your
 
 The program Secure CoPy (SCP) can be used to securely transfer files between Hydro and other systems.  SCP is built into all Mac and most Windows computers.  You can find tutorials online for using scp.  The important thing you need to know is the full pathname of the file(s) that you're wanting to move on the machine where they're coming from, *and* the full pathname of where you want the files to go.
 
-As an example, you want to move a a file called "my_input_file.dat" from your local computer to Hydro.  You want to put it in a directory on Hydro which is "/u/hirop/input_files".  First, open a terminal or command prompt.  Change directories to where the file is, so that if you run the "ls" command, the file you want to transfer is listed.  
+As an example, you want to move a file called "my_input_file.dat" from your local computer to Hydro.  You want to put it in a directory on Hydro which is "/u/hirop/input_files".  First, open a terminal or command prompt.  Change directories to where the file is, so that if you run the "ls" command, the file you want to transfer is listed.  
 
 :: 
 
