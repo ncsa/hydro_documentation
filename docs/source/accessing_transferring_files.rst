@@ -63,7 +63,9 @@ Login in via the Illinois Shibboleth service, this will be a Duo 2FA prompt
 ..
    Once logged in you should be taken to the File Manager section, on one side search for "BlueWaters" collection and you should see a list of endpoints, click on the “ncsa#BlueWaters” endpoint
 
-For the moment, continue using the legacy endpoint "ncsa#BlueWaters" to get to Hydro in Globus.  When a named end point is set up, it will be documented here.  
+Once in the file manager section, click on "collection".  Search for "NFI Hydro" and click on the "NFI#Hydro" collection.
+
+.. image:: globus/hydro_nfi_hydro_collection.png
 
 .. 
    this will be a link to the endpoint, which we don't know the name of yet.
