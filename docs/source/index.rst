@@ -21,7 +21,7 @@ memory per node, 40 Gb/s WAN bandwidth, and direct access to two Lustre-based pa
 This information is for users who are adept at using an HPC system and are only
 interested in the basic Hydro workflow.
 
-**1.** Getting Access (:ref:`getting-access`) - Limited to NFI projects who need
+**1.** Getting Access (:ref:`access-and-policy`) - Limited to NFI projects who need
 access to Hydro
 
 **2.** :ref:`logging-in` - example: *ssh hydro.ncsa.illinois.edu*
@@ -62,7 +62,8 @@ Access and Policy
 ----------------------
 
 Access to the Hydro cluster is limited to users of allocated NFI
-projects.
+projects and Illinois Computes projects. Please see https://wiki.ncsa.illinois.edu/display/FIN/Hydro 
+for additional information on non-NFI funded access to the Hydro cluster.
 
 If you are part of an allocated NFI project and would like
 access to the Hydro cluster please send email to
