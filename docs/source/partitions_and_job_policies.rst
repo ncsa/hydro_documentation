@@ -13,9 +13,9 @@ jobs to the Hydro cluster.
 Table.Hydro Partitions/Queues
 
 +---------------+---------------+----------+---------------+----------+----------+
-| **Partition   | **Node/Job    | **Max    | **Max**       | **Max    | **Charge |
+| **Partition   | **Node/Job    | **Max    | **Max \       | **Max    | **Charge |
 | Queue**       | Type**        | Nodes    | **Duration**  | Running  | Factor** |
-|               |               | /        |               | in       |          |
+|               |               | \ per    |               | in       |          |
 |               |               | Job**    |               | Queue/   |          |
 |               |               |          |               | user***  |          |
 +---------------+---------------+----------+---------------+----------+----------+
