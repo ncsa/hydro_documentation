@@ -10,7 +10,7 @@ Transferring a Few Small Files With Text Tools
 
 These tools are suitable for a few (typically less than 1000) files and in total less than 100 GB.  If your transfers using these tools take more than 15 minutes, please consider using Globus instead.  
 
-If you use a Windows machine, you can transfer files back and forth between your machine and Hydro using an application called "WinSCP".  You'll have to download it and install it.  When open WinSCP, you'll need to log into the Hydro login node as your "remote" node, using your username, password, and 2FA as usual.  Once you've logged in, SCP will work like a drag and drop interface for moving files.  
+If you use a Windows machine, you can transfer files back and forth between your machine and Hydro using an application called "WinSCP".  You'll have to download it and install it.  When open WinSCP, you'll need to log into the Hydro login node as your "remote" node, using your username, password, and 2FA as usual.  Once you've logged in, WinSCP will work like a drag and drop interface for moving files.  
 
 The program Secure CoPy (SCP) can be used to securely transfer files between Hydro and other systems.  SCP is built into all Mac and most Windows computers.  You can find tutorials online for using scp.  The important thing you need to know is the full pathname of the file(s) that you're wanting to move on the machine where they're coming from, *and* the full pathname of where you want the files to go.
 
