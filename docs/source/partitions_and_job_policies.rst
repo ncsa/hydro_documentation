@@ -21,17 +21,17 @@ Table.Hydro Partitions/Queues
 +---------------+---------------+----------+---------------+----------+----------+
 | sandybridge   | CPU           | TBD      | 7 days        | TBD      | 1.0      |
 +---------------+---------------+----------+---------------+----------+----------+
-| milan         | CPU           | TBD      | 7 days        | TBD      | TBD      |
+| milan         | CPU           | TBD      | 7 days        | TBD      | 6.0      |
 +---------------+---------------+----------+---------------+----------+----------+
-| rome          | CPU           | TBD      | 7 days        | TBD      | TBD      |
+| rome          | CPU           | TBD      | 7 days        | TBD      | 6.0      |
 +---------------+---------------+----------+---------------+----------+----------+
-| a100          | dual A100 GPU | TBD      | 7 days        | TBD      | TBD      |
+| a100          | dual A100 GPU | TBD      | 7 days        | TBD      | 20.0     |
 |               | w/ any CPU    |          |               |          |          |
 +---------------+---------------+----------+---------------+----------+----------+
-| a100milan     | dual A100 GPU | TBD      | 7 days        | TBD      | TBD      |
+| a100milan     | dual A100 GPU | TBD      | 7 days        | TBD      | 20.0     |
 |               | w/ Milan CPU  |          |               |          |          |
 +---------------+---------------+----------+---------------+----------+----------+
-| a100rome      | dual A100 GPU | TBD      | 7 days        | TBD      | TBD      |
+| a100rome      | dual A100 GPU | TBD      | 7 days        | TBD      | 20.0     |
 |               | w/ Rome CPU   |          |               |          |          |
 +---------------+---------------+----------+---------------+----------+----------+
 
@@ -41,7 +41,9 @@ sview view of slurm partitions
 Node Policies
 ~~~~~~~~~~~~~
 
-Node-sharing is the default for jobs. Node-exclusive mode can be
+Node-sharing is not enabled. Jobs currently run exclusive. 
+
+When node-sharing with jobs is enabled, node-exclusive mode can be
 obtained by specifying all the consumable resources for that node type
 or adding the following Slurm options:
 
