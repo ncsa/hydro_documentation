@@ -14,7 +14,7 @@ Table.Hydro Partitions/Queues
 
 +---------------+---------------+----------+---------------+----------+----------+
 | Partition     | Node/Job      | Max      | Max           | Max      | Charge   |
-| Queue         | Type          | Nodes    | Duration      | Running  | Factor   |
+| | (Queue)     | Type          | Nodes    | Duration      | Running  | Factor   |
 |               |               | | per    |               | in       |          |
 |               |               | Job      |               | Queue /  |          |
 |               |               |          |               | user     |          |
