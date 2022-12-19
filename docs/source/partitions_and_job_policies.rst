@@ -13,10 +13,10 @@ jobs to the Hydro cluster.
 Table.Hydro Partitions/Queues
 
 +---------------+---------------+----------+---------------+----------+----------+
-| Partition     | Node/Job      | Max.     | Max           | Max      | Charge   |
+| Partition     | Node/Job      | Max      | Max           | Max      | Charge   |
 | Queue         | Type          | Nodes    | Duration      | Running  | Factor   |
 |               |               | | per    |               | in       |          |
-|               |               | Job.     |               | Queue/   |          |
+|               |               | Job      |               | Queue /  |          |
 |               |               |          |               | user     |          |
 +===============+===============+==========+===============+==========+==========+
 | sandybridge   | CPU (Intel)   | TBD      | 7 days        | TBD      | 1.0      |
