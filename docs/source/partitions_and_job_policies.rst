@@ -38,11 +38,9 @@ Table.Hydro Partitions/Queues
 |               | w/ Rome CPU   |          |               |          |          |
 +---------------+---------------+----------+---------------+----------+----------+
 
-Sandybridge nodes have 16 cores per node, dual-socket.
-
-Milan nodes have 54 cores per node in a single socket.
-
-Rome nodes have 64 cores per node in a single socket.
+- Sandybridge nodes have 16 cores per node, dual-socket.
+- Milan nodes have 54 cores per node in a single socket.
+- Rome nodes have 64 cores per node in a single socket.
 
 
 sview view of slurm partitions
