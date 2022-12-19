@@ -13,49 +13,26 @@ jobs to the Hydro cluster.
 Table.Hydro Partitions/Queues
 
 +---------------+---------------+----------+---------------+----------+----------+
-| **Partition   | **Node        | **Max    | **Max**       | **Max    | **Charge |
+| **Partition   | **Node/Job    | **Max    | **Max**       | **Max    | **Charge |
 | Queue**       | Type**        | Nodes    | **Duration**  | Running  | Factor** |
 |               |               | per      |               | in       |          |
 |               |               | Job**    |               | Queue/   |          |
 |               |               |          |               | user\*** |          |
 +---------------+---------------+----------+---------------+----------+----------+
-| cpu           | CPU           | TBD      | 24 hr /       | 8,448    | 1.0      |
-|               |               |          | 48 hr         | cores    |          |
+| sandybridge   | CPU (Intel)   | TBD      | 7 days        | TBD      | 1.0      |
 +---------------+---------------+----------+---------------+----------+----------+
-| cpu-int       | CPU           | TBD      | 30 min        | in total | 2.0      |
-| eractive      |               |          |               |          |          |
+| milan         | CPU (AMD)     | TBD      | 7 days        | TBD      | 6.0      |
 +---------------+---------------+----------+---------------+----------+----------+
-| gpuA100x4     | quad          | TBD      | 24 hr /       | 3,200    | 1.0      |
-|               | A100          |          | 48 hr         | cores    |          |
-|               |               |          |               | and 200  |          |
-|               |               |          |               | gpus     |          |
+| rome          | CPU (AMD)     | TBD      | 7 days        | TBD      | 6.0      |
 +---------------+---------------+----------+---------------+----------+----------+
-| gpuA100x4     | quad-A100     | TBD      | 30 min        | in total | 2.0      |
-| -interactive  |               |          |               |          |          |
-|               |               |          |               |          |          |
+| a100          | dual A100 GPU | TBD      | 7 days        | TBD      | 20.0     |
+|               | w/ any CPU    |          |               |          |          |
 +---------------+---------------+----------+---------------+----------+----------+
-| gpuA100x8     | octa-A100     | TBD      | 24 hr /       | TBD      | 2.0      |
-|               |               |          | 48 hr         |          |          |
+| a100milan     | dual A100 GPU | TBD      | 7 days        | TBD      | 20.0     |
+|               | w/ Milan CPU  |          |               |          |          |
 +---------------+---------------+----------+---------------+----------+----------+
-| gpuA100x8     | octa-A100     | TBD      | 30 min        | TBD      | 4.0      |
-| -interactive  |               |          |               |          |          |
-|               |               |          |               |          |          |
-+---------------+---------------+----------+---------------+----------+----------+
-| gpuA40x4      | quad-A40      | TBD      | 24 hr /       | 3,200    | 0.6      |
-|               |               |          | 48 hr         | cores    |          |
-|               |               |          |               | and 200  |          |
-|               |               |          |               | gpus     |          |
-+---------------+---------------+----------+---------------+----------+----------+
-| gpuA40x4      | quad-A40      | TBD      | 30 min        | in total | 1.2      |
-| -interactive  |               |          |               |          |          |
-|               |               |          |               |          |          |
-+---------------+---------------+----------+---------------+----------+----------+
-| gpuMI100x8    | octa-MI100    | TBD      | 24 hr /       | TBD      | 1.5      |
-|               |               |          | 48 hr         |          |          |
-+---------------+---------------+----------+---------------+----------+----------+
-| gpuMI100x8    | octa-MI100    | TBD      | 30 min        | TBD      | 3.0      |
-| -interactive  |               |          |               |          |          |
-|               |               |          |               |          |          |
+| a100rome      | dual A100 GPU | TBD      | 7 days        | TBD      | 20.0     |
+|               | w/ Rome CPU   |          |               |          |          |
 +---------------+---------------+----------+---------------+----------+----------+
 
 sview view of slurm partitions
@@ -64,7 +41,9 @@ sview view of slurm partitions
 Node Policies
 ~~~~~~~~~~~~~
 
-Node-sharing is the default for jobs. Node-exclusive mode can be
+Node-sharing is not enabled. Jobs currently run exclusive. 
+
+When node-sharing with jobs is enabled, node-exclusive mode can be
 obtained by specifying all the consumable resources for that node type
 or adding the following Slurm options:
 
