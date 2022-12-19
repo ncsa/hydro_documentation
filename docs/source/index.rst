@@ -21,8 +21,8 @@ memory per node, 40 Gb/s WAN bandwidth, and direct access to two Lustre-based pa
 This information is for users who are adept at using an HPC system and are only
 interested in the basic Hydro workflow.
 
-**1.** Getting Access (:ref:`access-and-policy`) - Limited to NFI projects who need
-access to Hydro
+**1.** :ref:`access-and-policy` - Limited to NFI projects and Illinois Computes projects that need
+access to the Hydro compute resource.
 
 **2.** :ref:`logging-in` - example: *ssh hydro.ncsa.illinois.edu*
 
