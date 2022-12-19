@@ -13,9 +13,9 @@ jobs to the Hydro cluster.
 Table.Hydro Partitions/Queues
 
 +---------------+---------------+----------+---------------+----------+----------+
-| **Partition   | **Node/Job    | **Max    | **Max \       | **Max    | **Charge |
-| Queue**       | Type**        | Nodes    | **Duration**  | Running  | Factor** |
-|               |               | \ per    |               | in       |          |
+| **Partition   | **Node/Job    | **Max    | **Max         | **Max    | **Charge |
+| Queue**       | Type**        | Nodes    | Duration**    | Running  | Factor** |
+|               |               |   per    |               | in       |          |
 |               |               | Job**    |               | Queue/   |          |
 |               |               |          |               | user***  |          |
 +---------------+---------------+----------+---------------+----------+----------+
@@ -37,6 +37,7 @@ Table.Hydro Partitions/Queues
 
 sview view of slurm partitions
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Slurm's **sview** command provides a graphical view into a resource's partition and node properties.
 
 Node Policies
 ~~~~~~~~~~~~~
