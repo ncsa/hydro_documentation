@@ -73,7 +73,7 @@ projects      /projects/<PROJECT>   36          50 TB        Shared project loca
 Home Directory Permissions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-By default, user home directories and /project directories are closed
+By default, user home directories and /projects directories are closed
 (permissions 700) with a parent directory setting that prevents users
 from opening up the permissions. See the File and Directory Access
 Control List page (https://bluewaters.ncsa.illinois.edu/facl) for Blue
