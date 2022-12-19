@@ -14,10 +14,10 @@ Table.Hydro Partitions/Queues
 
 +---------------+---------------+----------+---------------+----------+----------+
 | Partition     | Node/Job      | Max      | Max           | Max      | Charge   |
-|               | Type          | Nodes    | Duration      | Running  | Factor   |
-| (Queue)       |               | | per    |               | in       |          |
-|               |               | Job      |               | Queue /  |          |
-|               |               |          |               | user     |          |
+|               |               | Nodes    | Duration      | Running  |          |
+| (Queue)       | Type          |          |               |          | Factor   |
+|               |               | per      |               | Queue /  |          |
+|               |               | Job      |               | user     |          |
 +===============+===============+==========+===============+==========+==========+
 | sandybridge   | CPU (Intel)   | TBD      | 7 days        | TBD      | 1.0      |
 +---------------+---------------+----------+---------------+----------+----------+
