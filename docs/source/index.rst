@@ -88,7 +88,7 @@ instructions below)
    push from Duo.
    
  **Account Management**
- ======================
+ ----------------------
  
  To manage a Hydro project group: add and remove users or set a group 
  delegate, please see the NCSA Allocation and Account Management page at 
