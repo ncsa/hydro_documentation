@@ -86,6 +86,14 @@ instructions below)
    `here <https://duo.security.ncsa.illinois.edu/portal>`__. Depending
    on the choice you make there, you should receive a pass code or a
    push from Duo.
+   
+ **Account Management**
+ ======================
+ 
+ To manage a Hydro project group: add and remove users or set a group 
+ delegate, please see the NCSA Allocation and Account Management page at 
+ https://wiki.ncsa.illinois.edu/display/USSPPRT/NCSA+Allocation+and+Account+Management
+ .
 
 .. _faq:
 
