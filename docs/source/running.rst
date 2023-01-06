@@ -51,16 +51,21 @@ The main sbatch options are listed below. Refer to the sbatch man page
 for options.
 
 -  | The common resource_names are:
-   | --time=\ *time*
 
-   time=maximum wall clock time (d-hh:mm:ss) *[default: maximum limit of
+:: 
+
+   --time=*time*
+
+time=maximum wall clock time (d-hh:mm:ss) *[default: maximum limit of
    the queue(partition) submittied to]*
 
-   --nodes=\ *n*
+:: 
 
-   --ntasks=\ *p* Total number of cores for the batch job
+   --nodes=*n*
 
-   --ntasks-per-node=\ *p* Number of cores per node (same as ppn under
+   --ntasks=*p* # Total number of cores for the batch job
+
+   --ntasks-per-node=*p* # Number of cores per node (same as ppn under
    PBS)
 
    | n=number of 16-core nodes *[default: 1 node]*
@@ -68,26 +73,32 @@ for options.
      use (1 through 16) *[default: 1 core]*
 
    | Examples:
-   | --time=00:30:00
-   | --nodes=2
-   | --ntasks=32
-   | or
-   | --time=00:30:00
-   | --nodes=2
-   | --ntasks-per-node=16
 
-   **Memory needs:** The compute nodes have 256GB.
+:: 
 
-   | Example:
-   | --time=00:30:00
-   | --nodes=2
-   | --ntask=32
-   | --mem=118000
-   | or
-   | --time=00:30:00
-   | --nodes=2
-   | --ntasks-per-node=16
-   | --mem-per-cpu=7375
+   --time=00:30:00
+   --nodes=2
+   --ntasks=32
+   or
+   --time=00:30:00
+   --nodes=2
+   --ntasks-per-node=16
+
+**Memory needs:** The compute nodes have 256GB.
+
+Example:
+
+:: 
+
+   --time=00:30:00
+   --nodes=2
+   --ntask=32
+   --mem=118000
+   or
+   --time=00:30:00
+   --nodes=2
+   --ntasks-per-node=16
+   --mem-per-cpu=7375
 
 Useful Batch Job Environment Variables
 
