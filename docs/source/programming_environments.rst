@@ -23,7 +23,7 @@ Software
 
          -  Tensorflow
 
-      -  GCC 11.2
+      -  GCC 11.3.0
       -  R
       -  GDAL
 
@@ -118,13 +118,8 @@ Useful User Defined Module Collections:
 Programming Environments
 ------------------------------
 
-The GNU compilers (GCC) version 11.2.0 are in the default user
-environment. Version 9.3.0 is also available — load this version with
-the command:
-
-+---------------------------------------------+
-| ``module load GCC/``\ ``9.3``\ ``.``\ ``0`` |
-+---------------------------------------------+
+The GNU compilers (GCC) version 11.3.0 are in the default user
+environment. 
 
 .. _compiling:
 
