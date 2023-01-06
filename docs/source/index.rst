@@ -30,7 +30,7 @@ access to the Hydro compute resource.
 
 **4.** :ref:`running` - example: *srun -n 1 ./foo.exe*
 
-**5.** :ref:`partitions-job-policies` - Batch System documentation
+**5.** :ref:`partitions-job-policies` - Job Policies documentation
 
 **6.** :ref:`slurm` - Slurm job control software
 
