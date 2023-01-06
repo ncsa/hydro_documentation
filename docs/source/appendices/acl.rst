@@ -87,11 +87,10 @@ directory you need to:
 
 
 .. 
-`ACL service
+   `ACL service
 
 .. 
-
-request <mailto:help%2Bhydro@ncsa.illinois.edu?subject=Request%20for%20ACL%20change&body=%3CSUBSTITUTE_ALL_CAPS_TEXT%3E%0AAs%20part%20of%20this%20ACL%20change%20request%2C%20I%20understand%20and%20do%20not%20object%20to%20an%20administrator%20altering%20existing%20Posix%20ACLs%20from%20first-level%20directory%20contents%20(non-recursive)%20by%20issuing%20a%20%22chmod%20og-rwx%20%3CTOP_LEVEL_DIRECTORY%3E%2F*%22.%20Existing%20extended%20ACL%20attributes%20on%20directory%20contents%20are%20already%20presumed%20intentional%20and%20will%20not%20be%20modified%20by%20the%20admin.%0AI%20%5B%20need%20%7C%20do%20not%20need%20%5D%20additional%20guidance%20on%20ACL%20management%20best%20practices.%0A%0AOption%20A%3A%20(Please%20do%20it%20for%20me)%0AI%20am%20requesting%20ACL%20expansion%20to%20%3CDIRECTORY%3E%20to%20%3CUSER%2C%20GROUP%2COTHER%3E%20with%20%3CR%7CW%7CX%3E%20permissions.%20(list%20full%20request)%0A...%0A%0AOption%20B%3A%20(Self-Managed)%0AI'll%20manage%20my%20ACLs.%20Please%20enable%20traversal%20into%20%3CTOP_LEVEL_DIRECTORY%3E%20for%20me.%0AI%20understand%20that%20this%20will%20expose%20all%20data%20in%20my%20directory%20according%20to%20the%20permissions%20I%20grant%2C%20and%20I%20will%20take%20care%20not%20to%20grant%20unnecessarily%20broad%20access.%0A>`__
+   request <mailto:help%2Bhydro@ncsa.illinois.edu?       subject=Request%20for%20ACL%20change&body=%3CSUBSTITUTE_ALL_CAPS_TEXT%3E%0AAs%20part%20of%20this%20ACL%20change%20request%2C%20I%20understand%20and%20do %20not%20object%20to%20an%20administrator%20altering%20existing%20Posix%20ACLs%20from%20first-level%20directory%20contents%20(non-  recursive)%20by%20issuing%20a%20%22chmod%20og-  rwx%20%3CTOP_LEVEL_DIRECTORY%3E%2F*%22.%20Existing%20extended%20ACL%20attributes%20on%20directory%20contents%20are%20already%20presumed%20intentional%20 and%20will%20not%20be%20modified%20by%20the%20admin.%0AI%20%5B%20need%20%7C%20do%20not%20need%20%5D%20additional%20guidance%20on%20ACL%20management%20be st%20practices.%0A%0AOption%20A%3A%20(Please%20do%20it%20for%20me)%0AI%20am%20requesting%20ACL%20expansion%20to%20%3CDIRECTORY%3E%20to%20%3CUSER%2C%20GR OUP%2COTHER%3E%20with%20%3CR%7CW%7CX%3E%20permissions.%20(list%20full%20request)%0A...%0A%0AOption%20B%3A%20(Self-   Managed)%0AI'll%20manage%20my%20ACLs.%20Please%20enable%20traversal%20into%20%3CTOP_LEVEL_DIRECTORY%3E%20for%20me.%0AI%20understand%20that%20this%20will %20expose%20all%20data%20in%20my%20directory%20according%20to%20the%20permissions%20I%20grant%2C%20and%20I%20will%20take%20care%20not%20to%20grant%20unn ecessarily%20broad%20access.%0A>`__
 
 
 with the top level folder you wish to be traverseable, and by whom.
