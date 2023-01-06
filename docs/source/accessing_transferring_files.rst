@@ -81,7 +81,7 @@ The system will prompt you to Authenticate to the endpoint, click continue; Glob
 
 You should then get dropped back into the “File Manger” view and be able to see your home directory in the explorer window
 
-.. image:: globus/Screen-Shot-2021-01-19-at-9.24.28-PM-768x381.png
+.. image:: hydro_globus_file_manager.png
 
 Then in a similar manner (in the right half of the “File Manger” view) search for and authenticate to the collection you are planning to transfer data to/from, then use the GUI to transfer the data; you can choose transfer settings. Also on the left is a button to view your current transfer activity
 
