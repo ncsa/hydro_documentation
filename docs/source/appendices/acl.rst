@@ -94,8 +94,8 @@ directory you need to:
 
 
 with the top level folder you wish to be traverseable, and by whom.
-   e.g. I would like my group "X" to be able to have read and write
-   access to a subdirectory of my home directory. 
+e.g. I would like my group "X" to be able to have read and write
+access to a subdirectory of my home directory. 
    
 ..    
    The link includes a
