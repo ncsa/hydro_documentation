@@ -115,7 +115,7 @@ Useful User Defined Module Collections:
 +----------------------------------+----------------------------------+
 
 
-Programming Environment
+Programming Environments
 ------------------------------
 
 The GNU compilers (GCC) version 11.2.0 are in the default user
