@@ -61,16 +61,11 @@ time=maximum wall clock time (d-hh:mm:ss) *[default: maximum limit of
 
 :: 
 
-   --nodes=*n*
+   --nodes=<n>
 
-   --ntasks=*p* # Total number of cores for the batch job
+   --ntasks=<p> # Total number of cores for the batch job
 
-   --ntasks-per-node=*p* # Number of cores per node (same as ppn under
-   PBS)
-
-n=number of 16-core nodes *[default: 1 node]*
-p=how many cores(ntasks) per job or per node(ntasks-per-node) to
-use (1 through 16) *[default: 1 core]*
+   --ntasks-per-node=<p> # Number of cores per node (same as ppn under PBS)
 
 Examples:
 
