@@ -79,6 +79,6 @@ from opening up the permissions. See the File and Directory Access
 Control List page (https://bluewaters.ncsa.illinois.edu/facl) for Blue
 Waters file system policies. The /projects file system is designed as
 common space for your group; if you want a space that all your group
-members can access, that's a good place for it. As always, your space on
-the /scratch file system is the best place for job inputs and outputs.
+members can access, that's a good place for it. /projects is also the 
+best place for job inputs and outputs.
 
