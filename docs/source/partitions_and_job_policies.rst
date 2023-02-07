@@ -69,19 +69,19 @@ Project and Job Accounting
 ~~~~~~~~~~~~~
 
 There are two available commands for tracking usage depending on the project in question's charging policy.
-For projects that are charged monthly and do not have a specific allocated award amount such as NGA projects you can use
+For projects that are charged monthly and do not have a specific allocated award amount such as NGA projects you can use:
 
 ::
 
   accounts
 
-For projects that are allocated a fixed amount, such as Illinois Computes projects, the following command will show 
+For projects that are allocated a fixed amount, such as Illinois Computes projects, the following command will show balance and depost info:
 
 ::
 
   accounts-remaining
   
-Additional information on job use can be found using the following script
+Additional information on job use can be found using the following script:
 
 ::
 
