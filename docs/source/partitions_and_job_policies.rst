@@ -65,8 +65,8 @@ date.
 
 Pre-emptive jobs will be supported at a future date.
 
-Project and Job Accounting
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+**Project and Job Accounting**
+-----------------------
 
 There are two available commands for tracking usage depending on the project in question's charging policy.
 For projects that are charged monthly and do not have a specific allocated award amount such as NGA projects you can use:
