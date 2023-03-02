@@ -439,5 +439,41 @@ $$$$$$$$$$$$$$$$$$$$$$
 |                      | HH:MM:SS”            | Y-MM-DD[THH:MM[:SS]] |
 +----------------------+----------------------+----------------------+
 
+Setting Default Account
+~~~~~~~~~~~~~~~~~~~
+
+To set a default account for charging jobs when you have more than one chargable account 
+first use the accounts command to view your list of accounts you can charge jobs to:
+
+::
+
+   $ accounts
+   Project Summary for User gbauer:
+   Project     Description                                 Usage (Hours)
+   ----------  ----------------------------------------  ---------------
+   abcd-hydro  .....                                                  25
+   wxyz-hydro  .....                                               10660
+
+and then use the sacctmgr to set a default account:
+
+::
+
+   $ sacctmgr modify user where ${USER} set DefaultAccount=abcd-hydro
+    Modified users...
+     gbauer
+   Would you like to commit changes? (You have 30 seconds to decide)
+   (N/y): y
+
+and then check to confirm
+
+::
+
+   $ sacctmgr show user ${USER}
+         User   Def Acct     Admin 
+   ---------- ---------- --------- 
+       gbauer abcd-hydro      None 
+
+
+
 Notebooks
 -------------
