@@ -1,7 +1,7 @@
 .. _transferring-files:
 
-Accessing and Transferring Files to and from Hydro
-====================================================
+Accessing and Transferring Files 
+=================================
 
 .. _small-transfer-tools:
 
