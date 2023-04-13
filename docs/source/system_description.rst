@@ -76,8 +76,8 @@ Home Directory Permissions
 By default, user home directories and /projects directories are closed
 (permissions 700) with a parent directory setting that prevents users
 from opening up the permissions. See the File and Directory Access
-Control List page (https://bluewaters.ncsa.illinois.edu/facl) for Blue
-Waters file system policies. The /projects file system is designed as
+Control List page (https://ncsa-hydro-documentation.readthedocs-hosted.com/en/latest/appendices/acl.html) 
+page in the Appendix. The /projects file system is designed as
 common space for your group; if you want a space that all your group
 members can access, that's a good place for it. /projects is also the 
 best place for job inputs and outputs.
