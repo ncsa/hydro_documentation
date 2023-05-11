@@ -117,6 +117,7 @@ Hydro Documentation Table of Contents
    index
    quick_start_guide
    system_description
+   illinois_computes
    accessing_transferring_files
    programming_environments
    containers
