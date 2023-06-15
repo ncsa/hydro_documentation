@@ -5,7 +5,7 @@ Accessing and Transferring Files
 
 .. _small-transfer-tools:
 
-Transferring a Few Small Files With Text Tools
+Transferring a Few Small Files
 -------------------------------------------------
 
 These tools are suitable for a few (typically less than 1000) files and in total less than 100 GB.  If your transfers using these tools take more than 15 minutes, please consider using Globus instead.  
@@ -36,7 +36,7 @@ The output will prompt you for your kerberos password, ask you to initiate a 2FA
 Transferring Many or Large Files With Globus
 ---------------------------------------------
 
-Globus is a web-based file transfer system that works in the background to move files between systems with "Globus Endpoints".  Hydro's Globus endpoint is called "ncsa#BlueWaters".  To transfer files to and from your directories using Globus, you will have to authenticate that endpoint, using your  NCSA username, password, and NCSA account on Duo. 
+Globus is a web-based file transfer system that works in the background to move files between systems with "Globus Collections".  Hydro's Globus endpoint is called "NFI Hydro".  To transfer files to and from your directories using Globus, you will have to authenticate that endpoint, using your  NCSA username, password, and NCSA account on Duo. 
 
 One-time Setup
 ~~~~~~~~~~~~~~~~
@@ -61,7 +61,7 @@ If prompted click “Allow” when asked to authorized the Globus Web App
 Login in via the Illinois Shibboleth service, this will be a Duo 2FA prompt
 
 ..
-   Once logged in you should be taken to the File Manager section, on one side search for "BlueWaters" collection and you should see a list of endpoints, click on the “ncsa#BlueWaters” endpoint
+   Once logged in you should be taken to the File Manager section, on one side search for "BlueWaters" collection and you should see a list of endpoints, click on the “NFI Hydro” collection
 
 Once in the file manager section, click on "collection".  Search for "NFI Hydro" and click on the "NFI#Hydro" collection.
 
