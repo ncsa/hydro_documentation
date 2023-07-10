@@ -223,6 +223,14 @@ The scancel command deletes a queued job or kills a running job.
 
 -  scancel JobID deletes/kills a job.
 
+Debugging batch jobs
+~~~~~~~~~~~~~~~~~~~
+To gain access to performance counters during job execution, specify a constraint/feature with the job for "perf".  
+::
+
+   #SBATCH --constraint=perf
+This should allow access to performance counters for debugging utilities.
+
 Job Dependencies
 ~~~~~~~~~~~~~~~~~~~
 
