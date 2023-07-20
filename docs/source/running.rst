@@ -235,8 +235,8 @@ Job Dependencies
 ~~~~~~~~~~~~~~~~~~~
 
 Job dependencies allow users to set execution order in which their
-queued jobs run. Job dependencies are set by using the ??dependency
-option with the syntax being ??dependency=<dependency type>:<JobID>.
+queued jobs run. Job dependencies are set by using the --dependency
+option with the syntax being --dependency=<dependency type>:<JobID>.
 SLURM places the jobs in *Hold* state until they are eligible to run.
 
 The following are examples on how to specify job dependencies using the
@@ -283,7 +283,7 @@ Job Arrays
 If a need arises to submit the same job to the batch system multiple
 times, instead of issuing one sbatch command for each individual job,
 users can submit a job array. Job arrays allow users to submit multiple
-jobs with a single job script using the ??array option to sbatch. An
+jobs with a single job script using the --array option to sbatch. An
 optional slot limit can be specified to limit the amount of jobs that
 can run concurrently in the job array. See the sbatch manual page for
 details (man sbatch). The file names for the input, output, etc. can be
