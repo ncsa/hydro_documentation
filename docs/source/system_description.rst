@@ -8,7 +8,7 @@
 Hardware Description
 -------------
 
--  2 Login and 42 Compute nodes
+-  2 Login and 68 Compute nodes
 -  Login node (2 ct):
 
    -  Dell PowerEdge R720
