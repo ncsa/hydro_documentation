@@ -1,5 +1,7 @@
 .. _containers:
 
+.. highlight:: none
+
 Containers
 ==============
 
