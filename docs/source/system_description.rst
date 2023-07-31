@@ -8,7 +8,7 @@
 Hardware Description
 -------------
 
--  2 Login and 42 Compute nodes
+-  2 Login and 68 Compute nodes
 -  Login node (2 ct):
 
    -  Dell PowerEdge R720
@@ -16,7 +16,7 @@ Hardware Description
       Cache (16 cores per node) (HT disabled)
    -  384 GB of memory
    
--  Compute node A (33 ct):
+-  Compute node A (28 ct):
 
    -  Dell PowerEdge R720
    -  Dual Socket (2) Intel Xeon CPU E5-2690 (8 core, SandyBridge) @ 2.90GHz (16 cores per node) (HT disabled)
@@ -27,7 +27,29 @@ Hardware Description
    -  40 Gb/s Ethernet
    -  FDR 56Gb/s InfiniBand
 
--  Compute node B (7 ct):
+-  Compute node B (27 ct):
+
+   -  Dell PowerEdge R720
+   -  Dual Socket (2) Intel Xeon CPU E5-2690 (8 core, SandyBridge) @ 2.0GHz (16 cores per node) (HT disabled)
+   -  384 GB of memory
+   -  Cache L1/L2/L3: 32/256/20480 KB; L3 Total: 20 MB
+   -  NUMA domains: 1 per socket, 2 per node
+   -  CPUs per NUMA: domain0={0,2,4,6,8,10,12,14}, domain1={1,3,5,7,9,11,13,15}
+   -  40 Gb/s Ethernet
+   -  FDR 56Gb/s InfiniBand
+
+-  Compute node C (4 ct):
+
+   -  Dell PowerEdge R815
+   -  Quad Socket (4)  (16 core, AMD Interlagos) @ 2.30GHz (64 cores per node)
+   -  512 GB of memory
+   -  Cache L1/L2/L3: .768/16/16 MB; L3 Total: 32 MB
+   -  NUMA domains: 2 per socket, 8 per node
+   -  CPUs per NUMA: domain0={0-7} domain1={8-15} domain2={32-39} domain3={40-47} domain4={48-55} domain5={56-63} domain6={16-23} domain7={24-31}
+   -  40 Gb/s Ethernet
+   -  QDR 40 Gb/s InfiniBand
+
+-  Compute node D (7 ct):
 
    -  Dell PowerEdge R7525
    -  Dual Socket (2) AMD EPYC CPU 7452 (32 core, Rome) @ 2.35GHz 
@@ -40,7 +62,7 @@ Hardware Description
    -  FDR 56Gb/s InfiniBand
    -  2 NVIDIA A100 80GB PCIe GPUs
 
--  Compute node C (2 ct):
+-  Compute node E (2 ct):
 
    -  Dell PowerEdge R7525
    -  Dual Socket (2) AMD EPYC CPU 7453 (28 core, Milan) @ 2.75GHz

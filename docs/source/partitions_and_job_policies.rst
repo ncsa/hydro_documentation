@@ -21,6 +21,10 @@ Table.Hydro Partitions/Queues
 +===============+===============+==========+===============+==========+==========+
 | sandybridge   | CPU (Intel)   | TBD      | 7 days        | TBD      | 1.0      |
 +---------------+---------------+----------+---------------+----------+----------+
+| sandybridge2.9| CPU (Intel)   | TBD      | 7 days        | TBD      | 1.0      |
++---------------+---------------+----------+---------------+----------+----------+
+| sandybridge2.0| CPU (Intel)   | TBD      | 7 days        | TBD      | 1.0      |
++---------------+---------------+----------+---------------+----------+----------+
 | milan         | CPU (AMD)     | TBD      | 7 days        | TBD      | 6.0      |
 +---------------+---------------+----------+---------------+----------+----------+
 | rome          | CPU (AMD)     | TBD      | 7 days        | TBD      | 6.0      |
@@ -39,7 +43,7 @@ Table.Hydro Partitions/Queues
 +---------------+---------------+----------+---------------+----------+----------+
 
 - Sandybridge nodes have 16 cores per node, dual-socket.
-- Milan nodes have 54 cores per node in a single socket.
+- Milan nodes have 56 cores per node in a single socket.
 - Rome nodes have 64 cores per node in a single socket.
 
 
