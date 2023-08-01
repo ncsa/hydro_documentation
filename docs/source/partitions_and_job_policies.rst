@@ -25,6 +25,8 @@ Table.Hydro Partitions/Queues
 +---------------+---------------+----------+---------------+----------+----------+
 | sandybridge2.0| CPU (Intel)   | TBD      | 7 days        | TBD      | 1.0      |
 +---------------+---------------+----------+---------------+----------+----------+
+| interlagos    | CPU (AMD)     | TBD      | 7 days        | TBD      | 1.0      |
++---------------+---------------+----------+---------------+----------+----------+
 | milan         | CPU (AMD)     | TBD      | 7 days        | TBD      | 6.0      |
 +---------------+---------------+----------+---------------+----------+----------+
 | rome          | CPU (AMD)     | TBD      | 7 days        | TBD      | 6.0      |
@@ -42,10 +44,10 @@ Table.Hydro Partitions/Queues
 |               | w/ Rome CPU   |          |               |          |          |
 +---------------+---------------+----------+---------------+----------+----------+
 
-- Sandybridge nodes have 16 cores per node, dual-socket.
-- Milan nodes have 56 cores per node in a single socket.
-- Rome nodes have 64 cores per node in a single socket.
-
+- Sandybridge nodes have 16 cores per node, dual-socket, 384MB. (2.9 and 2.0 ghz)
+- Interlagos nodes have 64 cores per node, quad-socket, 512MB.
+- Milan nodes have 56 cores per node, dual socket, 256MB.
+- Rome nodes have 64 cores per node, dual socket, 256MB.
 
 sview view of slurm partitions
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
