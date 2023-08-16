@@ -19,13 +19,19 @@ Apptainer distinguishes itself in that root/sudo authorization is not required
 to either run or (as of version 1.1) build containers (technical details at
 https://arxiv.org/ftp/arxiv/papers/2208/2208.12106.pdf).
 
-Apptainer 1.1 is installed on all Hydro login and compute nodes
-at /usr/bin/apptainer and is fully documented at https://apptainer.org/docs/user/1.1/
+Apptainer 1.2 is installed on all Hydro login and compute nodes
+at /usr/bin/apptainer and is fully documented at https://apptainer.org/docs/user/1.2/
 so the following is limited to details and advice specific to Hydro.
 In interpreting the Apptainer documentation it is occasionally helpful
 to know that Apptainer on Hydro runs in `non-suid mode
-<https://apptainer.org/docs/user/1.1/security.html#setuid-user-namespaces>`_.
+<https://apptainer.org/docs/user/1.2/security.html#setuid-user-namespaces>`_.
 
+Changes from Apptainer 1.1 are documented at
+https://github.com/apptainer/apptainer/releases/tag/v1.2.0
+with one improvement being that a $PWD under /projects is now bind-mounted by default.
+However, a $PWD under $HOME will be bind-mounted
+even if ``--no-home`` or ``--no-mount home`` are specified
+so ``--no-mount home,cwd`` or ``--contain`` must be used instead.
 
 .. _docker-aptainer:
 
@@ -97,9 +103,12 @@ particularly when files are copied using relative paths.
 Interacting with Host Filesystems
 --------------------------------------
 
-Apptainer will bind-mount $HOME and /tmp into the container by default.
+Apptainer will bind-mount $HOME, $PWD, and /tmp into the container by default.
 Additional directories may be mounted with ``--bind src[:dest[:ro]]``
-and default mounts suppressed with ``--no-home`` or ``--contain``.
+and default mounts suppressed with ``--no-mount home,cwd,tmp`` or ``--contain``.
+Note that ``--no-mount home`` or ``--no-home`` **will only disable mounting
+of the home directory if it is not also the current working directory.**
+
 The caller's current user and group will appear unchanged,
 but all other users and groups will appear as nobody.
 (With the ``--fakeroot`` option $HOME will be mounted as /root
@@ -108,7 +117,7 @@ Regardless of apparent user and group, **processes inside a
 container have the caller's full read and write capabilities
 on mounted host filesystems.**
 
-See https://apptainer.org/docs/user/1.1/bind_paths_and_mounts.html for details.
+See https://apptainer.org/docs/user/1.2/bind_paths_and_mounts.html for details.
 
 .. _container-mounting-images:
 
@@ -120,7 +129,7 @@ incur much higher latencies opening and closing files than local filesystems do.
 For this reason, workflows that process many small files can
 run orders of magnitude slower on a cluster than on a desktop workstation.
 
-As described at https://apptainer.org/docs/user/1.1/bind_paths_and_mounts.html#image-mounts,
+As described at https://apptainer.org/docs/user/1.2/bind_paths_and_mounts.html#image-mounts,
 Apptainer can bind-mount image files in standard ext3 and squashfs formats
 as well as its own SIF format.
 An image file can contain millions of tiny files while
@@ -134,7 +143,7 @@ Running with GPU Acceleration
 -------------------------------
 
 Apptainer GPU support is described in detail at
-https://apptainer.org/docs/user/1.1/gpu.html,
+https://apptainer.org/docs/user/1.2/gpu.html,
 but adding ``--nv`` should just work, assuming that
 GPUs were correctly requested in the Slurm submission options.
 Devices visible with nvidia-smi outside a container
@@ -163,7 +172,7 @@ Running on Multiple Nodes with MPI
 -----------------------------------
 
 The many limitations and pitfalls of combining containers and MPI
-are detailed at https://apptainer.org/docs/user/1.1/mpi.html
+are detailed at https://apptainer.org/docs/user/1.2/mpi.html
 but the short story is that the MPI library used inside the container
 must be compatible with both the host mpiexec or srun program
 used to launch the container and with the host high-speed network.
