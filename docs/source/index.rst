@@ -107,8 +107,8 @@ How do I submit a ticket about Hydro?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Email help+hydro@ncsa.illinois.edu with the following:
 
-- A descriptive subject line that includes "HYDRO" (e.g., "HYDRO: Permission denied error loading blorg module")
-- What you are overall actually trying to accomplish (we may be able to suggest a better way)
+- A descriptive subject line starting with "HYDRO:" (e.g., "HYDRO: Permission denied error loading blorg module")
+- What you are actually trying to accomplish (e.g., run multi-blorg regression analysis on 2.4 million files)
 - Commands or scripts you ran (in enough detail to reproduce the problem)
 - Complete error and other messages as text (not screenshots)
 - The list of loaded modules from running "module list"
