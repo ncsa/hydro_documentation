@@ -91,7 +91,7 @@ Storage and File Systems
    * - File System
      - Home
      - Projects
-     - Taiga
+     - Taiga (coming soon)
    * - Path
      - /u/<USER>
      - /projects/<PROJECT>
@@ -113,8 +113,8 @@ Storage and File Systems
      - 2 PB
      - >19 PB
    * - Default Quota
-     - 1 TB, XXX files
-     - 50 TB, XXX files
+     - 1 TB, 6M files
+     - 50 TB, 1M files
      - `Must be purchased <https://wiki.ncsa.illinois.edu/display/TG/>`_
    * - Backups
      - None
