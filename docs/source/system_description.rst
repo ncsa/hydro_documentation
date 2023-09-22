@@ -85,12 +85,45 @@ Network
 Storage and File Systems
 -------------------------
 
-============  ====================  =========  ============= =========
-File System   Path                  OSTs       Default Quota Description
-============  ====================  =========  ============= =========
-home          /u/<USER>             36          1 TB         Home directory, compiling, source, etc
-projects      /projects/<PROJECT>   36          50 TB        Shared project location, datasets, job I/O, etc.
-============  ====================  =========  ============= =========
+.. list-table::
+   :stub-columns: 1
+
+   * - File System
+     - Home
+     - Projects
+     - Taiga
+   * - Path
+     - /u/<USER>
+     - /projects/<PROJECT>
+     - /taiga/...
+   * - Media Type
+     - HDD
+     - HDD
+     - HDD, NVME cache
+   * - Mount Type
+     - Lustre
+     - Lustre
+     - Lustre
+   * - File Striping
+     - Fixed Size
+     - Fixed Size
+     - Progressive Layout
+   * - Total Size
+     - 2 PB
+     - 2 PB
+     - >19 PB
+   * - Default Quota
+     - 1 TB, XXX files
+     - 50 TB, XXX files
+     - `Must be purchased <https://wiki.ncsa.illinois.edu/display/TG/>`_
+   * - Backups
+     - None
+     - None
+     - `Snapshots <https://wiki.ncsa.illinois.edu/display/TG/Taiga+User+Guide#TaigaUserGuide-DataRecovery)>`_
+   * - Example Uses
+     - Scripts, source code, compiling
+     - Shared data, job I/O
+     - Sharing data across NCSA resources
 
 Home Directory Permissions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
