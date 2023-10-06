@@ -8,7 +8,7 @@ Running
 Running Batch Jobs (Slurm)
 ----------------------------
 
-User access to the compute nodes for running jobs is available via a
+User access to the compute nodes for running jobs is available via
 batch job. Hydro uses the `Slurm Workload
 Manager <https://slurm.schedmd.com/overview.html>`__ for running batch
 jobs. See the sbatch section for details on batch job submission.
