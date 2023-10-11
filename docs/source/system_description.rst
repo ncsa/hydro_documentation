@@ -135,5 +135,5 @@ Control List page (https://ncsa-hydro-documentation.readthedocs-hosted.com/en/la
 page in the Appendix. The /projects file system is designed as
 common space for your group; if you want a space that all your group
 members can access, that's a good place for it. /projects is also the 
-best place for job inputs and outputs.
+best place for job input and output.
 
