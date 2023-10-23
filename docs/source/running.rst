@@ -52,11 +52,14 @@ for options.
 
 -  | The common resource_names are:
 
+Partitions:
 :: 
 
-   --partition=<PARTITION_NAME> # Default is "sandybridge" if unspecified
+Full partition information can be listed with the "sinfo -s" command. (sandybridge, a100 can be specified for CPU and GPU jobs, respectively) Default is "sandybridge" if unspecified.
+::
 
-Full partition information can be listed with the "sinfo -s" command. (sandybridge, a100 can be specified for CPU and GPU jobs, respectively)
+   --partition=<PARTITION_NAME>
+
 For a100 partitions, a GPU resource needs to be included as well:
 ::
 
