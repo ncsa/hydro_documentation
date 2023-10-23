@@ -57,7 +57,11 @@ for options.
    --partition=<PARTITION_NAME> # Default is "sandybridge" if unspecified
 
 Full partition information can be listed with the "sinfo -s" command. (sandybridge, a100 can be specified for CPU and GPU jobs, respectively)
+For a100 partitions, a GPU resource needs to be included as well:
+::
 
+   --gres=gpu:2
+Wallclock time:
 :: 
 
    --time=*time*
