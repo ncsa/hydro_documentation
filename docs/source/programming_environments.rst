@@ -26,6 +26,7 @@ Software
       -  GCC 11.3.0
       -  R
       -  GDAL
+      -  AWS CLI
 
 .. _shells-and-modules:
 
@@ -61,6 +62,8 @@ Useful Module commands:
 | module avail                     | lists all available modules      |
 +----------------------------------+----------------------------------+
 | module list                      | lists currently loaded modules   |
++----------------------------------+----------------------------------+
+| module spider foo                | search for modules named foo     |
 +----------------------------------+----------------------------------+
 | module help *modulefile*         | help on module modulefile        |
 +----------------------------------+----------------------------------+
