@@ -495,5 +495,60 @@ and then check to confirm
 
 
 
-Notebooks
+Jupyter Notebooks
 -------------
+The Jupyter notebook executables are in your **$PATH** after loading the anaconda3 module. 
+**Do not run Jupyter on the shared login nodes.**
+Instead, follow these steps to attach a Jupyter notebook running on a compute node to your local web browser:
+
+#. Start a Jupyter job via ``srun`` and note the hostname (*you pick the port number for --port*).
+
+   **srun Jupyter ( anaconda3_cpu on a CPU node ):**
+   
+   .. code-block::
+      
+      $ srun --account=wxyz-hydro --partition=sandybridge \
+        --time=00:30:00 --mem=32g \
+        jupyter-notebook --no-browser \
+        --port=8991 --ip=0.0.0.0
+      ...
+          Or copy and paste one of these URLs:
+              http://hydro40:8991/?token=e940b8ece3510bd7a3a50bce7df2fb5a5a197dafed8adb82
+           or http://127.0.0.1:8991/?token=e940b8ece3510bd7a3a50bce7df2fb5a5a197dafed8adb82
+
+
+   Note the internal hostname in the cluster for step 2. You will use the second URL in step 3.
+
+   
+
+   In step 3, to start the notebook in your browser, replace http://hostname:8888/ with http://127.0.0.1:8991/ (the port number you selected with ``--port=``)
+
+   You may not see the job hostname when running with a container, find it with ``squeue``:
+
+   **squeue -u $USER:**
+
+   .. code-block::
+
+      $ squeue -u $USER
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+             35606 sandybrid jupyter- rbrunner  R      11:05      1 hydro40
+
+   Specify the host your job is using in the next step (hydro40, for example).
+
+#. From your local desktop or laptop create an SSH tunnel to the compute node via a login node of Delta. Replace "hydro40" with the node 
+
+   **SSH tunnel for Jupyter:**
+
+   .. code-block::
+
+      $ ssh -l my_hydro_username \
+        -L 127.0.0.1:8991:hydro40:8991 \
+        hydrol1.ncsa.illinois.edu
+
+   Authenticate with your login and MFA, as usual.
+
+#. Paste the second URL (containing 127.0.0.1:port_number and the token string) from step 1 into your browser and you will be connected to the Jupyter instance running on your compute node of Delta.
+
+   .. image:: images/software/jupyter_screenshot.png
+      :alt: Jupyter screenshot
+      :width: 700
