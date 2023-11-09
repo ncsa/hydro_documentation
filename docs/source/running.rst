@@ -330,6 +330,19 @@ A sample batch script that makes use of job arrays is available in
    `scancel <https://slurm.schedmd.com/job_array.html#scancel>`__
    command section.
 
+Interactive Sessions
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+Interactive sessions can be implemented in several ways, depending on what is needed.
+As an example, to start up a bash shell on one node of a partition named rome, one can use:
+
+::
+
+   srun --account=account_name --partition=rome --nodes=1 --pty bash
+
+Other Slurm options can be added to that command, such as options for specifying
+the desired session duration (--time), number of tasks (--tasks), etc.
+
 Translating PBS Scripts to Slurm Scripts
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
