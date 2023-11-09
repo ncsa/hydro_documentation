@@ -23,4 +23,4 @@ To see a projects balance and remaining compute time use the `accounts-remaining
 
 Please see the `Project and Job Accounting`_ section of the documentation.
 
-.. _Project and Job Accounting: partitions_and_job_policies.rst#project-and-job-accounting
+.. _Project and Job Accounting: partitions_and_job_policies.html#project-and-job-accounting
