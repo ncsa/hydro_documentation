@@ -13,9 +13,9 @@ job (whether interactive or batch job). Hydro uses the `Slurm Workload
 Manager <https://slurm.schedmd.com/overview.html>`__ for running 
 jobs. See the sbatch section for details on batch job submission.
 
-Please be aware that the interactive nodes are a shared resource for all
+Please be aware that the login nodes are a **shared** resource for all
 users of the system and their use should be limited to editing,
-compiling and building your programs, and for short non-intensive runs.
+compiling and building your programs, and for **short** non-intensive runs.  If you're running an application that takes more than, say, 4 cpu cores or runs longer than 30 minutes, set it up to run on a compute node.  If you run applications on the login nodes wider or longer than that, they may be killed.  You might get a warning first.  If you ever have questions if something is an appropriate use of the login nodes, please send in a ticket and ask: (:ref:`submit-ticket`).  
 
 An interactive job provides a way to get interactive access to a
 compute node via a job. See the srun or salloc section for
