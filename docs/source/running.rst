@@ -9,17 +9,16 @@ Running Batch Jobs (Slurm)
 ----------------------------
 
 User access to the compute nodes for running jobs is available via a
-batch job. Hydro uses the `Slurm Workload
-Manager <https://slurm.schedmd.com/overview.html>`__ for running batch
+job (whether interactive or batch job). Hydro uses the `Slurm Workload
+Manager <https://slurm.schedmd.com/overview.html>`__ for running 
 jobs. See the sbatch section for details on batch job submission.
 
 Please be aware that the interactive nodes are a shared resource for all
 users of the system and their use should be limited to editing,
 compiling and building your programs, and for short non-intensive runs.
 
-
-An interactive batch job provides a way to get interactive access to a
-compute node via a batch job. See the srun or salloc section for
+An interactive job provides a way to get interactive access to a
+compute node via a job. See the srun or salloc section for
 information on how to run an interactive job on the compute nodes. Also,
 a very short time *test* queue provides quick turnaround time for
 debugging purposes.
