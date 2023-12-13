@@ -56,7 +56,7 @@ Choose “National Center for Supercomputing Applications” as your Identity Pr
 
 If prompted click “Allow” when asked to authorized the Globus Web App
 
-.. image:: globus/Screen-Shot-2021-01-19-at-9.22.30-PM-768x506.png
+.. image:: images/file-mgmt/globus-info-services-allow.png
 
 Login in via the Illinois Shibboleth service, this will be a Duo 2FA prompt
 
@@ -65,7 +65,7 @@ Login in via the Illinois Shibboleth service, this will be a Duo 2FA prompt
 
 Once in the file manager section, click on "collection".  Search for "NFI Hydro" and click on the "NFI#Hydro" collection.
 
-.. image:: globus/hydro_nfi_hydro_collection.png
+.. image:: images/file-mgmt/globus-nfi-hydro.png
 
 .. 
    this will be a link to the endpoint, which we don't know the name of yet.
@@ -73,17 +73,17 @@ Once in the file manager section, click on "collection".  Search for "NFI Hydro"
 
 The system will prompt you to Authenticate to the endpoint, click continue; Globus may prompt you to link your netid@illinois.edu identity, go ahead and do so
 
-.. image:: globus/Screen-Shot-2021-01-19-at-9.23.26-PM-768x299.png
+.. image:: images/file-mgmt/globus-authentication-consent.png
 
-.. image:: globus/Screen-Shot-2021-01-19-at-9.51.47-PM-768x280.png
+.. image:: images/file-mgmt/globus-identity-required.png
 
-.. image:: globus/Screen-Shot-2021-01-19-at-9.52.00-PM-768x657.png
+.. image:: images/file-mgmt/globus-illinois-research-storage-info-services-allow.png
 
 You should then get dropped back into the “File Manger” view and be able to see your home directory in the explorer window
 
-.. image:: globus/hydro_globus_file_manager.png
+.. image:: images/file-mgmt/hydro-globus-file-manager.png
 
 Then in a similar manner (in the right half of the “File Manger” view) search for and authenticate to the collection you are planning to transfer data to/from, then use the GUI to transfer the data; you can choose transfer settings. Also on the left is a button to view your current transfer activity
 
-.. image:: globus/Screen-Shot-2021-01-19-at-9.39.22-PM-1024x141.png
+.. image:: images/file-mgmt/globus-activity-transfer.png
 
