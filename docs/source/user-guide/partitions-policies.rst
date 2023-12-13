@@ -60,9 +60,9 @@ Node-sharing is not enabled; jobs currently run exclusive.
 
 When node-sharing with jobs is enabled, node-exclusive mode can be obtained by specifying all the consumable resources for that node type or adding the following Slurm options:
 
-.. code-block::
+   .. code-block::
 
-   --exclusive --mem=0
+      --exclusive --mem=0
 
 GPU NVIDIA MIG (GPU slicing) for the A100 and preemptive jobs will be supported at future dates.
 
