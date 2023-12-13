@@ -561,6 +561,6 @@ Instead, follow these steps to attach a Jupyter notebook running on a compute no
 
 #. Paste the second URL (containing 127.0.0.1:port_number and the token string) from step 1 into your browser and you will be connected to the Jupyter instance running on your compute node of Delta.
 
-   .. image:: images/software/jupyter_screenshot.png
-      :alt: Jupyter screenshot
+   .. image:: images/running-jobs/jupyter-files.png
+      :alt: Jupyter files window.
       :width: 700
