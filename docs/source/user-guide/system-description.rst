@@ -1,12 +1,12 @@
 .. _system-overview:
 
-**System Overview**
-==========================
+System Overview
+==================
 
 .. _hardware:
 
 Hardware Description
--------------
+---------------------
 
 -  2 Login and 68 Compute nodes
 -  Login node (2 ct):
@@ -74,6 +74,87 @@ Hardware Description
    -  100 Gb/s Ethernet
    -  FDR 56Gb/s InfiniBand
    -  2 NVIDIA A100 80GB PCIe GPUs
+
+Hardware Description
+---------------------
+
+Hydro is composed of six node types:
+
+- Login nodes with Dell PowerEdge R720 and dual socket (2) Intel Xeon CPU E5-2690 (8 core, SandyBridge)
+- Compute nodes with Dell PowerEdge R720 and dual socket, Intel Xeon CPU E5-2690 (8 core, SandyBridge) *[2.90 GHz and 2.0 GHz types]*
+- Compute nodes with Dell PowerEdge R815 and quad socket
+- Compute nodes with Dell PowerEdge R7525 and dual socket, AMD EPYC CPU 7452 (32 core, Rome)
+- Compute nodes with Dell PowerEdge R7525 dual socket, AMD EPYC CPU 7453 (28 core, Milan)
+
+Dell PowerEdge R720 Login Node Specifications
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+-  Number of nodes: 2
+-  Dual Socket (2) Intel Xeon CPU E5-2690 (8 core, SandyBridge) @ 2.90GHz 20MB Cache (16 cores per node) (HT disabled)
+-  384 GB of memory
+   
+Dell PowerEdge R720 Compute Node A Specifications
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+-  Number of nodes: 28
+-  Dual Socket (2) Intel Xeon CPU E5-2690 (8 core, SandyBridge) @ **2.90GHz** (16 cores per node) (HT disabled)
+-  384 GB of memory
+-  Cache L1/L2/L3: 32/256/20480 KB; L3 Total: 20 MB
+-  NUMA domains: 1 per socket, 2 per node
+-  CPUs per NUMA: domain0={0,2,4,6,8,10,12,14}, domain1={1,3,5,7,9,11,13,15}
+-  40 Gb/s Ethernet
+-  FDR 56Gb/s InfiniBand
+
+Dell PowerEdge R720 Compute Node B Specifications
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+-  Number of nodes: 27
+-  Dual Socket (2) Intel Xeon CPU E5-2690 (8 core, SandyBridge) @ **2.0GHz** (16 cores per node) (HT disabled)
+-  384 GB of memory
+-  Cache L1/L2/L3: 32/256/20480 KB; L3 Total: 20 MB
+-  NUMA domains: 1 per socket, 2 per node
+-  CPUs per NUMA: domain0={0,2,4,6,8,10,12,14}, domain1={1,3,5,7,9,11,13,15}
+-  40 Gb/s Ethernet
+-  FDR 56Gb/s InfiniBand
+
+Dell PowerEdge R815 Compute Node Specifications
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+-  Number of nodes: 4
+-  Quad Socket (4)  (16 core, AMD Interlagos) @ 2.30GHz (64 cores per node)
+-  512 GB of memory
+-  Cache L1/L2/L3: .768/16/16 MB; L3 Total: 32 MB
+-  NUMA domains: 2 per socket, 8 per node
+-  CPUs per NUMA: domain0={0-7} domain1={8-15} domain2={32-39} domain3={40-47} domain4={48-55} domain5={56-63} domain6={16-23} domain7={24-31}
+-  40 Gb/s Ethernet
+-  QDR 40 Gb/s InfiniBand
+
+Dell PowerEdge R7525 Compute Node Specifications
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+-  Number of nodes: 7
+-  Dual Socket (2) AMD EPYC CPU 7452 (32 core, Rome) @ 2.35GHz (64 cores per node) (SMT disabled)
+-  256 GB of memory
+-  Cache L1/L2/L3: 32/512/16384 KB; L3 Total: 128 MB
+-  NUMA domains: 1 per socket, 2 per node
+-  CPUs per NUMA: domain0={0-31}, domain1={32-63}
+-  100 Gb/s Ethernet
+-  FDR 56Gb/s InfiniBand
+-  2 NVIDIA A100 80GB PCIe GPUs
+
+Dell PowerEdge R7525 Compute Node Specifications
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+-  Number of nodes: 2
+-  Dual Socket (2) AMD EPYC CPU 7453 (28 core, Milan) @ 2.75GHz (56 cores per node) (SMT disabled)
+-  256 GB of memory
+-  Cache L1/L2/L3: 32/512/16384 KB; L3 Total: 64 MB
+-  NUMA domains: 1 per socket, 2 per node
+-  CPUs per NUMA: domain0={0-27}, domain1={28-55}
+-  100 Gb/s Ethernet
+-  FDR 56Gb/s InfiniBand
+-  2 NVIDIA A100 80GB PCIe GPUs
+
 
 .. _network:
 
