@@ -1,89 +1,107 @@
-.. _transferring-files:
+.. _file-mgmt:
 
-Accessing and Transferring Files 
+File Management
 =================================
 
-.. _small-transfer-tools:
+.. _small-transfer:
 
 Transferring a Few Small Files
--------------------------------------------------
+-----------------------------------
 
-These tools are suitable for a few (typically less than 1000) files and in total less than 100 GB.  If your transfers using these tools take more than 15 minutes, please consider using Globus instead.  
+These tools are suitable for a few files (typically less than 1,000) and less than 100 GB in total.  If your transfers using these tools take more than **15 minutes**, consider using Globus instead.  
 
-If you use a Windows machine, you can transfer files back and forth between your machine and Hydro using an application called "WinSCP".  You'll have to download it and install it.  When open WinSCP, you'll need to log into the Hydro login node as your "remote" node, using your username, password, and 2FA as usual.  Once you've logged in, WinSCP will work like a drag and drop interface for moving files.  
+WinSCP [Windows]
+~~~~~~~~~~~~~~~~~
 
-The program Secure CoPy (SCP) can be used to securely transfer files between Hydro and other systems.  SCP is built into all Mac and most Windows computers.  You can find tutorials online for using scp.  The important thing you need to know is the full pathname of the file(s) that you're wanting to move on the machine where they're coming from, *and* the full pathname of where you want the files to go.
+If you use a **Windows** machine, you can transfer files between your machine and Hydro using an application called **WinSCP**.  
 
-As an example, you want to move a file called "my_input_file.dat" from your local computer to Hydro.  You want to put it in a directory on Hydro which is "/u/hirop/input_files".  First, open a terminal or command prompt.  Change directories to where the file is, so that if you run the "ls" command, the file you want to transfer is listed.  
+- Download and install WinSCP.  
+- When open WinSCP, you'll need to log into the Hydro login node as your "remote" node, using your username, password, and 2FA.  
+- Once you've logged in, WinSCP will work like a drag and drop interface for moving files.  
 
-:: 
+Secure Copy [Mac and Windows]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-   $ cd outgoing_data
-   $ ls
-   my_input_file.dat
-   
-Now securely copy the file to Hydro using the following command: 
+Secure Copy (SCP) is built into all Mac and **most** Windows computers and can be used to securely transfer files between Hydro and other systems. You can find tutorials online for using scp. The important information you need to know is the full pathname of the file(s) that you want to move *and* the full pathname of where you want the file(s) to go.
 
-:: 
+For example, the file **my_input_file.dat** is located in the **outgoing_data** directory on your local computer. To transfer it to **/u/hirop/input_files** on Hydro:
 
-   scp ./my_input_file.dat hirop@hydro.ncsa.illinois.edu:/u/hirop/input_files/
+#. Open a terminal or command prompt.  
+#. Change directories to the file location [**outgoing_data**]. 
+      
+   .. code-block::
 
-The output will prompt you for your kerberos password, ask you to initiate a 2FA confirmation (or else ask for a passcode).  If you authentication is successful, it will transfer the file, printing out progress as it does so.
+      $ cd outgoing_data
+
+#. Verify you are in the correct location, using the ``ls`` command. The file you want to transfer [**my_input_file.dat**] should be listed.
+      
+   .. code-block::
+
+      $ cd outgoing_data
+      $ ls
+
+#. Copy the file to Hydro [**/u/hirop/input_files**] using the following command.
+      
+   .. code-block::
+         
+      scp ./my_input_file.dat hirop@hydro.ncsa.illinois.edu:/u/hirop/input_files/
+
+   The output will prompt for your kerberos password and ask you to initiate a Duo 2FA confirmation. After your authentication is successful, it will transfer the file, printing out progress as it goes.
 
 
 .. _globus:
 
-Transferring Many or Large Files With Globus
----------------------------------------------
+Transferring Many Files or Large Files With Globus
+---------------------------------------------------
 
-Globus is a web-based file transfer system that works in the background to move files between systems with "Globus Collections".  Hydro's Globus endpoint is called "NFI Hydro".  To transfer files to and from your directories using Globus, you will have to authenticate that endpoint, using your  NCSA username, password, and NCSA account on Duo. 
+Globus is a web-based file transfer system that works in the background to move files between systems with **Globus Collections**. Hydro's Globus endpoint is called **NFI Hydro**. To transfer files to and from your directories using Globus, you will have to authenticate that endpoint, using your NCSA username, password, and NCSA Duo 2FA. 
 
 One-time Setup
 ~~~~~~~~~~~~~~~~
 
-You will need to set up a separate account on globus.org, that will have a username and a separate password.  To use Globus to transfer files to and from Hydro, if you haven't already, you will need to "link" your new Globus account with your NCSA identity.  Log into globus.org, click on "Account" in the left sidebar, then click on the "Identities" tab.  If your NCSA username and email address is not in that list, then click "Link Another Identity" in the upper right to link it.
+You will need to set up a separate account on globus.org, that will have a username and a separate password. To use Globus to transfer files to and from Hydro, you will need to *link* your new Globus account with your NCSA identity. 
+
+#. Log into `globus.org <https://globus.org>`_. 
+#. Click on **Settings** in the left sidebar.
+#. Click on the **Account** tab. If your NCSA username and email address is not in that list, then click **Link Another Identity** in the upper right to link it.
 
 Using Globus to Transfer Files
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Once your identity is linked (above) then do the following to transfer files using Globus.
+After your NCSA identity is linked in Globus, do the following to transfer files.
 
-Navigate to globus.org and cling “Log In” in the upper right corner
+#. Navigate to `globus.org <https://globus.org>`_.
+#. Click **Log In** in the upper right corner.
+#. Choose **National Center for Supercomputing Applications** as your Identity Provider and click **Continue**.
 
-Choose “National Center for Supercomputing Applications” as your Identity Provider and click “Continue”
+   .. image:: images/file-mgmt/globus-organizational-login.png
 
-.. image:: 
+#. If prompted, click **Allow** when asked to authorized the Globus Web App.
 
-If prompted click “Allow” when asked to authorized the Globus Web App
+   .. image:: images/file-mgmt/globus-info-services-allow.png
 
-.. image:: images/file-mgmt/globus-info-services-allow.png
+#. Login in via the Illinois Shibboleth service, this will be a Duo 2FA prompt.
 
-Login in via the Illinois Shibboleth service, this will be a Duo 2FA prompt
+#. Once in the **File Manager** section, click on **collection**.  
+#. Search for **NFI Hydro** and click on the **NFI Hydro** collection.
 
-..
-   Once logged in you should be taken to the File Manager section, on one side search for "BlueWaters" collection and you should see a list of endpoints, click on the “NFI Hydro” collection
+   .. image:: images/file-mgmt/globus-nfi-hydro.png
 
-Once in the file manager section, click on "collection".  Search for "NFI Hydro" and click on the "NFI#Hydro" collection.
+#. The system will prompt you to Authenticate to the endpoint, click **continue**. 
+#. If prompted, link your \netid@illinois.edu identity.
 
-.. image:: images/file-mgmt/globus-nfi-hydro.png
+   .. image:: images/file-mgmt/globus-authentication-consent.png
 
-.. 
-   this will be a link to the endpoint, which we don't know the name of yet.
-    .. image::
+   .. image:: images/file-mgmt/globus-identity-required.png
 
-The system will prompt you to Authenticate to the endpoint, click continue; Globus may prompt you to link your netid@illinois.edu identity, go ahead and do so
+   .. image:: images/file-mgmt/globus-illinois-research-storage-info-services-allow.png
 
-.. image:: images/file-mgmt/globus-authentication-consent.png
+   You should then get dropped back into the “File Manger” view and be able to see your home directory in the explorer window
 
-.. image:: images/file-mgmt/globus-identity-required.png
+   .. image:: images/file-mgmt/hydro-globus-file-manager.png
 
-.. image:: images/file-mgmt/globus-illinois-research-storage-info-services-allow.png
+#. In a similar manner (in the right half of the **File Manger** view), search for and authenticate to the collection you are planning to transfer data to/from
+#. Use the GUI to transfer the data; you can choose transfer settings. Also on the left is a button to view your current transfer activity
 
-You should then get dropped back into the “File Manger” view and be able to see your home directory in the explorer window
-
-.. image:: images/file-mgmt/hydro-globus-file-manager.png
-
-Then in a similar manner (in the right half of the “File Manger” view) search for and authenticate to the collection you are planning to transfer data to/from, then use the GUI to transfer the data; you can choose transfer settings. Also on the left is a button to view your current transfer activity
-
-.. image:: images/file-mgmt/globus-activity-transfer.png
+   .. image:: images/file-mgmt/globus-activity-transfer.png
 
