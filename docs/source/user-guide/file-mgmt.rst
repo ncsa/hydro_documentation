@@ -96,12 +96,12 @@ After your NCSA identity is linked in Globus, do the following to transfer files
 
    .. image:: images/file-mgmt/globus-illinois-research-storage-info-services-allow.png
 
-   You should then get dropped back into the “File Manger” view and be able to see your home directory in the explorer window
+   You should then get dropped back into the “File Manger” view and be able to see your home directory in the explorer window.
 
    .. image:: images/file-mgmt/hydro-globus-file-manager.png
 
-#. In a similar manner (in the right half of the **File Manger** view), search for and authenticate to the collection you are planning to transfer data to/from
-#. Use the GUI to transfer the data; you can choose transfer settings. Also on the left is a button to view your current transfer activity
+#. In a similar manner (in the right half of the **File Manger** view), search for and authenticate to the collection you are planning to transfer data to/from.
+#. Use the GUI to transfer the data; you can choose transfer settings. Also on the left is a button to view your current transfer activity.
 
    .. image:: images/file-mgmt/globus-activity-transfer.png
 
