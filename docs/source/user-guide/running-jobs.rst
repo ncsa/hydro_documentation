@@ -8,7 +8,8 @@ Running Jobs
 Running Batch Jobs (Slurm)
 ----------------------------
 
-User access to the compute nodes for running jobs is available via a job (whether interactive or batch job). Hydro uses the `Slurm Workload Manager <https://slurm.schedmd.com/overview.html>`_ for running jobs. 
+User access to the compute nodes for running jobs is available via a job (whether interactive or batch job). 
+Hydro uses the `Slurm Workload Manager <https://slurm.schedmd.com/overview.html>`_ for running jobs. 
 See the :ref:`sbatch` section for details on batch job submission.
 
 Please be aware that the login nodes are a **shared** resource for all users of the system and their use should be limited to editing, compiling and building your programs, and for **short**, non-intensive runs.  
@@ -44,62 +45,65 @@ The syntax for sbatch is:
 
 The main sbatch options are listed below. Refer to the sbatch man page for options.
 
--  | The common resource_names are:
+.. -  | The common resource_names are:
 
-Partitions:
-:: 
+- Partitions:
 
-Full partition information can be listed with the "sinfo -s" command. (sandybridge, a100 can be specified for CPU and GPU jobs, respectively) Default is "sandybridge" if unspecified.
-::
+  Full partition information can be listed with the ``sinfo -s` command. (sandybridge, a100 can be specified for CPU and GPU jobs, respectively) Default is **sandybridge** if unspecified.
 
-   --partition=<PARTITION_NAME>
+  .. code-block::
 
-For a100 partitions, a GPU resource needs to be included as well:
-::
+     --partition=<PARTITION_NAME>
 
-   --gres=gpu:2
-Wallclock time:
-:: 
+  For a100 partitions, a GPU resource needs to be included as well:
 
-   --time=*time*
+  .. code-block::
 
-time=maximum wall clock time (d-hh:mm:ss) *[default: maximum limit of the queue(partition) submitted to]*
+     --gres=gpu:2
 
-:: 
+- Wallclock time:
 
-   --nodes=<n>
+  .. code-block:: 
 
-   --ntasks=<p> # Total number of cores for the batch job
+     --time=*time*
 
-   --ntasks-per-node=<p> # Number of cores per node (same as ppn under PBS)
+  time=maximum wall clock time (d-hh:mm:ss) *[default: maximum limit of the queue(partition) submitted to]*
 
-Examples:
+  .. code-block:: 
 
-:: 
+     --nodes=<n>
 
-   --time=00:30:00
-   --nodes=2
-   --ntasks=32
-   or
-   --time=00:30:00
-   --nodes=2
-   --ntasks-per-node=16
+     --ntasks=<p> # Total number of cores for the batch job
 
-**Memory needs:** The compute nodes have 256GB.
+     --ntasks-per-node=<p> # Number of cores per node (same as ppn under PBS)
 
-Example:
+- Examples:
 
-:: 
+  .. code-block:: 
 
-   --time=00:30:00
-   --nodes=2
-   --ntask=32
-   --mem=118000
-   or
-   --time=00:30:00
-   --nodes=2
-   --ntasks-per-node=16
-   --mem-per-cpu=7375
+     --time=00:30:00
+     --nodes=2
+     --ntasks=32
+     or
+     --time=00:30:00
+     --nodes=2
+     --ntasks-per-node=16
+
+- Memory needs: The compute nodes have 256GB.
+
+  Example:
+
+  .. code-block:: 
+
+     --time=00:30:00
+     --nodes=2
+     --ntask=32
+     --mem=118000
+     or
+     --time=00:30:00
+     --nodes=2
+     --ntasks-per-node=16
+     --mem-per-cpu=7375
 
 Useful Batch Job Environment Variables
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -226,7 +230,7 @@ Job Dependencies
 ~~~~~~~~~~~~~~~~~~~
 
 Job dependencies allow users to set execution order in which their queued jobs run. 
-Job dependencies are set by using the **--dependency** option with the syntax being **--dependency=<dependency type>:<JobID>**. 
+Job dependencies are set by using the **\--dependency** option with the syntax being **\--dependency=<dependency type>:<JobID>**. 
 Slurm places the jobs in *Hold* state until they are eligible to run.
 
 The following are examples on how to specify job dependencies using the **afterany** dependency type, which indicates to Slurm that the dependent job should become eligible to start only after the specified job has completed.
@@ -273,7 +277,7 @@ Job Arrays
 ~~~~~~~~~~~~
 
 If a need arises to submit the same job to the batch system multiple times, instead of issuing one sbatch command for each individual job, users can submit a job array. 
-Job arrays allow users to submit multiple jobs with a single job script using the **--array** option to sbatch. 
+Job arrays allow users to submit multiple jobs with a single job script using the **\--array** option to sbatch. 
 An optional slot limit can be specified to limit the amount of jobs that can run concurrently in the job array. 
 See the sbatch man page for details. 
 The file names for the input, output, etc. can be varied for each job using the job array index value defined by the Slurm environment variable **SLURM_ARRAY_TASK_ID**.
@@ -284,10 +288,10 @@ A sample batch script that makes use of job arrays is available in **/projects/c
 
 Valid specifications for job arrays are:
 
-* --array 1-10
-* --array 1,2,6-10
-* --array 8
-* --array 1-100%5 (a limit of 5 jobs can run concurrently)
+* \--array 1-10
+* \--array 1,2,6-10
+* \--array 8
+* \--array 1-100%5 (a limit of 5 jobs can run concurrently)
 
 You should limit the number of batch jobs in the queues at any one time to 1,000 or less; each job within a job array is counted as one batch job.
 
@@ -307,7 +311,7 @@ As an example, to start up a bash shell on a node of a partition named rome, one
 
    srun --account=account_name --partition=rome --nodes=1 --pty bash
 
-Other Slurm options can be added to that command, such as options for specifying the desired session duration (**--time**), number of tasks (**--tasks**), and others.
+Other Slurm options can be added to that command, such as options for specifying the desired session duration (**\--time**), number of tasks (**\--tasks**), and others.
 
 Translating PBS Scripts to Slurm Scripts
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -371,7 +375,7 @@ $$$$$$$$$$$$$$$$$$$$$$
    |                      |                             |                                                     |
    |                      | OR                          | OR                                                  |
    |                      |                             |                                                     |
-   |                      | -l mppwidth=[PE_count]      | --ntasks=ntasks                                     |
+   |                      | -l mppwidth=[PE_count]      | \--ntasks=ntasks                                    |
    +----------------------+-----------------------------+-----------------------------------------------------+
    | Wall Clock Limit     | -l walltime=[hh:mm:ss]      | -t [min]                                            |
    |                      |                             |                                                     |
@@ -389,51 +393,51 @@ $$$$$$$$$$$$$$$$$$$$$$
    |                      |                             |                                                     |
    |                      | -j eo (both to stderr)      |                                                     |
    +----------------------+-----------------------------+-----------------------------------------------------+
-   | Copy Environment     | -V                          | --export=[ALL \| NONE \| variables]                 |
+   | Copy Environment     | -V                          | \--export=[ALL \| NONE \| variables]                |
    +----------------------+-----------------------------+-----------------------------------------------------+
-   | Event Notification   | -m abe                      | --mail-type=[events]                                |
+   | Event Notification   | -m abe                      | \--mail-type=[events]                               |
    +----------------------+-----------------------------+-----------------------------------------------------+
    | Email Address        | -M [address]                | -mail-user=[address]                                |
    +----------------------+-----------------------------+-----------------------------------------------------+
-   | Job Name             | -N [name]                   | --job-name=[name]                                   |
+   | Job Name             | -N [name]                   | \--job-name=[name]                                  |
    +----------------------+-----------------------------+-----------------------------------------------------+
-   | Job Restart          | -r [y \| n]                 | --requeue                                           |
+   | Job Restart          | -r [y \| n]                 | \--requeue                                          |
    |                      |                             |                                                     |
    |                      |                             | OR                                                  |
    |                      |                             |                                                     |
-   |                      |                             | --no-requeue                                        |
+   |                      |                             | \--no-requeue                                       |
    +----------------------+-----------------------------+-----------------------------------------------------+
-   | Resource Sharing     | -l nac cesspolicy=singlejob | --exclusive                                         |
+   | Resource Sharing     | -l nac cesspolicy=singlejob | \--exclusive                                        |
    |                      |                             |                                                     |
    |                      |                             | OR                                                  |
    |                      |                             |                                                     |
-   |                      |                             | --shared                                            |
+   |                      |                             | \--shared                                           |
    +----------------------+-----------------------------+-----------------------------------------------------+
-   | Memory Size          | -l mem=[MB]                 | --mem=[mem][M \| G \| T]                            |
+   | Memory Size          | -l mem=[MB]                 | \--mem=[mem][M \| G \| T]                           |
    |                      |                             |                                                     |
    |                      |                             | OR                                                  |
    |                      |                             |                                                     |
-   |                      |                             | --mem-per-cpu=[mem][M \| G \| T]                    |
+   |                      |                             | \--mem-per-cpu=[mem][M \| G \| T]                   |
    +----------------------+-----------------------------+-----------------------------------------------------+
-   | Accounts to charge   | -A OR -W                    | --account=[account]                                 |
+   | Accounts to charge   | -A OR -W                    | \--account=[account]                                |
    |                      | group_list=[account]        |                                                     |
    |                      |                             | OR                                                  |
    |                      |                             |                                                     |
    |                      |                             | -A                                                  |
    +----------------------+-----------------------------+-----------------------------------------------------+
-   | Tasks Per Node       | -l mppnppn [PEs_per_node]   | --tasks-per-node=[count]                            |
+   | Tasks Per Node       | -l mppnppn [PEs_per_node]   | \--tasks-per-node=[count]                           |
    +----------------------+-----------------------------+-----------------------------------------------------+
-   | CPUs Per Task        |                             | --cpus-per-task=[count]                             |
+   | CPUs Per Task        |                             | \--cpus-per-task=[count]                            |
    +----------------------+-----------------------------+-----------------------------------------------------+
-   | Job Dependency       | -d [job_id]                 | --depend=[state:job_id]                             |
+   | Job Dependency       | -d [job_id]                 | \--depend=[state:job_id]                            |
    +----------------------+-----------------------------+-----------------------------------------------------+
-   | Quality of Service   | -l qos=[name]               | --qos=[normal \| high]                              |
+   | Quality of Service   | -l qos=[name]               | \--qos=[normal \| high]                             |
    +----------------------+-----------------------------+-----------------------------------------------------+
-   | Job Arrays           | -t [array_spec]             | --array=[array_spec]                                |
+   | Job Arrays           | -t [array_spec]             | \--array=[array_spec]                               |
    +----------------------+-----------------------------+-----------------------------------------------------+
-   | Generic Resources    | -l o ther=[resource_spec]   | --gres=[resource_spec]                              |
+   | Generic Resources    | -l o ther=[resource_spec]   | \--gres=[resource_spec]                             |
    +----------------------+-----------------------------+-----------------------------------------------------+
-   | Job Enqueue Time     | -a “YYYY-MM-DD HH:MM:SS”    | --begin=YYYY-MM-DD[THH:MM[:SS]]                     |
+   | Job Enqueue Time     | -a “YYYY-MM-DD HH:MM:SS”    | \--begin=YYYY-MM-DD[THH:MM[:SS]]                    |
    +----------------------+-----------------------------+-----------------------------------------------------+
 
 Setting Default Account
@@ -479,7 +483,7 @@ The Jupyter notebook executables are in your **$PATH** after loading the anacond
 **Do not run Jupyter on the shared login nodes.**
 Instead, follow these steps to attach a Jupyter notebook running on a compute node to your local web browser:
 
-#. Start a Jupyter job via ``srun`` and note the hostname (*you pick the port number for --port*).
+#. Start a Jupyter job via ``srun`` and note the hostname (*you pick the port number for \--port*).
 
    **srun Jupyter ( anaconda3_cpu on a CPU node ):**
    
@@ -499,7 +503,7 @@ Instead, follow these steps to attach a Jupyter notebook running on a compute no
 
    
 
-   In step 3, to start the notebook in your browser, replace http://hostname:8888/ with http://127.0.0.1:8991/ (the port number you selected with ``--port=``)
+   In step 3, to start the notebook in your browser, replace http://hostname:8888/ with http://127.0.0.1:8991/ (the port number you selected with **\--port=**)
 
    You may not see the job hostname when running with a container, find it with ``squeue``:
 
