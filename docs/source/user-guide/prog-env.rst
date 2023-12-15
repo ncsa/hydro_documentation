@@ -8,41 +8,32 @@ Programming Environments
 Software
 -------------
 
--  Red Hat Enterprise Linux (RHEL) `8.4 <https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/8.4_release_notes/index>`_
--  Linux Kernel 4.18.0
--  Software is installed using Spack
-   
-   -  A complete list of installed software can be generated with the command ``module avail`` on the Hydro login node.
-   -  A sample of select packages:
+- Red Hat Enterprise Linux (RHEL) `8.4 <https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/8.4_release_notes/index>`_
+- Linux Kernel 4.18.0
+- Software is installed using `Spack <https://spack.io>`_
       
-      -  OpenMPI
-      -  FFTW
-      -  Python
-
-         -  Tensorflow
-
-      -  GCC 11.3.0
-      -  R
-      -  GDAL
-      -  AWS CLI
+  - OpenMPI
+  - FFTW
+  - Python (and TensorFlow)
+  - GCC 11.3.0
+  - R
+  - GDAL
+  - AWS CLI
+  - Run ``module avail`` on the Hydro login node for a complete list of installed software.
 
 .. _shells-modules:
 
 Shells and Modules
 ---------------------------
 
-The default shell is **/bin/bash**. You can change it by sending a request via email to help+hydro@ncsa.illinois.edu. 
+The default shell is **/bin/bash**. To request it be changed, email help+hydro@ncsa.illinois.edu. 
 
 The user environment is controlled using the modules environment management system. 
 Modules may be loaded, unloaded, or swapped either on a command line or in your **$HOME/.bashrc** (**.cshrc** for csh ) shell startup file.
 
-The command ``module avail | more`` will display the available modules on the system one page at a time.
-
 The ``module`` command is a user interface to the Lmod package. 
-The Lmod package provides for the dynamic modification of the user’s environment via **modulefiles** (a modulefile contains the information needed to configure the shell for an application). 
+The `Lmod package <https://lmod.readthedocs.io/en/latest/010_user.html>`_ provides for the dynamic modification of the user’s environment via **modulefiles** (a modulefile contains the information needed to configure the shell for an application). 
 Modules are independent of the user’s shell, so both **tcsh** and **bash** users can use the same commands to change the environment.
-
-`Lmod User Guide <https://lmod.readthedocs.io/en/latest/010_user.html>`_
 
 .. table:: Useful Module Commands
 
@@ -50,22 +41,23 @@ Modules are independent of the user’s shell, so both **tcsh** and **bash** use
    Command                                     Description                      
    =========================================== ==========================
    ``module avail``                            lists all available modules      
-   ``module list``                             lists currently loaded modules   
+   ``module list``                             lists currently loaded modules
+   ``module avail | more``		       display the available modules on the system one page at a time
    ``module spider foo``                       search for modules named **foo**     
    ``module help modulefile``                  help on module **modulefile**        
    ``module display modulefile``               display information about **modulefile**      
    ``module load modulefile``                  load **modulefile** into current shell environment     
    ``module unload modulefile``                remove **modulefile** from current shell environment  
-   ``module swap modulefile1 modulefile2``     unload **modulefile1** and load **modulefile2**    
+   ``module swap modulefile1 modulefile2``     unload **modulefile1** and load **modulefile2**  
    =========================================== ==========================
 
 **To include a particular software stack in your default environment for Hydro login and compute nodes:**
 
   #. Log into hydro login node. 
   #. Manipulate your modulefile stack until satisfied. 
-  #. Run ``module save``. This will create a **.lmod.d/default** file that will be loaded on Hydro login or compute nodes on your next login or job execution.
+  #. Run ``module save``; this will create a **.lmod.d/default** file that will be loaded on Hydro login or compute nodes on your next login or job execution.
 
-.. table:: Useful User Defined Module Collections:
+.. table:: Useful User Defined Module Collections
 
    ==================================== =======================
    Command                              Description                      
@@ -84,7 +76,7 @@ Modules are independent of the user’s shell, so both **tcsh** and **bash** use
 Programming Environments
 ------------------------------
 
-The GNU compilers (GCC) version 11.3.0 are in the default user environment. 
+The `GNU Compiler Collection (GCC) <https://gcc.gnu.org>`_ version 11.3.0 is in the default user environment. 
 
 .. _compiling:
 
@@ -114,7 +106,7 @@ Other Programming Environments
 Python
 ---------
 
-If you want a basic, recent Python setup, use the python installation under the gcc module. You can add modules via ``pip3 install --user <modulename>``,  setup virtual environments, and customize as needed for your workflow but starting from a smaller installed base of python than Anaconda.
+If you want a basic, recent Python setup, use the **python** installation under the **gcc** module. You can add modules via ``pip3 install --user <modulename>``, setup virtual environments, and customize as needed for your workflow but starting from a smaller installed base of Python than Anaconda.
 
 .. code-block::
 
@@ -127,17 +119,17 @@ If you want a basic, recent Python setup, use the python installation under the 
      1) modtree/gpu            3) user/license_file   5) gcc/11.3.0    7) openmpi/4.1.4
      2) scripts/script_paths   4) StdEnv              6) cuda/11.7.0   8) python/3.9.13
 
-You can view the python packages installed in this environment using ``pip3 list``
+View the python packages installed in this environment using ``pip3 list``
 
 Anaconda
 --------
 
-The Anaconda Python distribution is also available on Hydro by loading either the ``anaconda3_cpu`` or ``anaconda3_gpu`` modules. Anaconda comes with many included Python packages, and also uses the conda pagakage manager for viewing and installing packages. 
+The Anaconda Python distribution is also available on Hydro by loading either the **anaconda3_cpu** or **anaconda3_gpu** modules. Anaconda comes with many included Python packages, and also uses the `conda pagakage manager <https://docs.conda.io/en/latest/>`_ for viewing and installing packages. 
 
 anaconda3_cpu
 ---------------
 
-Use python from the ``anaconda3_cpu`` module if you need some of the modules provided by Anaconda in your python workflow.  For GPU nodes, use ``anaconda3_gpu``.
+Use Python from the **anaconda3_cpu** module if you need some of the modules provided by Anaconda in your Python workflow.  For GPU nodes, use **anaconda3_gpu**.
 
 .. code-block::
 
@@ -158,21 +150,26 @@ Use python from the ``anaconda3_cpu`` module if you need some of the modules pro
      1) scripts/script_paths   3) StdEnv        5) gcc/11.3.0      7) anaconda3_cpu/4.13.0
      2) user/license_file      4) modtree/cpu   6) openmpi/4.1.4
 
-The current list of modules available in anaconda3_cpu is shown via ``conda list``, including tensorflow, pytorch, etc.
+Use the ``conda list`` command to view the list of modules available in **anaconda3_cpu**.
 
 anaconda3_gpu (for CUDA)
 ------------------------
 
-Similar to the setup for anaconda_cpu, we have gpu versions of anaconda3 (module load anaconda3_gpu) and have installed pytorch and tensorflow cuda-aware python modules into these versions.  You may use these module when working with the gpu nodes.  See conda list after loading the module to review what is already installed.  As with anaconda3_cpu, let Hydro staff know if there are generally useful modules you would like us to try to install for the broader community.
+Similar to the setup for **anaconda_cpu**, Hydro has GPU versions of anaconda3 (``module load anaconda3_gpu``) and there are PyTorch and TensorFlow cuda-aware Python modules installed into these versions.  You may use these modules when working with the GPU nodes. See ``conda list`` after loading the module to review what is already installed. As with **anaconda3_cpu**, let Hydro staff know if there are generally useful modules you would like us to try to install for the broader community (:ref:`help`).
 
 Installing packages
 -------------------- 
 
-On Hydro, you may install your own python software stacks as needed.  There are a couple choices when customizing your python setup.  You may use any of these methods with any of the python versions or instances described below (or you may install your own python versions):
+On Hydro, you may install your own Python software stacks, as needed. There are a couple of choices when customizing your python setup.  You may use any of these methods with any of the Python versions or instances described below (or you may install your own Python versions):
 
-#. pip3 (Python module or Anaconda): ``pip3 install --user <python_package>``
-	useful when you need just 1 python environment per python version or instance.
-#. venv python virtual environment (Python module or Anaconda):
-	can name environments (metadata) and have multiple environments per python version or instance
-#. conda environments  (Anaconda only)
-	similar to venv but with more flexibility. See the `Managing Environments <https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html>`_ section of the Conda getting started guide to learn how to customize Conda for your workflow and add extra python modules to your environment.
+- pip3 (Python module or Anaconda): ``pip3 install --user <python_package>``
+
+  Useful when you need just 1 python environment per python version or instance.
+
+- venv python virtual environment (Python module or Anaconda):
+
+  Can name environments (metadata) and have multiple environments per python version or instance
+
+- conda environments  (Anaconda only)
+
+  Similar to venv but with more flexibility. See the `Managing Environments <https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html>`_ section of the Conda getting started guide to learn how to customize Conda for your workflow and add extra python modules to your environment.
