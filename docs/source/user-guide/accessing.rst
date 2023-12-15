@@ -18,7 +18,7 @@ If you are part of an allocated NFI project and would like access to the Hydro c
 Logging In
 --------------
 
-Connect to Hydro via the login hosts at **hydro.ncsa.illinois.edu** using SSH with your **NCSA DUO** passcode or push response from your phone app.
+Connect to Hydro via the login hosts at **hydro.ncsa.illinois.edu** using SSH with your **NCSA Duo** passcode or push response from your phone app.
 
 For instructions on how to activate your NCSA Duo account, see `Duo at NCSA <https://wiki.ncsa.illinois.edu/display/cybersec/Duo+at+NCSA>`_. 
 To check if your NCSA Duo is working properly, log into the `NCSA Duo portal <https://duo.security.ncsa.illinois.edu/portal>`_ and choose an authentication method.
@@ -27,4 +27,4 @@ To check if your NCSA Duo is working properly, log into the `NCSA Duo portal <ht
 **Account Management**
 ----------------------
  
-For instructions on how to manage a Hydro project group (add and remove users, or set a group delegate) see `NCSA Allocation and Account Management <https://wiki.ncsa.illinois.edu/display/USSPPRT/NCSA+Allocation+and+Account+Management>`_.
+For instructions on how to manage a Hydro project group (add and remove users, or set a group delegate), see `NCSA Allocation and Account Management <https://wiki.ncsa.illinois.edu/display/USSPPRT/NCSA+Allocation+and+Account+Management>`_.
