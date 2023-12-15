@@ -25,7 +25,7 @@ Home Directories
 Default home directories will have the following setting shown below.
 Note that root is both owner and group, and the '+' indicates additional attributes are present; in the example below, extended attributes for ACLs are enabled. 
 Full ACL listing can be queried with the getfacl command as shown. 
-Note: *The Posix representation of the top level directory ACL represents a "calculated effective mask" of 770 (drwxrwx---+), because additional extended attributes grant rwx to another user, in this case, "username". 
+Note: *The Posix representation of the top level directory ACL represents a "calculated effective mask" of 770 (drwxrwx\---+), because additional extended attributes grant rwx to another user, in this case, "username". 
 This can be interpreted exactly like a mask of 700 for user username.*
 
 .. code-block:: 
@@ -75,7 +75,7 @@ To enable access to directories and files residing within your home directory yo
 #. Depending on the request, an admin will either:
 
    -  Set a specific ACL grant as requested
-   -  Set the top level to an effective 701 permission, (drwx-----x ). This will allow traversal into your top-level directory by anyone on the system to access any file or folder according to its own specific permission limitations.
+   -  Set the top level to an effective 701 permission, (drwx\-----x ). This will allow traversal into your top-level directory by anyone on the system to access any file or folder according to its own specific permission limitations.
 
 #. An admin will check for any custom umask setting in your local environment setup that may result in unintentional data exposure in combination with requested ACL changes.
 
@@ -132,8 +132,8 @@ Note that the permissions for the parent directory need to allow for "o+x" as me
 See Also
 --------
 
-`getfacl(1) - Linux man page <https://linux.die.net/man/1/getfacl>`_
+- `getfacl(1) - Linux man page <https://linux.die.net/man/1/getfacl>`_
 
-`setfacl(1) - Linux man page <https://linux.die.net/man/1/setfacl>`_
+- `setfacl(1) - Linux man page <https://linux.die.net/man/1/setfacl>`_
 
-`Arch Linux - Access Control Lists <https://wiki.archlinux.org/index.php/Access_Control_Lists>`_
+- `Arch Linux - Access Control Lists <https://wiki.archlinux.org/index.php/Access_Control_Lists>`_
