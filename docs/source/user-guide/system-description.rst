@@ -94,46 +94,6 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 Storage and File Systems
 -------------------------
 
-.. list-table::
-   :stub-columns: 1
-
-   * - File System
-     - Home
-     - Projects
-     - Taiga (coming soon)
-   * - Path
-     - /u/<USER>
-     - /projects/<PROJECT>
-     - /taiga/...
-   * - Media Type
-     - HDD
-     - HDD
-     - HDD, NVME cache
-   * - Mount Type
-     - Lustre
-     - Lustre
-     - Lustre
-   * - File Striping
-     - Fixed Size
-     - Fixed Size
-     - Progressive Layout
-   * - Total Size
-     - 2 PB
-     - 2 PB
-     - >19 PB
-   * - Default Quota
-     - 1 TB, 6M files
-     - 50 TB, 1M files
-     - `Must be purchased <https://wiki.ncsa.illinois.edu/display/TG/>`_
-   * - Backups
-     - None
-     - None
-     - `Snapshots <https://wiki.ncsa.illinois.edu/display/TG/Taiga+User+Guide#TaigaUserGuide-DataRecovery)>`_
-   * - Example Uses
-     - Scripts, source code, compiling
-     - Shared data, job I/O
-     - Sharing data across NCSA resources
-
 .. table:: Hydro Storage and File Systems
 
    +------------------------------+-----------------+-----------+---------------------+-------------+
