@@ -78,23 +78,21 @@ Hardware Description
 Hardware Description
 ---------------------
 
-Hydro is composed of six node types:
+Hydro includes 2 login nodes and 68 compute nodes.
 
-- Login nodes with Dell PowerEdge R720 and dual socket (2) Intel Xeon CPU E5-2690 (8 core, SandyBridge)
-- Compute nodes with Dell PowerEdge R720 and dual socket, Intel Xeon CPU E5-2690 (8 core, SandyBridge) *[2.90 GHz and 2.0 GHz types]*
-- Compute nodes with Dell PowerEdge R815 and quad socket
-- Compute nodes with Dell PowerEdge R7525 and dual socket, AMD EPYC CPU 7452 (32 core, Rome)
-- Compute nodes with Dell PowerEdge R7525 dual socket, AMD EPYC CPU 7453 (28 core, Milan)
-
-Dell PowerEdge R720 Login Node Specifications
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Login Nodes
+~~~~~~~~~~~~~
 
 -  Number of nodes: 2
+-  Dell PowerEdge R720
 -  Dual Socket (2) Intel Xeon CPU E5-2690 (8 core, SandyBridge) @ 2.90GHz 20MB Cache (16 cores per node) (HT disabled)
 -  384 GB of memory
-   
-Dell PowerEdge R720 Compute Node A Specifications
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Compute Nodes
+~~~~~~~~~~~~~~~
+
+Dell PowerEdge R720 Compute Node Specifications [2.90GHz]
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 
 -  Number of nodes: 28
 -  Dual Socket (2) Intel Xeon CPU E5-2690 (8 core, SandyBridge) @ **2.90GHz** (16 cores per node) (HT disabled)
@@ -105,8 +103,8 @@ Dell PowerEdge R720 Compute Node A Specifications
 -  40 Gb/s Ethernet
 -  FDR 56Gb/s InfiniBand
 
-Dell PowerEdge R720 Compute Node B Specifications
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Dell PowerEdge R720 Compute Node Specifications [2.0GHz]
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 
 -  Number of nodes: 27
 -  Dual Socket (2) Intel Xeon CPU E5-2690 (8 core, SandyBridge) @ **2.0GHz** (16 cores per node) (HT disabled)
@@ -118,7 +116,7 @@ Dell PowerEdge R720 Compute Node B Specifications
 -  FDR 56Gb/s InfiniBand
 
 Dell PowerEdge R815 Compute Node Specifications
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 
 -  Number of nodes: 4
 -  Quad Socket (4)  (16 core, AMD Interlagos) @ 2.30GHz (64 cores per node)
@@ -130,7 +128,7 @@ Dell PowerEdge R815 Compute Node Specifications
 -  QDR 40 Gb/s InfiniBand
 
 Dell PowerEdge R7525 Compute Node Specifications
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 
 -  Number of nodes: 7
 -  Dual Socket (2) AMD EPYC CPU 7452 (32 core, Rome) @ 2.35GHz (64 cores per node) (SMT disabled)
@@ -143,7 +141,7 @@ Dell PowerEdge R7525 Compute Node Specifications
 -  2 NVIDIA A100 80GB PCIe GPUs
 
 Dell PowerEdge R7525 Compute Node Specifications
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 
 -  Number of nodes: 2
 -  Dual Socket (2) AMD EPYC CPU 7453 (28 core, Milan) @ 2.75GHz (56 cores per node) (SMT disabled)
@@ -158,8 +156,8 @@ Dell PowerEdge R7525 Compute Node Specifications
 
 .. _network:
 
-Network
-----------
+.. Network
+.. ----------
 
 .. _storage:
 
@@ -206,15 +204,18 @@ Storage and File Systems
      - Shared data, job I/O
      - Sharing data across NCSA resources
 
+.. table:: Hydro Storage and File Systems
+
+   ===================== =================== =============== =========== ================== =========== ==================== =============== ===============
+   File System           Path                Media Type      Mount Type  File Striping      Total Size  Default Quota        Backups         Example Uses
+   ===================== =================== =============== =========== ================== =========== ==================== =============== ===============
+   Home                  /u/<USER>           HDD             Lustre      Fixed Size         2PB         1 TB, 6M files       None            Scripts, source code, compiling
+   Projects              /projects/<PROJECT> HDD             Lustre      Fixed Size         2B          50 TB, 1M files      None            Shared data, job I/O
+   Taiga *[coming soon]* /taiga/…            HDD, NVME cache Lustre      Progressive Layout >19 PB      must be purchased--- 50 TB, 1M files Sharing data across NCSA resources
+   ===================== =================== =============== =========== ================== =========== ==================== =============== ===============
+
 Home Directory Permissions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-By default, user home directories and /projects directories are closed
-(permissions 700) with a parent directory setting that prevents users
-from opening up the permissions. See the File and Directory Access
-Control List page (https://ncsa-hydro-documentation.readthedocs-hosted.com/en/latest/appendices/acl.html) 
-page in the Appendix. The /projects file system is designed as
-common space for your group; if you want a space that all your group
-members can access, that's a good place for it. /projects is also the 
-best place for job input and output.
+By default, user home directories and /projects directories are closed (permissions 700) with a parent directory setting that prevents users from opening up the permissions (see :ref:`acl`). The /projects file system is designed as common space for your group. /projects is also the best place for job input and output.
 
