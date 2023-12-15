@@ -136,33 +136,38 @@ Storage and File Systems
 
 .. table:: Hydro Storage and File Systems
 
-   +---------------+-----------------+------------+-------------------+-------+---------------------+-------------+-----------------------+
-   | File System   | Media Type      | Mount Type | File Striping     | Total | Default Quota       | Backups     | Example Uses          |
-   |               |                 |            |                   |       |                     |             |                       |
-   |               |                 |            |                   | Size  |                     |             |                       |
-   +===============+=================+============+===================+=======+=====================+=============+=======================+
-   | Home (/u/)    | HDD             | Lustre     | Fixed Size        | 2PB   | 1 TB, 6M files      | None        | Scripts, source code, |
-   |               |                 |            |                   |       |                     |             |                       |
-   |               |                 |            |                   |       |                     |             | compiling             |
-   +---------------+-----------------+------------+-------------------+-------+---------------------+-------------+-----------------------+
-   | Projects      | HDD             | Lustere    | Fixed Size        | 2PB   | 50 TB, 1M files     | None        | Shared data, job I/O  |
-   |               |                 |            |                   |       |                     |             |                       |
-   | (/projects/)  |                 |            |                   |       |                     |             |                       |
-   +---------------+-----------------+------------+-------------------+-------+---------------------+-------------+-----------------------+
-   | *coming soon* | HDD, NVME cache | Lustre     | Progressive Layout| >19PB | `must be purchased`_| `snapshots`_| Sharing data across   |
-   |               |                 |            |                   |       |                     |             |                       |
-   | Taiga         |                 |            |                   |       |                     |             | NCSA resources        |
-   |               |                 |            |                   |       |                     |             |                       |
-   | (/taiga/)     |                 |            |                   |       |                     |             |                       |
-   +---------------+-----------------+------------+-------------------+-------+---------------------+-------------+-----------------------+
+   +------------------------------+-----------------+-----------+---------------------+-------------+
+   | File System                  | Media Type      | Total Size| Default Quota       | Backups     |                 
+   +==============================+=================+===========+=====================+=============+
+   | Home (/u/)                   | HDD             | 2PB       | 1 TB, 6M files      | None        |   
+   +------------------------------+-----------------+-----------+---------------------+-------------+
+   | Projects (/projects/)        | HDD             | 2PB       | 50 TB, 1M files     | None        | 
+   +------------------------------+-----------------+-----------+---------------------+-------------+
+   | Taiga (/taiga/) *coming soon*| HDD, NVME cache | >19PB     | `must be purchased`_| `snapshots`_|                 
+   +------------------------------+-----------------+-----------+---------------------+-------------+
 
 .. _must be purchased: https://wiki.ncsa.illinois.edu/display/TG/
 
 .. _snapshots: https://wiki.ncsa.illinois.edu/display/TG/Taiga+User+Guide#TaigaUserGuide-DataRecovery)
 
+Home
+~~~~~~~~
+
+The /home area of the file system is where users land upon logging into the cluster via SSH. /home is Lustre mount type with fixed size file striping. Example uses for /home are scripts, source code, and compiling.
+
 Home Directory Permissions
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 
 By default, user home directories and /projects directories are closed (permissions 700) with a parent directory setting that prevents users from opening up the permissions (see :ref:`acl`). 
 The /projects file system is designed as common space for your group. /projects is also the best place for job input and output.
+
+Projects
+~~~~~~~~~~
+
+The /projects area is where a group's storage capacity resides. /projects is Lustre mount type with fixed size file striping. Example uses for /projects are shared data and job I/O.
+
+Taiga [coming soon]
+~~~~~~~~~~~~~~~~~~~~
+
+Access to /taiga for Hyrdo is coming soon. /taiga is Lustre mount type with progressive layout file striping. Taiga will be able to be used to share data across NCSA resources.
 
