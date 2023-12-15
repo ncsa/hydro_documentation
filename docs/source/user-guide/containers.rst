@@ -14,7 +14,7 @@ Apptainer distinguishes itself in that root/sudo authorization is not required t
 `Apptainer 1.2 <https://apptainer.org/docs/user/1.2/>`_ is installed on all Hydro login and compute nodes at **/usr/bin/apptainer**.
 In interpreting the Apptainer documentation it is occasionally helpful to know that Apptainer on Hydro runs in `non-suid mode <https://apptainer.org/docs/user/1.2/security.html#setuid-user-namespaces>`_.
 
-See the `Apptainer v1.2.0 <https://github.com/apptainer/apptainer/releases/tag/v1.2.0>`_ release notes for information on the changes from Apptainer 1.1. One notable improvement is that a **$PWD** under **/projects** is now bind-mounted by default. However, a **$PWD** under **$HOME** will be bind-mounted even if **--no-home** or **--no-mount home** are specified so **--no-mount home,cwd** or **--contain** must be used instead.
+See the `Apptainer v1.2.0 <https://github.com/apptainer/apptainer/releases/tag/v1.2.0>`_ release notes for information on the changes from Apptainer 1.1. One notable improvement is that a **$PWD** under **/projects** is now bind-mounted by default. However, a **$PWD** under **$HOME** will be bind-mounted even if **--no-home** or **--no-mount home** are specified so **\--no-mount home,cwd** or **-\\-contain** must be used instead.
 
 .. _docker-aptainer:
 
