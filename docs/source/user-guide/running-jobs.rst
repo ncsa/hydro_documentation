@@ -119,7 +119,7 @@ Useful Batch Job Environment Variables
    +-------------------------+----------------------------+-------------------------------------------------------------------------+
    | Job Submission Directory| $SLURM_SUBMIT_DIR          | By default, jobs start in the directory that the job was submitted      |
    |                         |                            |                                                                         |
-   |                         |                            | from. So the "cd $SLURM_SUBMIT_DIR" command is not needed.              |
+   |                         |                            | from; the "cd $SLURM_SUBMIT_DIR" command is not needed.                 |
    +-------------------------+----------------------------+-------------------------------------------------------------------------+
    | JobID                   | $SLURM_JOB_ID              | Job identifier assigned to the job.                                     |
    +-------------------------+----------------------------+-------------------------------------------------------------------------+
@@ -180,7 +180,7 @@ srun
 
 The srun command initiates an interactive job on the compute nodes.
 
-For example, the following command will run an interactive job in the ncsa queue with a wall clock limit of 30 minutes, using one node and 16 cores per node. 
+For example, the following command will run an interactive job in the **ncsa** queue with a wall clock limit of 30 minutes, using one node and 16 cores per node. 
 You can also use other sbatch options such as those documented above.
 
 .. code-block::
@@ -263,7 +263,7 @@ In a shell script that submits batch jobs:
    JOB_03=`sbatch --dependency=afterany:$JOB_02 jobscript3.sbatch |cut -f 4 -d " "`
    ...
 
-Generally the recommended dependency types to use are:
+Generally, the recommended dependency types to use are:
 
 - after
 - afterany
@@ -278,7 +278,7 @@ Job Arrays
 
 If a need arises to submit the same job to the batch system multiple times, instead of issuing one sbatch command for each individual job, users can submit a job array. 
 Job arrays allow users to submit multiple jobs with a single job script using the **\--array** option to sbatch. 
-An optional slot limit can be specified to limit the amount of jobs that can run concurrently in the job array. 
+An optional slot limit can be specified to limit the number of jobs that can run concurrently in the job array. 
 See the sbatch man page for details. 
 The file names for the input, output, etc. can be varied for each job using the job array index value defined by the Slurm environment variable **SLURM_ARRAY_TASK_ID**.
 
@@ -369,7 +369,7 @@ $$$$$$$$$$$$$$$$$$$$$$
    +----------------------+-----------------------------+-----------------------------------------------------+
    | Node Count           | -l nodes=[count]            | -N [min[-max]]                                      |
    |                      |                             |                                                     |
-   |                      |                             | *Slurm autocalulates this if just task # is given   |
+   |                      |                             | *Slurm auto calculates this if just task # is given |
    +----------------------+-----------------------------+-----------------------------------------------------+
    | Total Task Count     | -l ppn=[count]              | -n                                                  |
    |                      |                             |                                                     |
@@ -443,7 +443,7 @@ $$$$$$$$$$$$$$$$$$$$$$
 Setting Default Account
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-To set a default account for charging jobs when you have more than one chargable account:
+To set a default account for charging jobs when you have more than one chargeable account:
 
 #. Use the ``accounts`` command to view your list of accounts you can charge jobs to:
 
@@ -466,7 +466,7 @@ To set a default account for charging jobs when you have more than one chargable
       Would you like to commit changes? (You have 30 seconds to decide)
       (N/y): y
 
-#. Then check to confirm
+#. Then check to confirm:
 
    .. code-block::
 
@@ -517,7 +517,7 @@ Instead, follow these steps to attach a Jupyter notebook running on a compute no
 
    Specify the host your job is using in the next step (hydro40, for example).
 
-#. From your local desktop or laptop create an SSH tunnel to the compute node via a login node of Delta. Replace "hydro40" with the node 
+#. From your local desktop or laptop create an SSH tunnel to the compute node via a login node of Delta. Replace "hydro40" with the node. 
 
    **SSH tunnel for Jupyter:**
 
