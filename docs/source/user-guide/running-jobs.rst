@@ -483,7 +483,7 @@ The Jupyter notebook executables are in your **$PATH** after loading the anacond
 **Do not run Jupyter on the shared login nodes.**
 Instead, follow these steps to attach a Jupyter notebook running on a compute node to your local web browser:
 
-#. Start a Jupyter job via ``srun`` and note the hostname (*you pick the port number for \--port*).
+#. Start a Jupyter job via ``srun`` and note the hostname (you pick the port number for **\--port=**).
 
    **srun Jupyter ( anaconda3_cpu on a CPU node ):**
    
