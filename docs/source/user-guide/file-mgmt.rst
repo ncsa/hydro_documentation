@@ -22,7 +22,7 @@ If you use a **Windows** machine, you can transfer files between your machine an
 Secure Copy [Mac and Windows]
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Secure Copy (SCP) is built into all Mac and **most** Windows computers and can be used to securely transfer files between Hydro and other systems. You can find tutorials online for using scp. The information you need to use scp is:
+Secure Copy (SCP) is built into all Mac and **most** Windows computers and can be used to securely transfer files between Hydro and other systems. You can find tutorials online for using **scp**. The information you need to use **scp** is:
 
 - The full path name of the file(s) that you want to move.
 - The full path name of where you want the file(s) to go.
@@ -57,7 +57,7 @@ For example, if the file **my_input_file.dat** is in the **outgoing_data** direc
 Transferring Many Files or Large Files with Globus
 ---------------------------------------------------
 
-Globus is a web-based file transfer system that works in the background to move files between systems with **Globus Collections**. Hydro's Globus endpoint is called **NFI Hydro**. To transfer files to and from your directories using Globus, you will have to authenticate that endpoint, using your NCSA username, password, and NCSA Duo 2FA. 
+Globus is a web-based file transfer system that works in the background to move files between systems with **Globus Collections**. Hydro's Globus endpoint is **NFI Hydro**. To transfer files to and from your directories using Globus, you need to authenticate that endpoint using your NCSA username, password, and NCSA Duo 2FA. 
 
 One-time Setup
 ~~~~~~~~~~~~~~~~
@@ -66,7 +66,7 @@ You will need to set up a separate account on globus.org, that will have a usern
 
 #. Log into `globus.org <https://globus.org>`_. 
 #. Click on **Settings** in the left sidebar.
-#. Click on the **Account** tab. If your NCSA username and email address is not in that list, then click **Link Another Identity** in the upper right to link it.
+#. Click on the **Account** tab. If your **NCSA** username and email address is not in that list, then click **Link Another Identity** in the upper right to link it.
 
 Using Globus to Transfer Files
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -105,7 +105,7 @@ After your NCSA identity is linked in Globus, do the following to transfer files
    .. image:: images/file-mgmt/globus-illinois-research-storage-info-services-allow.png
       :alt: Globus Illinois Research Storage web app information and services allow screen.
 
-   You should then get dropped back into the “File Manger” view and be able to see your home directory in the explorer window.
+   You should then get dropped back into the **File Manger** view and be able to see your home directory in the explorer window.
 
    .. image:: images/file-mgmt/hydro-globus-file-manager.png
       :alt: Globus file manager NFI Hydro screen.
