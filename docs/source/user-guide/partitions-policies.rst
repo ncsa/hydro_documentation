@@ -41,7 +41,7 @@ Hydro Partitions (Queues)
    |                   | w/ Rome CPU   |           |              |                |               |
    +-------------------+---------------+-----------+--------------+----------------+---------------+
 
-- Sandybridge nodes have 16 cores per node, dual-socket, 384MB (2.9 and 2.0 ghz).
+- Sandybridge nodes have 16 cores per node, dual-socket, 384MB (2.9 and 2.0 GHz).
 - Interlagos nodes have 64 cores per node, quad-socket, 512MB.
 - Milan nodes have 56 cores per node, dual socket, 256MB.
 - Rome nodes have 64 cores per node, dual socket, 256MB.
