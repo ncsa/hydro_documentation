@@ -14,7 +14,7 @@ Apptainer distinguishes itself in that root/sudo authorization is not required t
 `Apptainer 1.2 <https://apptainer.org/docs/user/1.2/>`_ is installed on all Hydro login and compute nodes at **/usr/bin/apptainer**.
 In interpreting the Apptainer documentation it is occasionally helpful to know that Apptainer on Hydro runs in `non-suid mode <https://apptainer.org/docs/user/1.2/security.html#setuid-user-namespaces>`_.
 
-See the `Apptainer v1.2.0 <https://github.com/apptainer/apptainer/releases/tag/v1.2.0>`_ release notes for information on the changes from Apptainer 1.1. One notable improvement is that a **$PWD** under **/projects** is now bind-mounted by default. However, a **$PWD** under **$HOME** will be bind-mounted even if **\--no-home** or **\--no-mount home** are specified so **\--no-mount home,cwd** or **\--contain** must be used instead.
+See the `Apptainer v1.2.0 release notes <https://github.com/apptainer/apptainer/releases/tag/v1.2.0>`_ for information on the changes from Apptainer 1.1. One notable improvement is that a **$PWD** under **/projects** is now bind-mounted by default. However, a **$PWD** under **$HOME** will be bind-mounted even if **\--no-home** or **\--no-mount home** are specified so **\--no-mount home,cwd** or **\--contain** must be used instead.
 
 .. _docker-apptainer:
 
@@ -59,7 +59,7 @@ Using Docker Images with Apptainer
 
      apptainer run /tmp/rocky
 
-  The Lustre home and projects filesystems lack xattr support, which results in a long stream of error messages from apptainer build and causes yum install transaction failures. It is therefore necessary to use a writable local filesystem (/tmp) for sandboxes, and then convert the image to a SIF file on a cross-node filesystem for future use, e.g.:
+  The Lustre home and projects filesystems lack xattr support, which results in a long stream of error messages from apptainer build and causes yum install transaction failures. It is therefore necessary to use a writable local filesystem (/tmp) for sandboxes, and then convert the image to a SIF file on a cross-node filesystem for future use:
 
   .. code-block::
 
@@ -115,7 +115,7 @@ Devices visible with nvidia-smi outside a container should be visible inside a c
 Images based on Alpine Linux may not work correctly with **\--nv** (reporting **nvidia-smi: not found**). 
 If this happens, try an image based on another Linux distribution such as Ubuntu.
 
-The NVIDIA HPC SDK container distribution includes `directions for running with Singularity <https://catalog.ngc.nvidia.com/orgs/nvidia/containers/nvhpc#running-with-singularity>`_ that can be used as-is with Apptainer (/usr/bin/singularity is a symbolic link to apptainer). 
+The NVIDIA HPC SDK container distribution includes `directions for running with Singularity <https://catalog.ngc.nvidia.com/orgs/nvidia/containers/nvhpc#running-with-singularity>`_ that can be used as-is with Apptainer (**/usr/bin/singularity** is a symbolic link to apptainer). 
 Note that by default Apptainer passes through most environment variables, including CC, CXX, FC, and F77 from the gcc module and MPICC, MPICXX, MPIF77, and MPIF90 from the openmpi module, which will mislead cmake and configure scripts into attempting to use compilers in **/sw/spack/...** that are not available in the container. 
 This can be prevented by either running ``module unload gcc openmpi`` or running Apptainer with the **\--cleanenv** option.
 
@@ -124,7 +124,7 @@ This can be prevented by either running ``module unload gcc openmpi`` or running
 Running on Multiple Nodes with MPI
 -----------------------------------
 
-The many limitations and pitfalls of combining containers and MPI are detailed in the `Apptainer user guide - MPI <https://apptainer.org/docs/user/1.2/mpi.html>`_ but the short story is that the MPI library used inside the container must be compatible with both the host mpiexec or srun program used to launch the container and with the host high-speed network. 
+The many limitations and pitfalls of combining containers and MPI are detailed in the `Apptainer user guide - MPI <https://apptainer.org/docs/user/1.2/mpi.html>`_. To summarize, the MPI library used inside the container must be compatible with both the host mpiexec or srun program used to launch the container and with the host high-speed network. 
 Images based on the latest OpenMPI release seem likely to work.
 
 The `NVIDIA GPU Cloud (NGC) HPC benchmark <https://catalog.ngc.nvidia.com/orgs/nvidia/containers/hpc-benchmarks>`_ HPL image can be launched within a Slurm job by:
@@ -133,7 +133,7 @@ The `NVIDIA GPU Cloud (NGC) HPC benchmark <https://catalog.ngc.nvidia.com/orgs/n
 
    srun --mpi=pmi2 --cpu-bind=none apptainer run --nv NGC/hpc-benchmarks\:21.4-hpl hpl.sh ...
 
-The job script sets all the node counts, task counts, and so on, but the hpl.sh script uses numactl so both CPU and GPU binding must be disabled.
+The job script sets all the node counts, task counts, and so on, but the **hpl.sh** script uses **numactl** so both CPU and GPU binding must be disabled.
 The **\--mpi=pmi2** option overrides Hydro's default pmix, but if there is a failure the pmi signal handling doesn’t work and the run hangs rather than exits.
 
 The `Extreme-scale Scientific Software Stack (E4S) <https://e4s-project.github.io/>`_ image just works out of the box. 
@@ -151,7 +151,7 @@ While the **\--cleanenv** option can prevent interaction with the Hydro module s
 Accessing Hydro Modules in a Container
 ----------------------------------------
 
-The following Apptainer definition file will build an image that is compatible with the Hydro base OS and modules, including the MPI library, if launched with the **\--bind** and **\--env** options shown in the %help section. 
+The following Apptainer definition file will build an image that is compatible with the Hydro base OS and modules, including the MPI library, if launched with the **\--bind** and **\--env** options shown in the **%help** section. 
 The definition file can be extended to yum install additional packages to augment the Hydro software stack when building and running software in a container.
 
 .. code-block::
