@@ -1,7 +1,7 @@
 Illinois Computes
 ====================
 
-Illinois Computes projects can be granted access to the Hydro system.  This page outlines that process for prospective users and projects, and provides pointers to specific differences for Illinois computes projects, such as for charging.
+Illinois Computes projects can be granted access to the Hydro system.  This page outlines that process for prospective users and projects and provides pointers to specific differences for Illinois computes projects, such as for charging.
 
 Illinois Computes Participation
 --------------------------------
