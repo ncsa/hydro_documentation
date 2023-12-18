@@ -1,7 +1,7 @@
-.. _system-overview:
+.. _architecture:
 
-System Overview
-==================
+System Architecture
+====================
 
 .. _hardware:
 
