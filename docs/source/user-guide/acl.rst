@@ -132,8 +132,8 @@ Note that the permissions for the parent directory need to allow for "o+x" as me
 See Also
 --------
 
-- `getfacl(1) - Linux man page <https://linux.die.net/man/1/getfacl>`_
+- `Linux man page - getfacl(1) <https://linux.die.net/man/1/getfacl>`_
 
-- `setfacl(1) - Linux man page <https://linux.die.net/man/1/setfacl>`_
+- `Linux man page - setfacl(1) <https://linux.die.net/man/1/setfacl>`_
 
 - `Arch Linux - Access Control Lists <https://wiki.archlinux.org/index.php/Access_Control_Lists>`_
