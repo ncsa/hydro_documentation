@@ -15,14 +15,14 @@ See the :ref:`sbatch` section for details on batch job submission.
 Please be aware that the login nodes are a **shared** resource for all users of the system and their use should be limited to editing, compiling and building your programs, and for **short**, non-intensive runs.  
 If you're running an application that takes more than, say, 4 CPU cores or runs longer than 30 minutes, set it up to run on a compute node.  
 If you run applications on the login nodes wider or longer than that, they may be killed.  
-You might get a warning first.  
+You *might* get a warning first.  
 If you ever have questions if something is an appropriate use of the login nodes, please submit a support request (:ref:`help`).  
 
 An interactive job provides a way to get interactive access to a compute node via a job. 
 See the :ref:`srun` section for information on how to run an interactive job on the compute nodes. 
 Also, a very short time *test* queue provides quick turnaround time for debugging purposes.
 
-To ensure the health of the batch system and scheduler users should refrain from having more than 1,000 batch jobs in the queues at any one time.
+To ensure the health of the batch system and scheduler, users should refrain from having more than 1,000 batch jobs in the queues at any one time.
 
 There is currently 1 partition/queue named **normal**. 
 The normal partition's default wallclock time is 4 hours with a limit of 7 days. 
@@ -49,7 +49,7 @@ The main sbatch options are listed below. Refer to the sbatch man page for optio
 
 - Partitions:
 
-  Full partition information can be listed with the ``sinfo -s` command. (sandybridge, a100 can be specified for CPU and GPU jobs, respectively) Default is **sandybridge** if unspecified.
+  Full partition information can be listed with the ``sinfo -s`` command. (sandybridge, a100 can be specified for CPU and GPU jobs, respectively) Default is **sandybridge** if unspecified.
 
   .. code-block::
 
@@ -67,7 +67,7 @@ The main sbatch options are listed below. Refer to the sbatch man page for optio
 
      --time=*time*
 
-  time=maximum wall clock time (d-hh:mm:ss) *[default: maximum limit of the queue(partition) submitted to]*
+  time=maximum wall clock time (d-hh:mm:ss) *[default: maximum limit of the queue (partition) submitted to]*
 
   .. code-block:: 
 
@@ -119,7 +119,7 @@ Useful Batch Job Environment Variables
    +-------------------------+----------------------------+-------------------------------------------------------------------------+
    | Job Submission Directory| $SLURM_SUBMIT_DIR          | By default, jobs start in the directory that the job was submitted      |
    |                         |                            |                                                                         |
-   |                         |                            | from; the "cd $SLURM_SUBMIT_DIR" command is not needed.                 |
+   |                         |                            | from; the ``cd $SLURM_SUBMIT_DIR`` command is not needed.               |
    +-------------------------+----------------------------+-------------------------------------------------------------------------+
    | JobID                   | $SLURM_JOB_ID              | Job identifier assigned to the job.                                     |
    +-------------------------+----------------------------+-------------------------------------------------------------------------+
@@ -178,7 +178,7 @@ See the sbatch man page for additional environment variables available.
 srun
 ~~~~~~
 
-The srun command initiates an interactive job on the compute nodes.
+The ``srun`` command initiates an interactive job on the compute nodes.
 
 For example, the following command will run an interactive job in the **ncsa** queue with a wall clock limit of 30 minutes, using one node and 16 cores per node. 
 You can also use other sbatch options such as those documented above.
@@ -219,7 +219,7 @@ The ``scancel`` command deletes a queued job or kills a running job.
 Debugging Batch Jobs
 ~~~~~~~~~~~~~~~~~~~~~~
 
-To gain access to performance counters during job execution, specify a constraint/feature with the job for "perf". 
+To gain access to performance counters during job execution, specify a constraint/feature with the job for **perf**. 
 This should allow access to performance counters for debugging utilities.
 
 .. code-block::
@@ -325,7 +325,7 @@ $$$$$$$$$$$$$$$
 .. table:: User Commands - PBS to Slurm
 
    ======================= ====================== =======================
-   User Commands           PBS/Torque             Slurm                       
+   User Commands           PBS/TORQUE             Slurm                       
    ======================= ====================== =======================
    Job submission          qsub [script_file]     sbatch [script_file]            
    Job deletion            qdel [job_id]          scancel [job_id]                
@@ -344,7 +344,7 @@ $$$$$$$$$$$$
 .. table:: Environment Variables - PBS to Slurm
 
    ================ ============== ====================
-   Environment      PBS/Torque     Slurm
+   Environment      PBS/TORQUE     Slurm
    ================ ============== ====================
    Job ID           $PBS_JOBID     $SLURM_JOBID
    Submit Directory $PBS_O_WORKDIR $SLURM_SUBMIT_DIR
@@ -359,7 +359,7 @@ $$$$$$$$$$$$$$$$$$$$$$
 .. table:: Job Specifications - PBS to Slurm
 
    +----------------------+-----------------------------+-----------------------------------------------------+
-   | Job Specification    | PBS/Torque                  | Slurm                                               |
+   | Job Specification    | PBS/TORQUE                  | Slurm                                               |
    +======================+=============================+=====================================================+
    | Script directive     | #PBS                        | #SBATCH                                             |
    +----------------------+-----------------------------+-----------------------------------------------------+
