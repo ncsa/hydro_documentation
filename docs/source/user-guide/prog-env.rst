@@ -42,7 +42,7 @@ Modules are independent of the user’s shell, so both **tcsh** and **bash** use
    =========================================== ==========================
    ``module avail``                            lists all available modules      
    ``module list``                             lists currently loaded modules
-   ``module avail | more``		       display the available modules on the system one page at a time
+   ``module avail | more``		           display the available modules on the system one page at a time
    ``module spider foo``                       search for modules named **foo**     
    ``module help modulefile``                  help on module **modulefile**        
    ``module display modulefile``               display information about **modulefile**      
