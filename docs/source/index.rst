@@ -37,7 +37,7 @@ You can also browse the full list of NCSA’s `HPC-Moodle Self-Paced Tutorials <
    :maxdepth: 2
    :caption: User Guide
    
-   user-guide/system-description
+   user-guide/architecture
    user-guide/illinois-computes
    user-guide/accessing
    user-guide/file-mgmt
