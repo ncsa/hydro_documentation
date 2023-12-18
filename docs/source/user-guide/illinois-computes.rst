@@ -20,3 +20,5 @@ Job Accounting
 Illinois Compute projects are awarded Hydro compute time in units of node-hours. As jobs complete, a charge is subtracted from the project compute time balance. 
 
 To see a project's balance and remaining compute time, use the ``accounts-remaining`` command. See the :ref:`project-job-accounting` section for more information.
+
+|
