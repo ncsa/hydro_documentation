@@ -63,9 +63,9 @@ Modules are independent of the user’s shell, so both **tcsh** and **bash** use
    Command                              Description                      
    ==================================== =======================
    ``module save``                      Save current modulefile stack to **~/.lmod.d/default** 
-   ``module save collection_name``      Save current modulefile stack to **~/.lmod.d/collectioin_name**
+   ``module save collection_name``      Save current modulefile stack to **~/.lmod.d/collection_name**
    ``module restore``                   Load **~/.lmod.d/default** if it exists or System default    
-   ``module restore collection_name``   Load your **~/.lmod.d/collectioin_name**                       
+   ``module restore collection_name``   Load your **~/.lmod.d/collection_name**                       
    ``module reset``                     Reset your modulefiles to System default 
    ``module disable collection_name``   Disable **collection_name** by adding **collection_name~**      
    ``module savelist``                  List all your **~/.lmod.d/collections**                   
@@ -124,7 +124,7 @@ View the python packages installed in this environment using ``pip3 list``
 Anaconda
 --------
 
-The Anaconda Python distribution is also available on Hydro by loading either the **anaconda3_cpu** or **anaconda3_gpu** modules. Anaconda comes with many included Python packages, and also uses the `conda pagakage manager <https://docs.conda.io/en/latest/>`_ for viewing and installing packages. 
+The Anaconda Python distribution is also available on Hydro by loading either the **anaconda3_cpu** or **anaconda3_gpu** modules. Anaconda comes with many included Python packages and uses the `conda package manager <https://docs.conda.io/en/latest/>`_ for viewing and installing packages. 
 
 anaconda3_cpu
 ---------------
@@ -155,7 +155,7 @@ Use the ``conda list`` command to view the list of modules available in **anacon
 anaconda3_gpu (for CUDA)
 ------------------------
 
-Similar to the setup for **anaconda_cpu**, Hydro has GPU versions of anaconda3 (``module load anaconda3_gpu``) and there are PyTorch and TensorFlow cuda-aware Python modules installed into these versions.  You may use these modules when working with the GPU nodes. See ``conda list`` after loading the module to review what is already installed. As with **anaconda3_cpu**, let Hydro staff know if there are generally useful modules you would like us to try to install for the broader community (:ref:`help`).
+Like the setup for **anaconda_cpu**, Hydro has GPU versions of anaconda3 (``module load anaconda3_gpu``) and there are PyTorch and TensorFlow cuda-aware Python modules installed into these versions.  You may use these modules when working with the GPU nodes. See ``conda list`` after loading the module to review what is already installed. As with **anaconda3_cpu**, let Hydro staff know if there are modules you would like installed for the broader community (:ref:`help`).
 
 Installing packages
 -------------------- 
@@ -168,10 +168,10 @@ On Hydro, you may install your own Python software stacks, as needed. There are 
 
 - venv python virtual environment (Python module or Anaconda):
 
-  Can name environments (metadata) and have multiple environments per python version or instance
+  Can name environments (metadata) and have multiple environments per python version or instance.
 
 - conda environments  (Anaconda only)
 
-  Similar to venv but with more flexibility. See the `Managing Environments <https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html>`_ section of the Conda getting started guide to learn how to customize Conda for your workflow and add extra python modules to your environment.
+  Like venv but with more flexibility. See the `Managing Environments <https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html>`_ section of the Conda getting started guide to learn how to customize Conda for your workflow and add extra python modules to your environment.
 
 |
