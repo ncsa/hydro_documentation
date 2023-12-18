@@ -118,7 +118,7 @@ The /home area of the file system is where users land upon logging into the clus
 Home Directory Permissions
 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 
-By default, user home directories and /projects directories are closed (permissions 700) with a parent directory setting that prevents users from opening up the permissions (see :ref:`acl`). 
+By default, user home directories and /projects directories are closed (permissions 700) with a parent directory setting that prevents users from opening the permissions (see :ref:`acl`). 
 The /projects file system is designed as common space for your group. /projects is also the best place for job input and output.
 
 Projects
@@ -129,6 +129,6 @@ The /projects area is where a group's storage capacity resides. /projects is Lus
 Taiga [coming soon]
 ~~~~~~~~~~~~~~~~~~~~
 
-Access to /taiga for Hyrdo is coming soon. /taiga is Lustre mount type with progressive layout file striping. Taiga will be able to be used to share data across NCSA resources.
+Access to /taiga for Hydro is coming soon. /taiga is Lustre mount type with progressive layout file striping. Taiga will be able to be used to share data across NCSA resources.
 
 |
