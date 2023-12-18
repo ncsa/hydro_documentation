@@ -503,7 +503,7 @@ Instead, follow these steps to attach a Jupyter notebook running on a compute no
 
    
 
-   In step 3, to start the notebook in your browser, replace http://hostname:8888/ with http://127.0.0.1:8991/ (the port number you selected with **\--port=**)
+   In step 3, to start the notebook in your browser, replace **\http://hostname:8888/** with **\http://127.0.0.1:8991/** (the port number you selected with **\--port=**)
 
    You may not see the job hostname when running with a container, find it with ``squeue``:
 
@@ -529,7 +529,7 @@ Instead, follow these steps to attach a Jupyter notebook running on a compute no
 
    Authenticate with your login and MFA, as usual.
 
-#. Paste the second URL (containing 127.0.0.1:port_number and the token string) from step 1 into your browser and you will be connected to the Jupyter instance running on your compute node of Delta.
+#. Paste the second URL (containing **127.0.0.1:port_number** and the token string) from step 1 into your browser and you will be connected to the Jupyter instance running on your compute node of Delta.
 
    .. image:: images/running-jobs/jupyter-files.png
       :alt: Jupyter files window.
