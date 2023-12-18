@@ -534,3 +534,5 @@ Instead, follow these steps to attach a Jupyter notebook running on a compute no
    .. image:: images/running-jobs/jupyter-files.png
       :alt: Jupyter files window.
       :width: 700
+
+|
