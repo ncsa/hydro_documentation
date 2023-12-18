@@ -9,7 +9,7 @@ Filesystem ACL change restriction defaults:
 
 -  Default ACL for new file creation is 600 instead of 644 (**default umask changing from 022 to 077**).
 -  All **top level folders will not permit ACL changes by users** (home, projects).
--  Though ACL expansion of subfolders isn't permitted by default, a **service request can be made to enable either ACL self management or a specific ACL change enabled by administrators**.
+-  Though ACL expansion of subfolders isn't permitted by default, a **service request can be made to enable either ACL self-management or a specific ACL change enabled by administrators**.
 
 Recommended practice:
 
@@ -25,7 +25,7 @@ Home Directories
 Default home directories will have the following setting shown below.
 Note that root is both owner and group, and the '+' indicates additional attributes are present; in the example below, extended attributes for ACLs are enabled. 
 Full ACL listing can be queried with the getfacl command as shown. 
-Note: *The Posix representation of the top level directory ACL represents a "calculated effective mask" of 770 (drwxrwx\--\-+), because additional extended attributes grant rwx to another user, in this case, "username". 
+Note: *The Posix representation of the top-level directory ACL represents a "calculated effective mask" of 770 (drwxrwx\--\-+), because additional extended attributes grant rwx to another user, in this case, "username". 
 This can be interpreted exactly like a mask of 700 for user username.*
 
 .. code-block:: 
@@ -70,7 +70,7 @@ Enabling access to others outside of a group
 
 To enable access to directories and files residing within your home directory you need to:
 
-#. Submit a ticket asking for an "ACL change request" with the top level folder you wish to be traverseable, and by whom. e.g. I would like my group "X" to be able to have read and write access to a subdirectory of my home directory. 
+#. Submit a ticket asking for an "ACL change request" with the top-level folder you wish to be traversable, and by whom. e.g. I would like my group "X" to be able to have read and write access to a subdirectory of my home directory. 
 
 #. Depending on the request, an admin will either:
 
