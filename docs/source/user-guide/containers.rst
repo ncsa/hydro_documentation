@@ -8,7 +8,7 @@ Containers
 Containerization is a modern software packaging and execution technology that allows scripts and executables to be distributed with not only libraries and other dependencies, but a complete Linux operating system environment. 
 Unlike virtual machines, which run a separate kernel on virtual processors, containerized applications share the same kernel as the host and therefore suffer practically no overhead.
 
-The Hydro cluster supports containers via `Apptainer <https://apptainer.org/>`_ (formerly Singularity), which is similar to Docker but specialized for traditional HPC environments. 
+The Hydro cluster supports containers via `Apptainer <https://apptainer.org/>`_ (formerly Singularity), which is like Docker but specialized for traditional HPC environments. 
 Apptainer distinguishes itself in that root/sudo authorization is not required to either run or (as of version 1.1) build containers (technical details in `Apptainer Without Setuid - Dave Dykstra <https://arxiv.org/ftp/arxiv/papers/2208/2208.12106.pdf>`_).
 
 `Apptainer 1.2 <https://apptainer.org/docs/user/1.2/>`_ is installed on all Hydro login and compute nodes at **/usr/bin/apptainer**.
@@ -16,7 +16,7 @@ In interpreting the Apptainer documentation it is occasionally helpful to know t
 
 See the `Apptainer v1.2.0 <https://github.com/apptainer/apptainer/releases/tag/v1.2.0>`_ release notes for information on the changes from Apptainer 1.1. One notable improvement is that a **$PWD** under **/projects** is now bind-mounted by default. However, a **$PWD** under **$HOME** will be bind-mounted even if **\--no-home** or **\--no-mount home** are specified so **\--no-mount home,cwd** or **\--contain** must be used instead.
 
-.. _docker-aptainer:
+.. _docker-apptainer:
 
 Using Docker Images with Apptainer
 ---------------------------------------
@@ -109,7 +109,7 @@ Each image file can safely be mounted either read-write by a single container or
 Running with GPU Acceleration
 -------------------------------
 
-Apptainer GPU support is described in detail in the `Apptainer user guide - GPU Support <https://apptainer.org/docs/user/1.2/gpu.html>`_, but adding **\--nv** should just work, assuming that GPUs were correctly requested in the Slurm submission options. 
+Apptainer GPU support is described in detail in the `Apptainer user guide - GPU Support <https://apptainer.org/docs/user/1.2/gpu.html>`_ but adding **\--nv** should just work, assuming that GPUs were correctly requested in the Slurm submission options. 
 Devices visible with nvidia-smi outside a container should be visible inside a container launched with **\--nv**.
 
 Images based on Alpine Linux may not work correctly with **\--nv** (reporting **nvidia-smi: not found**). 
