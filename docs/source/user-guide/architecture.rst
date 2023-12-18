@@ -99,11 +99,11 @@ Storage and File Systems
    +------------------------------+-----------------+-----------+---------------------+-------------+
    | File System                  | Media Type      | Total Size| Default Quota       | Backups     |                 
    +==============================+=================+===========+=====================+=============+
-   | Home (/u/)                   | HDD             | 2PB       | 1 TB, 6M files      | None        |   
+   | Home (/u)                    | HDD             | 2PB       | 1 TB, 6M files      | None        |   
    +------------------------------+-----------------+-----------+---------------------+-------------+
-   | Projects (/projects/)        | HDD             | 2PB       | 50 TB, 1M files     | None        | 
+   | Projects (/projects)         | HDD             | 2PB       | 50 TB, 1M files     | None        | 
    +------------------------------+-----------------+-----------+---------------------+-------------+
-   | Taiga (/taiga/) *coming soon*| HDD, NVME cache | >19PB     | `must be purchased`_| `snapshots`_|                 
+   | Taiga (/taiga) *coming soon* | HDD, NVME cache | >19PB     | `must be purchased`_| `snapshots`_|                 
    +------------------------------+-----------------+-----------+---------------------+-------------+
 
 .. _must be purchased: https://wiki.ncsa.illinois.edu/display/TG/
@@ -113,7 +113,7 @@ Storage and File Systems
 Home
 ~~~~~~~~
 
-The home (**/u/**) area of the file system is where users land upon logging into the cluster via SSH. Home is Lustre mount type with fixed size file striping. Example uses for home are scripts, source code, and compiling.
+The home (**/u**) area of the file system is where users land upon logging into the cluster via SSH. Home is Lustre mount type with fixed size file striping. Example uses for home are scripts, source code, and compiling.
 
 Home Directory Permissions
 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$
@@ -123,11 +123,11 @@ By default, user home directories and /projects directories are closed (permissi
 Projects
 ~~~~~~~~~~
 
-The projects (**/projects/**) area is where a group's storage capacity resides. Projects is Lustre mount type with fixed size file striping. The projects file system is designed as common space for your group. Projects is also the best place for job input and output.
+The projects (**/projects**) area is where a group's storage capacity resides. Projects is Lustre mount type with fixed size file striping. The projects file system is designed as common space for your group. Projects is also the best place for job input and output.
 
 Taiga [coming soon]
 ~~~~~~~~~~~~~~~~~~~~
 
-Access to taiga (**/taiga/**) for Hydro is coming soon. Taiga is Lustre mount type with progressive layout file striping. Taiga will be able to be used to share data across NCSA resources.
+Access to taiga (**/taiga**) for Hydro is coming soon. Taiga is Lustre mount type with progressive layout file striping. Taiga will be able to be used to share data across NCSA resources.
 
 |
