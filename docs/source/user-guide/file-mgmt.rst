@@ -94,7 +94,7 @@ After your NCSA identity is linked in Globus, do the following to transfer files
       :alt: Globus file amanger "NFI Hydro" collection search.
 
 #. The system will prompt you to Authenticate to the endpoint, click **continue**. 
-#. If prompted, link your \netid@illinois.edu identity.
+#. If prompted, link your **netid\@illinois.edu** identity.
 
    .. image:: images/file-mgmt/globus-authentication-consent.png
       :alt: Globus authenitcation/consent for Globus to manage data on the collection screen.
