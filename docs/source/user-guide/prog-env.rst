@@ -173,3 +173,5 @@ On Hydro, you may install your own Python software stacks, as needed. There are 
 - conda environments  (Anaconda only)
 
   Similar to venv but with more flexibility. See the `Managing Environments <https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html>`_ section of the Conda getting started guide to learn how to customize Conda for your workflow and add extra python modules to your environment.
+
+|
