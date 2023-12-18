@@ -28,3 +28,5 @@ To check if your NCSA Duo is working properly, log into the `NCSA Duo portal <ht
 ----------------------
  
 For instructions on how to manage a Hydro project group (add and remove users, or set a group delegate), see `NCSA Allocation and Account Management <https://wiki.ncsa.illinois.edu/display/USSPPRT/NCSA+Allocation+and+Account+Management>`_.
+
+|
