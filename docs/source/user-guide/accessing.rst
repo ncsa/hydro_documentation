@@ -11,7 +11,7 @@ Access and Policy
 Access to the Hydro cluster is limited to users of allocated NFI projects and Illinois Computes projects. 
 Please see the `NCSA Services - Hydro <https://wiki.ncsa.illinois.edu/display/FIN/Hydro>`_ page for additional information on non-NFI funded access to the Hydro cluster.
 
-If you are part of an allocated NFI project and would like access to the Hydro cluster, please email `help+hydro@ncsa.illinois.edu <mailto:help+delta@ncsa.illinois.edu?subject=access%20to%20Hydro%20cluster>`_ with a justification for your need to use the cluster.
+If you are part of an allocated NFI project and would like access to the Hydro cluster, please email `help+hydro@ncsa.illinois.edu <mailto:help+hydro@ncsa.illinois.edu?subject=access%20to%20Hydro%20cluster>`_ with a justification for your need to use the cluster.
 
 .. _logging-in:
 
