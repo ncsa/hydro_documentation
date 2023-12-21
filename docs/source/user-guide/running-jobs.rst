@@ -194,7 +194,7 @@ You will see something like this:
 
 .. code-block::
 
-   srun: job 123456 queued and waiting for resources``
+   srun: job 123456 queued and waiting for resources
 
 Once the job starts, you will see:
 
