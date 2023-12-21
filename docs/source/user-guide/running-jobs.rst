@@ -230,16 +230,16 @@ Job Dependencies
 ~~~~~~~~~~~~~~~~~~~
 
 Job dependencies allow users to set execution order in which their queued jobs run. 
-Job dependencies are set by using the **\--dependency** option with the syntax being **\--dependency=<dependency type>:<JobID>**. 
+Job dependencies are set by using the ``--dependency`` option with the syntax being ``--dependency=<dependency type>:<JobID>``. 
 Slurm places the jobs in *Hold* state until they are eligible to run.
 
-The following are examples on how to specify job dependencies using the **afterany** dependency type, which indicates to Slurm that the dependent job should become eligible to start only after the specified job has completed.
+The following are examples on how to specify job dependencies using the ``afterany`` dependency type, which indicates to Slurm that the dependent job should become eligible to start only after the specified job has completed.
 
 On the command line:
 
 .. code-block::
 
-   sbatch --dependency=afterany:<JobID> jobscript.pbs``
+   sbatch --dependency=afterany:<JobID> jobscript.pbs
 
 In a job script:
 
@@ -265,10 +265,10 @@ In a shell script that submits batch jobs:
 
 Generally, the recommended dependency types to use are:
 
-- after
-- afterany
-- afternotok
-- afterok
+- ``after``
+- ``afterany``
+- ``afternotok``
+- ``afterok``
 
 While there are additional dependency types, those types that work based on batch job error codes may not behave as expected because of the difference between a batch job error and application errors. 
 See the dependency section of the sbatch man page for additional information.
@@ -277,10 +277,10 @@ Job Arrays
 ~~~~~~~~~~~~
 
 If a need arises to submit the same job to the batch system multiple times, instead of issuing one sbatch command for each individual job, users can submit a job array. 
-Job arrays allow users to submit multiple jobs with a single job script using the **\--array** option to sbatch. 
+Job arrays allow users to submit multiple jobs with a single job script using the ``--array`` option to sbatch. 
 An optional slot limit can be specified to limit the number of jobs that can run concurrently in the job array. 
 See the sbatch man page for details. 
-The file names for the input, output, etc. can be varied for each job using the job array index value defined by the Slurm environment variable **SLURM_ARRAY_TASK_ID**.
+The file names for the input, output, etc. can be varied for each job using the job array index value defined by the Slurm environment variable ``SLURM_ARRAY_TASK_ID``.
 
 A sample batch script that makes use of job arrays is available in **/projects/consult/slurm/jobarray.sbatch**.
 
@@ -288,10 +288,10 @@ A sample batch script that makes use of job arrays is available in **/projects/c
 
 Valid specifications for job arrays are:
 
-* \--array 1-10
-* \--array 1,2,6-10
-* \--array 8
-* \--array 1-100%5 (a limit of 5 jobs can run concurrently)
+* ``--array 1-10``
+* ``--array 1,2,6-10``
+* ``--array 8``
+* ``--array 1-100%5`` (a limit of 5 jobs can run concurrently)
 
 You should limit the number of batch jobs in the queues at any one time to 1,000 or less; each job within a job array is counted as one batch job.
 
@@ -311,7 +311,7 @@ As an example, to start up a bash shell on a node of a partition named rome, one
 
    srun --account=account_name --partition=rome --nodes=1 --pty bash
 
-Other Slurm options can be added to that command, such as options for specifying the desired session duration (**\--time**), number of tasks (**\--tasks**), and others.
+Other Slurm options can be added to that command, such as options for specifying the desired session duration (``--time``), number of tasks (``--tasks``), and others.
 
 Translating PBS Scripts to Slurm Scripts
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -479,11 +479,11 @@ To set a default account for charging jobs when you have more than one chargeabl
 
 Jupyter Notebooks
 -------------------
-The Jupyter notebook executables are in your **$PATH** after loading the anaconda3 module. 
+The Jupyter notebook executables are in your ``$PATH`` after loading the anaconda3 module. 
 **Do not run Jupyter on the shared login nodes.**
 Instead, follow these steps to attach a Jupyter notebook running on a compute node to your local web browser:
 
-#. Start a Jupyter job via ``srun`` and note the hostname (you pick the port number for **\--port=**).
+#. Start a Jupyter job via ``srun`` and note the hostname (you pick the port number for ``--port=``).
 
    **srun Jupyter ( anaconda3_cpu on a CPU node ):**
    
@@ -503,7 +503,7 @@ Instead, follow these steps to attach a Jupyter notebook running on a compute no
 
    
 
-   In step 3, to start the notebook in your browser, replace **\http://hostname:8888/** with **\http://127.0.0.1:8991/** (the port number you selected with **\--port=**)
+   In step 3, to start the notebook in your browser, replace **\http://hostname:8888/** with **\http://127.0.0.1:8991/** (the port number you selected with ``--port=``)
 
    You may not see the job hostname when running with a container, find it with ``squeue``:
 
