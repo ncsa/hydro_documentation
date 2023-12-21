@@ -83,7 +83,7 @@ There are two available commands for tracking usage depending on the project's c
 
      accounts-remaining
   
-Additional information on job use can be found using the script **jobcharge_grp.py**. The script requires the following arguments:
+Additional information on job use can be found using the script ``jobcharge_grp.py``. The script requires the following arguments:
 
    .. code-block::
 
