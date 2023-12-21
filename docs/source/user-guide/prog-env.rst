@@ -83,7 +83,7 @@ The `GNU Compiler Collection (GCC) <https://gcc.gnu.org>`_ version 11.3.0 is in 
 Compiling
 ------------
 
-To compile MPI code, use the **mpicc**, **mpiCC**, or **mpif90** compiler wrappers to automatically include the OpenMPI libraries.
+To compile MPI code, use the ``mpicc``, ``mpiCC``, or ``mpif90`` compiler wrappers to automatically include the OpenMPI libraries.
 
 For example:
 
@@ -106,7 +106,7 @@ Other Programming Environments
 Python
 ---------
 
-If you want a basic, recent Python setup, use the **python** installation under the **gcc** module. You can add modules via ``pip3 install --user <modulename>``, setup virtual environments, and customize as needed for your workflow but starting from a smaller installed base of Python than Anaconda.
+If you want a basic, recent Python setup, use the ``python`` installation under the ``gcc`` module. You can add modules via ``pip3 install --user <modulename>``, setup virtual environments, and customize as needed for your workflow but starting from a smaller installed base of Python than Anaconda.
 
 .. code-block::
 
@@ -124,12 +124,12 @@ View the python packages installed in this environment using ``pip3 list``
 Anaconda
 --------
 
-The Anaconda Python distribution is also available on Hydro by loading either the **anaconda3_cpu** or **anaconda3_gpu** module. Anaconda comes with many included Python packages and uses the `Conda package manager <https://docs.conda.io/en/latest/>`_ for viewing and installing packages. 
+The Anaconda Python distribution is also available on Hydro by loading either the ``anaconda3_cpu`` or ``anaconda3_gpu`` module. Anaconda comes with many included Python packages and uses the `Conda package manager <https://docs.conda.io/en/latest/>`_ for viewing and installing packages. 
 
 anaconda3_cpu
 ---------------
 
-Use Python from the **anaconda3_cpu** module if you need some of the modules provided by Anaconda in your Python workflow.  For GPU nodes, use **anaconda3_gpu**.
+Use Python from the ``anaconda3_cpu`` module if you need some of the modules provided by Anaconda in your Python workflow.  For GPU nodes, use ``anaconda3_gpu``.
 
 .. code-block::
 
@@ -150,12 +150,12 @@ Use Python from the **anaconda3_cpu** module if you need some of the modules pro
      1) scripts/script_paths   3) StdEnv        5) gcc/11.3.0      7) anaconda3_cpu/4.13.0
      2) user/license_file      4) modtree/cpu   6) openmpi/4.1.4
 
-Use the ``conda list`` command to view the list of modules available in **anaconda3_cpu**.
+Use the ``conda list`` command to view the list of modules available in ``anaconda3_cpu``.
 
 anaconda3_gpu (for CUDA)
 ------------------------
 
-Like the setup for **anaconda_cpu**, Hydro has GPU versions of anaconda3 (``module load anaconda3_gpu``) and there are PyTorch and TensorFlow CUDA-aware Python modules installed into these versions.  You may use these modules when working with the GPU nodes. See ``conda list`` after loading the module to review what is already installed. As with **anaconda3_cpu**, let Hydro staff know if there are modules you would like installed for the broader community (:ref:`help`).
+Like the setup for ``anaconda_cpu``, Hydro has GPU versions of anaconda3 (``module load anaconda3_gpu``) and there are PyTorch and TensorFlow CUDA-aware Python modules installed into these versions.  You may use these modules when working with the GPU nodes. See ``conda list`` after loading the module to review what is already installed. As with ``anaconda3_cpu``, let Hydro staff know if there are modules you would like installed for the broader community (:ref:`help`).
 
 Installing packages
 -------------------- 
@@ -172,6 +172,6 @@ On Hydro, you can install your own Python software stacks, as needed. There are 
 
 - **conda environments** (Anaconda only)
 
-  Like **venv** but with more flexibility. See the `Managing Environments section of the Conda getting started guide <https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html>`_ to learn how to customize Conda for your workflow and add extra python modules to your environment.
+  Like ``venv`` but with more flexibility. See the `Managing Environments section of the Conda getting started guide <https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html>`_ to learn how to customize Conda for your workflow and add extra python modules to your environment.
 
 |
