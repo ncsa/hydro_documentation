@@ -1,6 +1,3 @@
-.. meta::
-    :google-site-verification: D6d2MOvDRon7baT8kQbEmeq6Uvmnrgy7lxwNffyIujw
-
 ##########################
 Hydro User Documentation
 ##########################
