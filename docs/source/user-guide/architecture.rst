@@ -103,7 +103,7 @@ Storage and File Systems
    +------------------------------+-----------------+-----------+---------------------+-------------+
    | Projects (/projects)         | HDD             | 2PB       | 50 TB, 1M files     | None        | 
    +------------------------------+-----------------+-----------+---------------------+-------------+
-   | Taiga (/taiga) *coming soon* | HDD, NVME cache | >19PB     | `must be purchased`_| `snapshots`_|                 
+   | Taiga (/taiga)               | HDD, NVME cache | >19PB     | `must be purchased`_| `snapshots`_|                 
    +------------------------------+-----------------+-----------+---------------------+-------------+
 
 .. _must be purchased: https://wiki.ncsa.illinois.edu/display/TG/
@@ -125,9 +125,9 @@ Projects
 
 The projects (**/projects**) area is where a group's storage capacity resides. Projects is Lustre mount type with fixed size file striping. The projects file system is designed as common space for your group. Projects is also the best place for job input and output.
 
-Taiga [coming soon]
+Taiga
 ~~~~~~~~~~~~~~~~~~~~
 
-Access to taiga (**/taiga**) for Hydro is coming soon. Taiga is Lustre mount type with progressive layout file striping. Taiga will be able to be used to share data across NCSA resources.
+If a Taiga allocation has been purchased, it can be accessed on any hydro node under (**/taiga**) . It is a Lustre mount type with progressive layout file striping. Taiga can be used to share data across NCSA resources.
 
 |
