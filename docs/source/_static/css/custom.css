@@ -1,0 +1,8 @@
+.wy-nav-content {
+    max-width: 90% !important;
+}
+
+/* making logo/home link hover color the same as background */
+body > div > nav > div > div.wy-side-nav-search > a:hover{
+    background: #2980b9 !important;
+}
