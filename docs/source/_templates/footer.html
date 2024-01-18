@@ -1,0 +1,9 @@
+<!--This adds the About Cookies button to the footer-->
+
+{% extends '!footer.html' %}
+
+{% block extrafooter %} {{super}}
+      <!-- OneTrust Cookies Settings button start -->
+      <button id="cookie-button" class="ot-sdk-show-settings">About Cookies</button>
+      <!-- OneTrust Cookies Settings button end -->
+{% endblock %}
