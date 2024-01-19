@@ -6,3 +6,17 @@
 body > div > nav > div > div.wy-side-nav-search > a:hover{
     background: #2980b9 !important;
 }
+
+
+/* custom styling for 'about cookies' button in footer */
+#cookie-button {
+    cursor: pointer;
+    color:  #FF5F05;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+#cookie-button:hover {
+    color: #13294B;
+}
