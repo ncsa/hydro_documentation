@@ -3,20 +3,16 @@
 Quick Start Guide
 ==================
 
-This information is for users who are adept at using an HPC system and are only
-interested in the basic Hydro workflow.
+This information is for users that are adept at using an HPC system and are only interested in the basic Hydro workflow.
 
-**1.** :ref:`access-and-policy` - Limited to NFI projects and Illinois Computes projects that need
-access to the Hydro compute resource.
+- :ref:`access-and-policy`: Access to Hydro is limited to `New Frontiers Initiative <https://newfrontiers.illinois.edu/about/>`_ (NFI) projects and `Illinois Computes <https://computes.illinois.edu>`_ projects that need access to the Hydro compute resource.
 
-**2.** :ref:`logging-in` - example: *ssh hydro.ncsa.illinois.edu*
+- :ref:`logging-in`: Access Hydro through SSH with `NCSA Duo <https://wiki.ncsa.illinois.edu/display/cybersec/Duo+at+NCSA>`_ authentication. For example, ``ssh hydro.ncsa.illinois.edu``.
 
-**3.** :ref:`compiling` - example: *mpicc -o foo.exe foo.c*
+- :ref:`compiling`: Compile MPI code, and automatically include OpenMPI libraries, with compiler wrappers. For example, ``mpicc -o foo.exe foo.c``.
 
-**4.** :ref:`running` - example: *srun -n 1 ./foo.exe*
+- :ref:`running`: Hydro uses `Slurm <https://slurm.schedmd.com/documentation.html>`_ to run jobs. Use ``sbatch`` or ``srun``, as appropriate, to submit a job to a queue. For example, ``srun -n 1 ./foo.exe``. A :ref:`sample batch script <sample-batch-script>` is also available.
 
-**5.** :ref:`partitions-job-policies` - Job Policies documentation
+- :ref:`partitions-job-policies`: See the :ref:`partitions <partitions-job-policies>` and :ref:`architecture <architecture>` sections for the name and technical details of Hydro's queues. 
 
-**6.** :ref:`slurm` - Slurm job control software
-
-**7.** :ref:`sample-batch-script` - Sample batch script
+- Track project usage with the ``accounts`` or ``accounts-remaining`` command, depending on your project's :ref:`charging policy <project-job-accounting>`.
