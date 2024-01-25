@@ -25,4 +25,4 @@ This information is for users that are adept at using an HPC system and are only
 
 ..
 
-- :ref:`Track project usage <project-job-accounting>` with the ``accounts`` or ``accounts-remaining`` command, depending on your project's charging policy.
+- :ref:`Track project usage <project-job-accounting>` with the ``accounts`` (for projects charged monthly) or ``accounts-remaining`` (for projects with fixed allocations).
