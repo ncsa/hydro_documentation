@@ -9,7 +9,11 @@ This information is for users that are adept at using an HPC system and are only
 
 ..
 
-- :ref:`Log into Hydro <logging-in>` through SSH with `NCSA Duo <https://wiki.ncsa.illinois.edu/display/cybersec/Duo+at+NCSA>`_ authentication. For example, ``ssh hydro.ncsa.illinois.edu``.
+- :ref:`Log into Hydro <logging-in>` through SSH with `NCSA Duo <https://wiki.ncsa.illinois.edu/display/cybersec/Duo+at+NCSA>`_ authentication. 
+
+  .. code-block:: terminal
+
+     ssh hydro.ncsa.illinois.edu
 
 ..
 
@@ -25,4 +29,4 @@ This information is for users that are adept at using an HPC system and are only
 
 ..
 
-- :ref:`Track project usage <project-job-accounting>` with the ``accounts`` (for projects charged monthly) or ``accounts-remaining`` (for projects with fixed allocations) command.
+- :ref:`Track project usage <project-job-accounting>` with the ``accounts`` command (for projects charged monthly) or the ``accounts-remaining`` command (for projects with fixed allocations).
