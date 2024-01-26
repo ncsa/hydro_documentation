@@ -33,6 +33,6 @@ This information is for users that are adept at using an HPC system and are only
 
 ..
 
-- :ref:`Transfer files <globus>` with Globus (endpoint **NFI Hydro**), linked to your **NCSA identity**.
+- :ref:`Transfer files <globus>` with `Globus <https://www.globus.org>`_ (endpoint **NFI Hydro**), linked to your **NCSA identity**.
 
 |
