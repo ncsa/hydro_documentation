@@ -25,7 +25,7 @@ This information is for users that are adept at using an HPC system and are only
 
 ..
 
-- The :ref:`Partitions <partitions-job-policies>` and :ref:`Architecture <architecture>` sections include the name and technical details of Hydro's queues. 
+- The :ref:`Partitions <partitions-job-policies>` section includes the name and technical details of Hydro's queues. 
 
 ..
 
