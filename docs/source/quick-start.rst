@@ -21,11 +21,11 @@ This information is for users that are adept at using an HPC system and are only
 
 ..
 
-- :ref:`Run jobs on Hydro <running>` with `Slurm <https://slurm.schedmd.com/documentation.html>`_. Use ``sbatch`` or ``srun``, as appropriate, to submit a job to a queue. For example, ``srun -n 1 ./foo.exe``. A :ref:`sample batch script <sample-batch-script>` is also available.
+- :ref:`Run jobs on Hydro <running>` with `Slurm <https://slurm.schedmd.com/documentation.html>`_. Use ``sbatch`` or ``srun`` to submit a job to a queue. For example, ``srun -n 1 ./foo.exe``; a :ref:`sample batch script <sample-batch-script>` is also available.
 
 ..
 
-- See the :ref:`partitions <partitions-job-policies>` and :ref:`architecture <architecture>` sections for the name and technical details of Hydro's queues. 
+- The :ref:`partitions <partitions-job-policies>` and :ref:`architecture <architecture>` sections include the name and technical details of Hydro's queues. 
 
 ..
 
