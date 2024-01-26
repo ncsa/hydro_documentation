@@ -25,8 +25,12 @@ This information is for users that are adept at using an HPC system and are only
 
 ..
 
-- The :ref:`partitions <partitions-job-policies>` and :ref:`architecture <architecture>` sections include the name and technical details of Hydro's queues. 
+- The :ref:`Partitions <partitions-job-policies>` and :ref:`Architecture <architecture>` sections include the name and technical details of Hydro's queues. 
 
 ..
 
 - :ref:`Track project usage <project-job-accounting>` with the ``accounts`` command (for projects charged monthly) or the ``accounts-remaining`` command (for projects with fixed allocations).
+
+..
+
+- :ref:`Transfer files <globus>` with Globus (endpoint **NFI Hydro**), linked to your **NCSA identity**.
