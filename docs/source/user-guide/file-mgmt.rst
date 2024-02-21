@@ -57,63 +57,8 @@ For example, if the file **my_input_file.dat** is in the **outgoing_data** direc
 Transferring Many Files or Large Files with Globus
 ---------------------------------------------------
 
-Globus is a web-based file transfer system that works in the background to move files between systems with **Globus Collections**. Hydro's Globus endpoint is **NFI Hydro**. To transfer files to and from your directories using Globus, you need to authenticate that endpoint using your NCSA username, password, and NCSA Duo 2FA. 
+Globus is a web-based file transfer system that works in the background to move files between systems with Globus `endpoints <https://docs.globus.org/faq/globus-connect-endpoints/#what_is_an_endpoint>`_. See `Transferring Files - Globus <https://docs.ncsa.illinois.edu/en/proposed_changes/common/transfer.html#globus>`_ for complete instructions on using Globus.
 
-One-time Setup
-~~~~~~~~~~~~~~~~
-
-You will need to set up a separate account on globus.org, that will have a username and a separate password. To use Globus to transfer files to and from Hydro, you will need to *link* your new Globus account with your NCSA identity. 
-
-#. Log into `globus.org <https://globus.org>`_. 
-#. Click on **Settings** in the left sidebar.
-#. Click on the **Account** tab. If your **NCSA** username and email address is not in that list, then click **Link Another Identity** in the upper right to link it.
-
-Using Globus to Transfer Files
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-After your NCSA identity is linked in Globus, do the following to transfer files.
-
-#. Navigate to `globus.org <https://globus.org>`_.
-#. Click **Log In** in the upper right corner.
-#. Choose **National Center for Supercomputing Applications** as your Identity Provider and click **Continue**.
-
-   .. image:: images/file-mgmt/globus-organizational-login.png
-      :alt: Globus organizational login screen.
-
-#. If prompted, click **Allow** when asked to authorize the Globus Web App.
-
-   .. image:: images/file-mgmt/globus-info-services-allow.png
-      :alt: Globus web app information and services allow screen.
-
-#. Login in via the Illinois Shibboleth service, this will be a Duo 2FA prompt.
-
-#. Once in the **File Manager** section, click on **collection**.  
-#. Search for **NFI Hydro** and click on the **NFI Hydro** collection.
-
-   .. image:: images/file-mgmt/globus-nfi-hydro.png
-      :alt: Globus file manager "NFI Hydro" collection search.
-
-#. The system will prompt you to Authenticate to the endpoint, click **continue**. 
-#. If prompted, link your **netid\@illinois.edu** identity.
-
-   .. image:: images/file-mgmt/globus-authentication-consent.png
-      :alt: Globus authentication/consent for Globus to manage data on the collection screen.
-
-   .. image:: images/file-mgmt/globus-identity-required.png
-      :alt: Globus identity required screen.
-
-   .. image:: images/file-mgmt/globus-illinois-research-storage-info-services-allow.png
-      :alt: Globus Illinois Research Storage web app information and services allow screen.
-
-   You should then get dropped back into the **File Manger** view and be able to see your home directory in the explorer window.
-
-   .. image:: images/file-mgmt/hydro-globus-file-manager.png
-      :alt: Globus file manager NFI Hydro screen.
-
-#. In a similar manner (in the right half of the **File Manger** view), search for and authenticate to the collection you are planning to transfer data to/from.
-#. Use the GUI to transfer the data; you can choose transfer settings. Also on the left is a button to view your current transfer activity.
-
-   .. image:: images/file-mgmt/globus-activity-transfer.png
-      :alt: Globus activity transfer screen.
+The Hydro endpoint collection name is: **NFI Hydro**
 
 |
