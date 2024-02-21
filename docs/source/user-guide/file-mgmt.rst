@@ -57,7 +57,7 @@ For example, if the file **my_input_file.dat** is in the **outgoing_data** direc
 Transferring Many Files or Large Files with Globus
 ---------------------------------------------------
 
-Globus is a web-based file transfer system that works in the background to move files between systems with Globus `endpoints <https://docs.globus.org/faq/globus-connect-endpoints/#what_is_an_endpoint>`_. See `Transferring Files - Globus <https://docs.ncsa.illinois.edu/en/proposed_changes/common/transfer.html#globus>`_ for complete instructions on using Globus.
+Globus is a web-based file transfer system that works in the background to move files between systems with Globus `endpoints <https://docs.globus.org/faq/globus-connect-endpoints/#what_is_an_endpoint>`_. See `Transferring Files - Globus <https://docs.ncsa.illinois.edu/en/proposed_changes/common/transfer.html#globus>`_ for complete instructions on using Globus with NCSA computing resources.
 
 The Hydro endpoint collection name is: **NFI Hydro**
 
