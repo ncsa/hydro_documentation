@@ -527,7 +527,7 @@ Instead, follow these steps to attach a Jupyter notebook running on a compute no
         -L 127.0.0.1:8991:hydro40:8991 \
         hydrol1.ncsa.illinois.edu
 
-   Authenticate with your login and MFA, as usual.
+   Authenticate with your login and MFA, as usual. Note that if you have SSH ControlMaster set up on your local machine, you may need to add -o ControlPath=none to the ssh command parameters above.
 
 #. Paste the second URL (containing **127.0.0.1:port_number** and the token string) from step 1 into your browser and you will be connected to the Jupyter instance running on your compute node of Delta.
 
