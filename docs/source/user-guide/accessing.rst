@@ -24,7 +24,7 @@ For instructions on how to activate your NCSA Duo account, see `Duo at NCSA <htt
 To check if your NCSA Duo is working properly, log into the `NCSA Duo portal <https://duo.security.ncsa.illinois.edu/portal>`_ and choose an authentication method.
 
 
-**Account Management**
+Account Management
 ----------------------
  
 For instructions on how to manage a Hydro project group (add and remove users, or set a group delegate), see `NCSA Allocation and Account Management <https://wiki.ncsa.illinois.edu/display/USSPPRT/NCSA+Allocation+and+Account+Management>`_. Please note though, that group membership changes synchronize with Hydro **every 15 minutes** in case your changes are not appearing on the system immediately.
