@@ -155,7 +155,7 @@ Use the ``conda list`` command to view the list of modules available in ``anacon
 anaconda3_gpu (for CUDA)
 ------------------------
 
-Like the setup for ``anaconda_cpu``, Hydro has GPU versions of anaconda3 (``module load anaconda3_gpu``) and there are PyTorch and TensorFlow CUDA-aware Python modules installed into these versions.  You may use these modules when working with the GPU nodes. See ``conda list`` after loading the module to review what is already installed. As with ``anaconda3_cpu``, let Hydro staff know if there are modules you would like installed for the broader community (:ref:`help`).
+Like the setup for ``anaconda_cpu``, Hydro has GPU versions of anaconda3 (``module load anaconda3_gpu``) and there are PyTorch and TensorFlow CUDA-aware Python modules installed into these versions.  You may use these modules when working with the GPU nodes. See ``conda list`` after loading the module to review what is already installed. As with ``anaconda3_cpu``, let Hydro staff know if there are modules you would like installed for the broader community by :ref:`submitting a support request <help>`.
 
 Installing packages
 -------------------- 
