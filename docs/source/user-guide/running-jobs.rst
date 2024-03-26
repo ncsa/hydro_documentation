@@ -16,7 +16,7 @@ Please be aware that the login nodes are a **shared** resource for all users of 
 If you're running an application that takes more than, say, 4 CPU cores or runs longer than 30 minutes, set it up to run on a compute node.  
 If you run applications on the login nodes wider or longer than that, they may be killed.  
 You *might* get a warning first.  
-If you ever have questions if something is an appropriate use of the login nodes, please submit a support request (:ref:`help`).  
+If you ever have questions if something is an appropriate use of the login nodes, please :ref:`submit a support request <help>`.  
 
 An interactive job provides a way to get interactive access to a compute node via a job. 
 See the :ref:`srun` section for information on how to run an interactive job on the compute nodes. 
