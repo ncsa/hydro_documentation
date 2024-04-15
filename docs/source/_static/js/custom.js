@@ -12,7 +12,7 @@ $( document ).ready(function() {
   aside = document.querySelector("body > div > section > div > div > div:nth-child(1) > ul > li.wy-breadcrumbs-aside > a");
 
   // Next to the default "Edit on GitHub", add a separator, then the hub link.
-  // aside.replaceWith(hub_link);
+  aside.replaceWith(hub_link);
 
 
 });
