@@ -20,3 +20,14 @@ body > div > nav > div > div.wy-side-nav-search > a:hover{
 #cookie-button:hover {
     color: #13294B;
 }
+
+
+/* making "System Documentation Hub" link visited color the same as unvisited */
+body > div > section > div > div > div:nth-child(1) > ul > li.wy-breadcrumbs-aside > a:visited{
+    color: #2980b9 !important;
+}
+
+
+body > div > section > div > div > div:nth-child(1) > ul > li.wy-breadcrumbs-aside{
+    text-align: right;
+}
