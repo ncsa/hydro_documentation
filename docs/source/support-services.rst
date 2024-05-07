@@ -3,6 +3,13 @@ Support and Services
 
 This page describes topics that Hydro has specific infrastructure to support. If you have any questions, please :ref:`submit a support request <help>`.  
 
+Illinois Computes Consulting
+----------------------------
+
+`Support services for researchers with Illinois Computes allocations <https://computes.illinois.edu/expertise-user-support/>`_ include introductory guidance, code and workflow optimization, specialized domain expertise, and visualization.
+To access these services, the PI on the allocation should use `XRAS <https://xras-submit.ncsa.illinois.edu/requests>`_ to submit a supplement request to an Illinois Computes allocation, selecting "NCSA Consulting Services" in the list of available resources.
+Requesting this resource indicates a desire for support from NCSA Research Consulting on a project, to be funded by Illinois Computes. NCSA facilitators will reach out to conduct an interview to understand the project needs and develop a work plan outlining what NCSA can provide under the Illinois Computes program.
+
 General Support
 ------------------
 
