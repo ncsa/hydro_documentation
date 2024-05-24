@@ -108,7 +108,7 @@ Storage and File Systems
 
 .. _must be purchased: https://docs.ncsa.illinois.edu/systems/taiga/
 
-.. _See Taiga documentation: https://docs.ncsa.illinois.edu/systems/taiga/en/latest/user-guide/data-recovery.html)
+.. _See Taiga documentation: https://docs.ncsa.illinois.edu/systems/taiga/en/latest/user-guide/data-recovery.html
 
 Home
 ~~~~~~~~
