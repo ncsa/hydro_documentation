@@ -96,19 +96,19 @@ Storage and File Systems
 
 .. table:: Hydro Storage and File Systems
 
-   +------------------------------+-----------------+-----------+---------------------+-------------+
-   | File System                  | Media Type      | Total Size| Default Quota       | Backups     |                 
-   +==============================+=================+===========+=====================+=============+
-   | Home (/u)                    | HDD             | 2PB       | 1 TB, 6M files      | None        |   
-   +------------------------------+-----------------+-----------+---------------------+-------------+
-   | Projects (/projects)         | HDD             | 2PB       | 50 TB, 1M files     | None        | 
-   +------------------------------+-----------------+-----------+---------------------+-------------+
-   | Taiga (/taiga)               | HDD, NVME cache | >19PB     | `must be purchased`_| `snapshots`_|                 
-   +------------------------------+-----------------+-----------+---------------------+-------------+
+   +------------------------------+-----------------+-----------+---------------------+----------------------------+
+   | File System                  | Media Type      | Total Size| Default Quota       | Backups                    |                 
+   +==============================+=================+===========+=====================+============================+
+   | Home (/u)                    | HDD             | 2PB       | 1 TB, 6M files      | None                       |   
+   +------------------------------+-----------------+-----------+---------------------+----------------------------+
+   | Projects (/projects)         | HDD             | 2PB       | 50 TB, 1M files     | None                       | 
+   +------------------------------+-----------------+-----------+---------------------+----------------------------+
+   | Taiga (/taiga)               | HDD, NVME cache | >19PB     | `Must be purchased`_| `See Taiga documentation`_ |                 
+   +------------------------------+-----------------+-----------+---------------------+----------------------------+
 
-.. _must be purchased: https://wiki.ncsa.illinois.edu/display/TG/
+.. _must be purchased: https://docs.ncsa.illinois.edu/systems/taiga/
 
-.. _snapshots: https://wiki.ncsa.illinois.edu/display/TG/Taiga+User+Guide#TaigaUserGuide-DataRecovery)
+.. _See Taiga documentation: https://docs.ncsa.illinois.edu/systems/taiga/en/latest/user-guide/data-recovery.html)
 
 Home
 ~~~~~~~~
