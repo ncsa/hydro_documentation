@@ -7,7 +7,7 @@ Introduction
 
 The Hydro HPC system provides highly productive resources and services for computational and data-intensive science. 
 It is designed for maximum throughput on large-scale, complex applications using InfiniBand interconnect architecture. 
-Hydro consists of 55 server nodes with a mix of AMD and Intel CPUs, and 18 NVIDIA A100 GPUs, 6 PB of online storage and 430 Gbps in external networking capability. 
+Hydro consists of 70 server nodes with a mix of AMD and Intel CPUs, and 18 NVIDIA A100 GPUs, 6 PB of online storage and 430 Gbps in external networking capability. 
 The architectural balance makes Hydro capable of supporting an extremely wide range of science disciplines and uses, from at scale simulation and modeling to the most advanced approaches to Big Data and Artificial Intelligence.  
 Hydro supports a current Linux base software stack and programming environment.
 
