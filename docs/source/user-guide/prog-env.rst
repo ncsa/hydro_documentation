@@ -26,7 +26,7 @@ Software
 Shells and Modules
 ---------------------------
 
-The default shell is **/bin/bash**. To request it be changed, email help+hydro@ncsa.illinois.edu. 
+The default shell is **/bin/bash**. To request it be changed, :ref:`submit a support request <help>`. 
 
 The user environment is controlled using the modules environment management system. 
 Modules may be loaded, unloaded, or swapped either on a command line or in your **$HOME/.bashrc** (**.cshrc** for csh ) shell startup file.
