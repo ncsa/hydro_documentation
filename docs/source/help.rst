@@ -14,15 +14,7 @@ Refer to the `JSM User Job Aid <https://docs.ncsa.illinois.edu/en/latest/_static
 
 .. raw:: html
    
-   <p>The <a href="http://help.ncsa.illinois.edu">NCSA Help Portal</a> is the preferred method to submit requests. However, if you run into problems using it, you can still email <a href="mailto:help@ncsa.illinois.edu?subject=Hydro: ">help@ncsa.illinois.edu</a> for support. Expand the following section for guidelines on sending email requests so that NCSA staff can efficiently address them.</p>
-
-Email Support Request Guidelines
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. raw:: html
-
-   <details>
-   <summary><a><b>Email support request guidelines</b> <i>(click to expand/collapse)</i></a></summary>
+   <p>The <a href="http://help.ncsa.illinois.edu">NCSA Help Portal</a> is the preferred method to submit requests. However, if you run into problems using it, you can still email <a href="mailto:help@ncsa.illinois.edu?subject=Hydro: ">help@ncsa.illinois.edu</a> for support.</p>
 
 **To help NCSA staff efficiently address your request, in your initial email, please include:**
 
@@ -43,9 +35,5 @@ Email Support Request Guidelines
 **If you have multiple, unrelated issues, please create a separate ticket for each by sending separate emails.**
 
 You will receive email correspondence as your ticket is worked on, please respond to any questions that are asked.
-
-.. raw:: html
-
-   </details>
 
 |
