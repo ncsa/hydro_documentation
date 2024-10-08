@@ -3,6 +3,13 @@
 {% extends '!footer.html' %}
 
 {% block extrafooter %} {{super}}
+      <!-- Adding GitHub link start-->
+      {% if display_github %}
+          <a href="https://github.com/{{ github_user }}/{{ github_repo }}/blob/{{ github_version }}{{ conf_py_path }}{{ pagename }}.rst">
+          View on GitHub.</a>
+      {% endif %}
+      <!-- Adding GitHub link end -->
+
       <!-- OneTrust Cookies Settings button start -->
       <button id="cookie-button" class="ot-sdk-show-settings">About Cookies</button>
       <!-- OneTrust Cookies Settings button end -->
