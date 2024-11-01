@@ -90,7 +90,7 @@ The caller's current user and group will appear unchanged, but all other users a
 (With the ``--fakeroot`` option ``$HOME`` will be mounted as ``/root`` and the caller's user and group will be mapped to root.) 
 Regardless of apparent user and group, **processes inside a container have the caller's full read and write capabilities on mounted host filesystems**.
 
-Because of limited user and group visibilty, running ``cp -a`` from inside of a container on a host filesystem file or directory with an :ref:`access control list <alc>` will fail with an "Invalid argument" error. See `this issue <https://github.com/apptainer/apptainer/issues/1239>`_ for details.
+Because of limited user and group visibilty, running ``cp -a`` from inside of a container on a host filesystem file or directory with an :ref:`access control list <acl>` will fail with an "Invalid argument" error. See `this issue <https://github.com/apptainer/apptainer/issues/1239>`_ for details. Access control lists can be removed by running ``setfacl --remove-all --recursive`` outside of a container.
 
 See the `Apptainer user guide - Bind Paths and Mounts <https://apptainer.org/docs/user/1.2/bind_paths_and_mounts.html>`_ for details.
 
