@@ -113,7 +113,7 @@ Storage and File Systems
 Home
 ~~~~~~~~
 
-The home (**/u**) area of the file system is where users land upon logging into the cluster via SSH. Home is Lustre mount type with fixed size file striping. Example uses for home are scripts, source code, and compiling.
+The home (**/u**) area of the file system is where users land upon logging into the cluster via SSH. Home is NFS based, lower space than projects but highly responsive. Example uses for home are scripts, source code, and compiling.
 
 Home Directory Permissions
 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$
@@ -123,7 +123,7 @@ By default, user home directories and /projects directories are closed (permissi
 Projects
 ~~~~~~~~~~
 
-The projects (**/projects**) area is where a group's storage capacity resides. Projects is Lustre mount type with fixed size file striping. The projects file system is designed as common space for your group. Projects is also the best place for job input and output.
+The projects (**/projects**) area is where a group's storage capacity resides. Projects is Lustre mount type with progressive layout file striping. The projects file system is designed as common space for your group. Projects is also the best place for job input and output.
 
 Taiga
 ~~~~~~~~~~~~~~~~~~~~
