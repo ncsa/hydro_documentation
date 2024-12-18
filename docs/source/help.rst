@@ -3,7 +3,7 @@
 Getting Help 
 =============
 
-Go to the `NCSA Help Portal <http://help.ncsa.illinois.edu>`_ for assistance with any questions or issues not answered by the documentation. Powered by Jira Service Manager (JSM), in this portal you can:
+Go to the `NCSA Help Portal <https://jira.ncsa.illinois.edu/servicedesk/customer/portal/2/group/20>`_ for assistance with any questions or issues not answered by the documentation. Powered by Jira Service Manager (JSM), in this portal you can:
 
 - Submit support request tickets.
 - Search knowledge base articles to resolve common issues faster.
@@ -14,7 +14,7 @@ Refer to the `JSM User Job Aid <https://docs.ncsa.illinois.edu/en/latest/_static
 
 .. raw:: html
    
-   <p>The <a href="http://help.ncsa.illinois.edu">NCSA Help Portal</a> is the preferred method to submit requests. However, if you run into problems using it, you can still email <a href="mailto:help@ncsa.illinois.edu?subject=Hydro: ">help@ncsa.illinois.edu</a> for support.</p>
+   <p>The <a href="https://jira.ncsa.illinois.edu/servicedesk/customer/portal/2/group/20">NCSA Help Portal</a> is the preferred method to submit requests. However, if you run into problems using it, you can still email <a href="mailto:help@ncsa.illinois.edu?subject=Hydro: ">help@ncsa.illinois.edu</a> for support.</p>
 
 **To help NCSA staff efficiently address your request, in your initial email, please include:**
 
