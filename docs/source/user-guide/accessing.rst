@@ -9,7 +9,7 @@ Hydro Login Methods
 Once you have an approved Hydro allocation, the primary methods for accessing Hydro are:
    
     - :ref:`connecting_ssh` - Most common login method for users.
-    - :ref:`vs_code_ssh` - Visual Studio Code extension that allows you to connect to Hydro through VSCode`
+    - :ref:`vs_code_ssh` - Visual Studio Code extension that allows you to connect to Hydro through VS Code
 
 .. _connecting_ssh:
 
@@ -52,22 +52,30 @@ NCSA requires multifactor authentication (MFA) for all users. You can choose one
 listed to authenticate. Once your MFA method is accepted, you will be connected to one of Hydro's 
 login nodes.
 
+.. Note::
+    **Login node usage policy**
+    
+    Login nodes are shared among all users and are intended for file management, job submission, 
+    and other tasks that do not require significant computational resources. Please do not run 
+    computationally intensive jobs on the login nodes. Please see the :ref:`running` page 
+    for information on submitting jobs to the compute nodes.
+
 .. _vs_code_ssh:
 
-VSCode Remote SSH extension
+VS Code Remote SSH extension
 -------------------------------
 
-The Visual Studio Code Remote - SSH extension allows you to connect your VSCode window to a remote 
+The Visual Studio Code Remote - SSH extension allows you to connect your VS Code window to a remote 
 system via SSH and take full advantage of VS Code's feature set. You can find the extension 
-through VSCodes built in extension browser or by visiting the 
-`VSCode Marketplace <https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh>`_.
+through VS Code's built in extension browser or by visiting the 
+`VS Code Marketplace <https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh>`_.
 
 #. Install the Remote - SSH extension into VS Code
 
-..  figure:: ../images/accessing/01_remote_ssh.png
-       :alt: Remote ssh extension in VS Code.
-       :figwidth: 550px
-       :width: 500px
+    ..  figure:: images/accessing/01_remote_ssh.png
+        :alt: Remote ssh extension in VS Code.
+        :figwidth: 550px
+        :width: 500px
 
 #. Follow the `VS Code connect to a remote host <https://code.visualstudio.com/docs/remote/ssh#_connect-to-a-remote-host>`_ instructions. 
 

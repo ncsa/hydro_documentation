@@ -22,9 +22,9 @@ Adding Users to Your Allocation
 --------------------------------
 PIs can add and remove users from their allocation using the `NCSA group management interface
 <https://internal.ncsa.illinois.edu/mis/groups/>`_. PIs can delegate the ability to manage users 
-to other project members once those accounts are added to the project. Please refer to `this page
+to other project members once those accounts are added to the project. Please refer to `NCSA documentation
 <https://docs.ncsa.illinois.edu/en/latest/account-mgmt/group-mgmt.html#group-mgmt>`_
-for additional documentation on the group management interface. 
+for additional help with the group management interface. 
 
 .. Note::
     Group membership changes may take up to **15 minutes** to synchronize the changes with Hydro.
