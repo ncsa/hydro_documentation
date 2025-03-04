@@ -5,11 +5,21 @@ Hydro User Documentation
 Introduction
 ======================
 
-The Hydro HPC system provides highly productive resources and services for computational and data-intensive science. 
-It is designed for maximum throughput on large-scale, complex applications using InfiniBand interconnect architecture. 
-Hydro consists of 70 server nodes with a mix of AMD and Intel CPUs, and 18 NVIDIA A100 GPUs, 6 PB of online storage and 430 Gbps in external networking capability. 
-The architectural balance makes Hydro capable of supporting an extremely wide range of science disciplines and uses, from at scale simulation and modeling to the most advanced approaches to Big Data and Artificial Intelligence.  
-Hydro supports a current Linux base software stack and programming environment.
+The Hydro HPC system provides highly productive resources and services for computational and 
+data-intensive science. It is designed for maximum throughput on large-scale, complex applications 
+using InfiniBand interconnect architecture. Hydro consists of 70 server nodes with a mix of AMD 
+and Intel CPUs, and 18 NVIDIA A100 GPUs, 6 PB of online storage and 430 Gbps in external 
+networking capability. The architectural balance makes Hydro capable of supporting an extremely 
+wide range of science disciplines and uses, from at scale simulation and modeling to the most 
+advanced approaches to Big Data and Artificial Intelligence. Hydro supports a current Linux base 
+software stack and programming environment.
+
+Who is eligible to request a allocation on Hydro?
+---------------------------------------------------
+Hydro allocations are limited to Illinois Computes and NFI projects. Please see the 
+`NCSA Services - Hydro <https://wiki.ncsa.illinois.edu/display/FIN/Hydro>`_ page for additional 
+information on non-NFI funded access to the Hydro cluster.
+
 
 Getting Started with High-Performance Computing
 =================================================
@@ -35,7 +45,7 @@ Browse NCSA’s `HPC-Moodle <https://www.hpc-training.org>`_ for a full list of 
    :caption: User Guide
    
    user-guide/architecture
-   user-guide/illinois-computes
+   user-guide/accounts
    user-guide/accessing
    user-guide/file-mgmt
    user-guide/prog-env
