@@ -31,7 +31,6 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 -  NUMA domains: 1 per socket, 2 per node
 -  CPUs per NUMA: domain0={0,2,4,6,8,10,12,14}, domain1={1,3,5,7,9,11,13,15}
 -  40 Gb/s Ethernet
--  FDR 56Gb/s InfiniBand
 
 Dell PowerEdge R720 Compute Node Specifications [2.0GHz]
 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
@@ -43,7 +42,6 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 -  NUMA domains: 1 per socket, 2 per node
 -  CPUs per NUMA: domain0={0,2,4,6,8,10,12,14}, domain1={1,3,5,7,9,11,13,15}
 -  40 Gb/s Ethernet
--  FDR 56Gb/s InfiniBand
 
 Dell PowerEdge R815 Compute Node Specifications
 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
@@ -55,7 +53,6 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 -  NUMA domains: 2 per socket, 8 per node
 -  CPUs per NUMA: domain0={0-7} domain1={8-15} domain2={32-39} domain3={40-47} domain4={48-55} domain5={56-63} domain6={16-23} domain7={24-31}
 -  40 Gb/s Ethernet
--  QDR 40 Gb/s InfiniBand
 
 Dell PowerEdge R7525 Compute Node Specifications
 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
@@ -67,7 +64,7 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 -  NUMA domains: 1 per socket, 2 per node
 -  CPUs per NUMA: domain0={0-31}, domain1={32-63}
 -  100 Gb/s Ethernet
--  FDR 56Gb/s InfiniBand
+-  1.5 TB NVME (/tmp)
 -  2 NVIDIA A100 80GB PCIe GPUs
 
 Dell PowerEdge R7525 Compute Node Specifications
@@ -80,7 +77,7 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 -  NUMA domains: 1 per socket, 2 per node
 -  CPUs per NUMA: domain0={0-27}, domain1={28-55}
 -  100 Gb/s Ethernet
--  FDR 56Gb/s InfiniBand
+-  1.5 TB NVME (/tmp)
 -  2 NVIDIA A100 80GB PCIe GPUs
 
 
@@ -103,6 +100,8 @@ Storage and File Systems
    +------------------------------+-----------------+-----------+---------------------+----------------------------+
    | Projects (/projects)         | HDD, NVME cache | n/a       | 50 TB, 750k files   | None                       | 
    +------------------------------+-----------------+-----------+---------------------+----------------------------+
+   | Temp (/tmp) - GPU nodes only | Local NVME      | 1.5TB     | n/a                 | Cleared after each job     |                 
+   +------------------------------+-----------------+-----------+---------------------+----------------------------+
    | Taiga (/taiga)               | HDD, NVME cache | >19PB     | `Must be purchased`_| `See Taiga documentation`_ |                 
    +------------------------------+-----------------+-----------+---------------------+----------------------------+
 
@@ -124,6 +123,11 @@ Projects
 ~~~~~~~~~~
 
 The projects (**/projects**) area is where a group's storage capacity resides. Projects is Lustre mount type with progressive layout file striping. The projects file system is designed as common space for your group. Projects is also the best place for job input and output.
+
+Temp
+~~~~~~~~~~
+
+The local temp space is intended for per-node scratch use during a job, and it is cleared between jobs. It can be accessed simply by using /tmp.  Local NVME temp space is only a feature on GPU nodes. On all others, /tmp will reside in host memory.
 
 Taiga
 ~~~~~~~~~~~~~~~~~~~~
