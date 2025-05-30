@@ -1,6 +1,6 @@
-##########################
-Hydro User Documentation
-##########################
+############################################################################
+Hydro User Documentation: Hydro will shut down PERMANENTLY June 30, 2025
+############################################################################
 
 Introduction
 ======================
@@ -34,6 +34,7 @@ Browse NCSA’s `HPC-Moodle <https://www.hpc-training.org>`_ for a full list of 
    :maxdepth: 2
    :hidden:
 
+   shutdown
    status-updates
    quick-start
    faq
