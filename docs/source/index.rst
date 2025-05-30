@@ -34,6 +34,7 @@ Browse NCSA’s `HPC-Moodle <https://www.hpc-training.org>`_ for a full list of 
    :maxdepth: 2
    :hidden:
 
+   shutdown
    status-updates
    quick-start
    faq
