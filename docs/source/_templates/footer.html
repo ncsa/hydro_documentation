@@ -6,11 +6,14 @@
       <!-- Adding GitHub link start-->
       {% if display_github %}
           <a href="https://github.com/{{ github_user }}/{{ github_repo }}/blob/{{ github_version }}{{ conf_py_path }}{{ pagename }}.rst">
-          View on GitHub.</a>
+          View on GitHub.</a><br/>
       {% endif %}
       <!-- Adding GitHub link end -->
 
+      <a href="https://docs.ncsa.illinois.edu/en/latest/">NCSA System Documentation</a><br/>
+
       <!-- OneTrust Cookies Settings button start -->
+      <br/>      
       <button id="cookie-button" class="ot-sdk-show-settings">About Cookies</button>
       <!-- OneTrust Cookies Settings button end -->
 {% endblock %}
