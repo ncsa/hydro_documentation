@@ -1,2 +1,2 @@
-Hydro will SHUT DOWN PERMANENTLY on June 30, 2025
+Hydro was SHUT DOWN June 30
 ====================================================
