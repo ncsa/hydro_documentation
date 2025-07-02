@@ -1,5 +1,5 @@
 ############################################################################
-Hydro User Documentation: Hydro will shut down PERMANENTLY June 30, 2025
+Hydro was SHUT DOWN on June 30 (as scheduled)
 ############################################################################
 
 Introduction
